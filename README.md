@@ -65,3 +65,9 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 * [Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
 
 [^1]: All'interno della cartella ./lang/torch è inoltre presente il file delle fonti di luce addizionali per D&D5e
+
+## Supporto
+Se ti piace questo modulo e vorresti aiutare, suggerire l'aggiunta di una traduzione o hai trovato un bug contattami su discord @half.tone o [crea un issue](https://github.com/Halftonex/italian-modules-translation/issues) qui su GitHub.
+
+## Licenza
+Questo modulo per Foundry VTT è sotto la licenza [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
