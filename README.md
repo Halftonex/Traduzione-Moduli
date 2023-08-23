@@ -70,4 +70,4 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 Se ti piace questo modulo e vorresti aiutare, suggerire l'aggiunta di una traduzione o hai trovato un bug contattami su discord @half.tone o [crea un issue](https://github.com/Halftonex/italian-modules-translation/issues) qui su GitHub.
 
 ## Licenza
-Questo modulo per Foundry VTT è sotto la licenza [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+Questo modulo per Foundry VTT è sotto la licenza [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
