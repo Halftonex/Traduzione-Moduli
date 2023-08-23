@@ -1,0 +1,132 @@
+{
+	"POLYGLOT": {
+		"DefaultAlphabet": "Alfabeto Predefinito",
+		"FontSettings": "Impostazioni Font",
+		"GeneralSettings": "Impostazioni Generali",
+		"LanguageSettings": "Impostazioni Lingua",
+		"ChatSettings": "Impostazioni Chat",
+		"General": "Generale",
+		"Languages.title": "Lingue",
+		"Languages.hint": "Cambia l'alfabeto usato per le lingue. Ripristinare le impostazioni predefinite ricaricherà la pagina.",
+		"Font": "Font",
+		"Fonts": "Font",
+		"FontSize": "Dimensione Caratteri (%)",
+		"AlphabeticOnly": "Solo Alfabetico",
+		"Logographical": "Logografico",
+		"AllowOOC.hint": "Scegli che utenti hanno i messaggi rimescolati. OOC = Fuori personaggio (Out of Character).",
+		"AllowOOC.title": "Rimescola i messaggi OOC in chat",
+		"AllowOOCOptions": {
+			"a": "Tutti",
+			"b": "Solo GM",
+			"c": "Solo Giocatori",
+			"d": "Nessuno"
+		},
+		"Omniglot": {
+			"title": "Lingua Onniglotta",
+			"hint": "Determina una lingua con la quale chi la conosce è capace di capire e parlare tutte le altre lingue."
+		},
+		"ComprehendLanguages.hint": "Determina una lingua che fa comprendere a chi la conosce tutte le altre lingue, ma che non può essere parlata o scritta.",
+		"ComprehendLanguages.title": "Incantesimo Comprensione dei Linguaggi",
+		"CustomLanguages.hint": "Definisci una lista di lingue personalizzate, separate da virgole, da aggiungere al sistema.",
+		"CustomLanguages.title": "Lingue Personalizzate",
+		"DefaultLanguage.hint": "Nome del linguaggio predefinito da selezionare. Se vuoto, usa il predefinito di sistema.",
+		"DefaultLanguage.title": "Lingua Predefinita",
+		"DisplayTranslated.hint": "Per le lingue che sono tradotte nella chat, mostra il testo originale con la traduzione sotto.",
+		"DisplayTranslated.title": "Mostra Traduzioni",
+		"enableAllFonts": {
+			"hint": "Aggiunge i font di Foundry alle {setting1} e {setting2}.",
+			"title": "Aggiungi i font di Foundry alle {settingMenuLabel}"
+		},
+		"ExportFonts.hint": "Aggiunge i font di Foundry al Core del menu dei {settingMenuLabel}. Disattiva questa impostazione per rimuovere tutti i font di Polyglot dal menu.",
+		"ExportFonts.title": "Aggiungi i font di Polyglot al Core",
+		"HideTranslation.hint": "Nasconde il Mappamondo e il testo \"Tradotto da\" nei messaggi in chat ai giocatori. Perfetto per quando vuoi nascondere loro che lingua stai parlando. Richiede il riavvio.",
+		"HideTranslation.title": "Nascondi Indicatori ai Giocatori",
+		"IgnoreJournalFontSize": {
+			"hint": "Ignora la dimensione dei font di Polyglot nei Diari, rendendoli della stessa dimensione del testo. Utile la dove la formattazione del Diario sia una necessità.",
+			"title": "Usa Dimensione Font Predefinita"
+		},
+		"JournalHighlight": {
+			"hint": "Definisci l'opacità dell'evidenziamento in un Dario.",
+			"title": "Opacità dell'evidenziamento nei Diari (%)"
+		},
+		"JournalHighlightColor": {
+			"hint": "Definisci il colore dell'evidenziamento in un Dario.",
+			"title": "Colore dell'evidenziamento"
+		},
+		"LanguageProvider": {
+			"choices": {
+				"module": "[Modulo] {name}",
+				"native": "Generico",
+				"system": "[Sistema] {name}"
+			},
+			"hint": "Seleziona la fonte delle informazioni per gli alfabeti e le lingue. Altre fonti possono essere rese disponibili tramite sistemi e moduli installati. Le opzioni sottostanti dipendono dalla fonte stabilita qui. ⚠️ Se cambi la fonte, devi salvare e riaprire queste impostazioni.",
+			"name": "Fonte delle Impostazioni delle Lingue"
+		},
+		"languageDataPath": {
+			"title": "Percorso Dati Lingua",
+			"hint": "Se il tuo sistema ha delle lingue memorizzate nei dati degli attori ed esse non vengono caricate correttamente, potrebbe essere necessario usare un altro percorso. Inserisci l'attributo corretto dei dati (es. actor.system.languages or actor.system.speak). Questa opzione ha priorità sull'impostazione {setting}. Richiede riavvio."
+		},
+		"literacyDataPath": {
+			"title": "Percorso Dati Alfabetizzazione",
+			"hint": "Uguale all'impostazione {setting}, ma per la lettura dei Diari. Questa opzione richiede l'impostazione {setting}. Richiede riavvio."
+		},
+		"LanguageRegex": {
+			"hint": "Puoi usare questa impostazione per cambiare il termine cercato tra gli oggetti da \"Lingua\" a qualcos'altro, come \"Linguaggio\".",
+			"title": "RegEx Lingua"
+		},
+		"logographicalFontToggle.hint": "Dimezza la dimensione delle frasi usando font logografiche (es. caratteri Giapponesi e Cinesi).",
+		"logographicalFontToggle.title": "Font Logografiche",
+		"RandomizeRunes.hint": "Determina che tipo di RNG viene usato per generare una frase. ⚠️ L'opzione \"Nessuno\" supporta solo caratteri alfanumerici (no accenti).",
+		"RandomizeRunes.title": "Rendi casuali le Rune",
+		"RandomizeRunesOptions": {
+			"a": "Predefinito",
+			"b": "Frasi uniche",
+			"c": "Nessuno ⚠️"
+		},
+		"ReplaceLanguages.hint": "Sostituisce la lingua predefinita del sistema con le tue lingue personalizzate. La prima lingua nella lista diventerà la nuova lingua predefinita.",
+		"ReplaceLanguages.title": "Sostituisci la Lingua di Sistema",
+		"RuneRegex": {
+			"hint": "Fa in modo che la resa casuale ignori i caratteri non alfanumerici (es. !,.;:?#$\"'). Questo potrebbe comportare, in alcuni font, effetti indesiderati mostrando quei caratteri come quadrati (□).",
+			"title": "Rendi Casuale solo gli Alfanumerici"
+		},
+		"ScrambleGM.hint": "Non tradurre i testi per il GM (fai riferimento al colore del mappamondo per capire se il token comprende il testo). Richiede il ricaricamento.",
+		"ScrambleGM.title": "Rimescola i messaggi per il GM",
+		"Truespeech.hint": "Determina una lingua che fa capire a chi la conosce tutte le lingue parlate (non fa leggere i Diari) e che può essere capita da tutte le creature.",
+		"Truespeech.title": "Incantesimo Lingua",
+		"Translation": "Traduzione",
+		"TranslatedFrom": "Tradotto da ",
+		"LanguageLabel": "Lingua",
+		"AlphabetLabel": "Alfabeto",
+		"LatinAlphabet": "Alfabeto Latino",
+		"ToggleRunes": "Attiva/Disattiva Rune",
+		"Runes": "Rune",
+		"UESRPG.Language": "Lingua",
+		"Generic": {
+			"Language": "Lingua"
+		},
+		"COC7": {
+			"LanguageOwn": "Lingua",
+			"LanguageAny": "Lingua",
+			"LanguageOther": "Lingua",
+			"LanguageSpec": "Lingua"
+		},
+		"DND5E": {
+			"SpecialLanguages.title": "Sostituisci Lingue Speciali",
+			"SpecialLanguages.hint": "Nome della lingua che rimpiazzerà \"lingue\" come \"tutte le lingue conosciute in vita\"."
+		},
+		"SWADE": {
+			"LanguageSkills": "Lingua",
+			"AdditionalLanguageStat": {
+				"title": "Chiave della Statistica della Lingua",
+				"hint": "È possibile individuare una Statistica Addizionale (la quale è impostata nelle impostazioni di configurazione SWADE). Devi inserire la Chiave della Statistica (case sensitive). Attenzione in quanto questa opzione sovrascrive l'impostazione {setting}."
+			},
+			"AdditionalLiterateStat": {
+				"title": "Chiave della Statistica di Alfabetizzazione",
+				"hint": "È possibile limitare la lettura dei Diari aggiungendo una Statistica Addizionale. Devi inserire la Chiave della Statistica (case sensitive). Questa opzione è indipendente dall'impostazione {setting}."
+			}
+		},
+		"WFRP4E": {
+			"LanguageSkills": "Lingua"
+		}
+	}
+}

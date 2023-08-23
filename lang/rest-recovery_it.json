@@ -1,0 +1,562 @@
+{
+  "REST-RECOVERY": {
+    "ClassNames": {
+      "Wizard": "Mago",
+      "Druid": "Druido",
+      "Bard": "Bardo"
+    },
+    "Warnings": {
+      "PreventedLongRest": "Non puoi effettuare un riposo lungo perché sei afflitto da una condizione che te lo impedisce!",
+      "PreventedShortRest": "Non puoi effettuare un riposo breve perché sei afflitto da una condizione che te lo impedisce!",
+      "NotPromptedLongRest": "Il DM ha configurato il gioco in modo che i giocatori non possano effettuare un riposo lungo senza che gli venga richiesto!",
+      "NotPromptedShortRest": "Il DM ha configurato il gioco in modo che i giocatori non possano effettuare un riposo breve senza che gli venga richiesto!"
+    },
+    "FeatureNames": {
+      "ArcaneRecovery": "Recupero Arcano",
+      "NaturalRecovery": "Recupero Naturale",
+      "PowerSurge": "Fonte d'Energia",
+      "SongOfRest": "Canto di Riposo",
+      "ChefFeat": "Cuoco",
+      "ChefTools": "Utensili da Cuoco",
+      "PeriaptItem": "Talismano della Rimarginazione",
+      "WoundClosureBlessing": "Benedizione della Rimarginazione",
+      "DurableFeat": "Robusto",
+      "BlackBloodFeature": "Guarigione del Sangue Nero"
+    },
+    "PatchedRecovery": "{recoveryName} di {actorName} è stato rattoppato.",
+    "PatchedConsumable": "Aggiornati gli utilizzi di {itemName}",
+    "Modules": {
+      "DFreds": "Effetti Convenienti di DFreds",
+      "CUB": "Combat Utility Belt"
+    },
+    "Fractions": {
+      "None": "Nessuno",
+      "Quarter": "Quarto",
+      "Half": "Metà",
+      "Full": "Completa",
+      "Custom": "Formula Personalizzata"
+    },
+    "Rounding": {
+      "RoundDown": "Arrotonda in Basso",
+      "RoundUp": "Arrotonda in Alto"
+    },
+    "Misc": {
+      "Food": "Cibo",
+      "Water": "Acqua",
+      "Both": "Entrambi"
+    },
+    "NumberToText": {
+      "1": "Uno",
+      "2": "Due",
+      "3": "Tre",
+      "4": "Quattro",
+      "5": "Cinque",
+      "1st": "1°",
+      "2nd": "2°",
+      "3rd": "3°",
+      "4th": "4°",
+      "5th": "5°"
+    },
+    "Chat": {
+      "RegainedUses": "Inoltre, hanno recuperato quanto segue:",
+      "SpellSlotList": "{number} slot incantesimo di {level} livello",
+      "SpellSlotListPlural": "{number} slot incantesimo di {level} livello",
+      "RecoveryNameNum": "{name} ha riguadagnato {number} utilizzi",
+      "SongOfRest": "{name} beneficia del Canto di Riposo di {bard}.",
+      "SongOfRestSelf": "{name} beneficia del proprio Canto di Riposo",
+      "Chef": "{name} gode del cibo delizioso di {chef}.",
+      "ChefSelf": "{name} gode del proprio cibo delizioso.",
+      "ConsumedBothDayWorth": "{actorName} ha consumato {itemName} per un'intera giornata di cibo e acqua.",
+      "ConsumedBoth": "{actorName} ha consumato {itemName} per {charges} unità di cibo e acqua.",
+      "ConsumedFoodDayWorth": "{actorName} ha mangiato {itemName} per un'intera giornata di cibo.",
+      "ConsumedFood": "{actorName} ha mangiato {itemName} per {charges} unità di cibo.",
+      "ConsumedWaterDayWorth": "{actorName} ha bevuto {itemName} per un'intera giornata di acqua.",
+      "ConsumedWater": "{actorName} ha bevuto {itemName} per {charges} unità d'acqua.",
+      "RequiredSatedFood": "C'è bisogno di {units} unità di cibo per essere sazi per la giornata.",
+      "RequiredSatedWater": "C'è bisogno di {units} unità d'acqua per essere dissetati per la giornata.",
+      "SatedFood": "Non richiedono ulteriore cibo.",
+      "SatedWater": "Non richiedono ulteriore acqua.",
+      "FoodFullNone": "Hanno mangiato una quantità di loro cibo sufficiente a saziarsi.",
+      "FoodHalfNone": "Hanno mangiato il loro cibo, ma solo metà razione giornaliera.",
+      "FoodHalfHalf": "Hanno mangiato da una fonte esterna e dal loro cibo quanto basta per essere sazi.",
+      "FoodNoneFull": "Hanno mangiato cibo a sufficienza da esser sazi.",
+      "FoodNoneHalf": "Hanno mangiato da una fonte esterna, ma solo metà della quantità necessaria.",
+      "FoodNoneNone": "Non hanno mangiato.",
+      "WaterFullNone": "Hanno bevuto abbastanza acqua dalle loro scorte.",
+      "WaterHalfNone": "Hanno bevuto dalle loro scorte, ma solo metà della quantità necessaria.",
+      "WaterHalfHalf": "Hanno bevuto a sufficienza, da una fonte esterna e dalle loro scorte.",
+      "WaterNoneFull": "Hanno bevuto abbastanza acqua da una fonte esterna.",
+      "WaterNoneHalf": "Hanno bevuto da una fonte esterna, ma solo metà della quantità necessaria.",
+      "WaterNoneNone": "Non hanno bevuto.",
+      "NoExhaustion": "Ma si è riusciti a evitare l'indebolimento.",
+      "Exhaustion": "Così, si è sofferto di  {exhaustion} livelli di esaurimento.",
+      "ExhaustionDeath": "Malauguratamente, {actorName} ha raggiunto {max_levels} livelli di indebolimento e ha perso la vita.",
+      "ExhaustionArmor": "Hanno scelto di tenere addosso l'armatura, e non hanno rimosso alcun livello di indebolimento.",
+      "HitDiceArmor": "Hanno recuperato meno dadi vita del normale perché hanno riposato in armatura.",
+      "NoHitDiceArmor": "Non hanno recuperato alcun dado vita perché hanno riposato in armatura.",
+      "HitDiceNoArmor": "Hanno scelto di non riposare con l'armatura, e hanno recuperato la quantità prevista di dadi vita.",
+      "PreventedHitDiceRecovery": "Dato che hanno speso dei dadi vita durante il riposo lungo, non ne hanno recuperato alcuno.",
+      "CouldNotLongRest": "{actorName} non ha potuto effettuare un riposo lungo.",
+      "CouldNotShortRest": "{actorName} non ha potuto effettuare un riposo breve."
+    },
+    "Dialogs": {
+      "SaveProfile": {
+        "Title": "Crea Nuovo Profilo",
+        "Enter": "Inserisci il nome preimpostato:",
+        "OverrideProfile": "Il tuo nuovo profilo non può avere lo stesso nome di un vecchio profilo",
+        "Empty": "Il tuo nuovo profilo non può avere un nome vuoto"
+      },
+      "DiscardChanges": {
+        "Title": "Modifiche Non Salvate",
+        "Content": "Hai delle modifiche non salvato in questo profilo. Sei sicuro di voler cambiare profilo?"
+      },
+      "ResetDefaultChanges": {
+        "Title": "Impostazione predefinita",
+        "Content": "Sei sicuro di voler ripristinare il profilo del modulo \"Predefinito\" ai suoi valori predefiniti?"
+      },
+      "DeleteProfile": {
+        "Title": "Rimuovi profilo",
+        "Content": "Sei sicuro di voler eliminare il profilo \"{profile}\"?"
+      },
+      "QuickSetup": {
+        "Title": "Rest Recovery: Configurazione Rapida",
+        "SlowNaturalHealingTitle": "Guarigione Naturale Lenta",
+        "SlowNaturalHealingLabel": "I personaggi non recuperano punti ferita al termine di un riposo lungo. Devono invece spendere dadi vita per curarsi, come durante un riposo breve.",
+        "RecoverHitDiceTitle": "Recupera Dadi Vita Prima di un Riposo Lungo",
+        "RecoverHitDiceLabel": "Modifica la guarigione naturale lenta così che i personaggi recuperino i loro dadi vita quando cominciano il riposo lungo, anziché quando lo terminano.",
+        "OpenSettings": "Apri Impostazioni"
+      },
+      "PromptRest": {
+        "Title": "Richiedi Riposo Per i Giocatori",
+        "ConfigureProfiles": "Configura Profili",
+        "Short": "Riposo Breve",
+        "Long": "Riposo Lungo",
+        "NewDayTitle": "Nuovo Giorno",
+        "NoNewDayTitle": "Non è un Nuovo Giorno",
+        "NewDayHint": "Questo fa in modo che i personaggi che terminano il riposo, recuperino le abilità che si ricaricano ogni giorno.",
+        "NewDaySimpleCalendarHint": "A seconda del tipo selezionato qui sotto, i personaggi che terminano un riposo recuperano le abilità che si ricaricano ogni giorno. Questo è determinato dal modulo <strong>Simple Calendar</strong>",
+        "NoNewDaySimpleCalendarHint": "Né un riposo lungo né uno corto considereranno un nuovo giorno, quindi i personaggi che ne finiscono uno <strong>non</strong> recupereranno le abilità che si ricaricano ogni giorno. Questo è determinato dal modulo <strong>Simple Calendar</strong>.",
+        "NewDay": "(nuovo giorno)",
+        "Submit": "Invia",
+        "PlayerListShort": "Riposo"
+      },
+      "ShortRest": {
+        "ForcedNewDayTitle": "Nuovo Giorno",
+        "ForcedNewDayHint": "È l'alba di un nuovo giorno, quindi questo riposo breve ti farà recuperare le abilità che si ripristinano ogni giorno.",
+        "NoHitDiceRest": "Vuoi prenderti un riposo breve'? In un riposo breve puoi recuperare risorse primarie o secondarie.",
+        "NoMoreRests": "Niente più riposi brevi.",
+        "NoMoreRestsSmall": "Non hai più capacità per un riposo breve, poiché le regole del tuo gioco impongono un massimo di<strong>{max_short_rests}</strong> per riposo lungo.",
+        "ShortRestLimit": "Hai <strong>{num_short_rests}</strong>riposi brevi rimanenti prima di dover fare riposo lungo.",
+        "ShortRestLimitSmall": "Le regole del tuo gioco impongono un massimo di<strong>{max_short_rests}</strong> per riposo lungo.",
+        "AutoRoll": "Tiro Aut.",
+        "MinHitDiceSpend": "Devi utilizzare <strong>{min_spend}</strong> dadi vita per terminare questo riposo breve.",
+        "MaxHitDiceSpend": "Puoi utilizzare solo <strong>{max_spend}</strong> dadi vita durante questo riposo  breve (<strong>{current}</strong> rimanenti).",
+        "FinishRest": "Completa Riposo Breve"
+      },
+      "RestHealthWarning": {
+        "Title": "Termina il Riposo Lungo?",
+        "Content": "Non hai speso nessun dado vita per recuperare i punti ferita, sei sicuro di voler finire il tuo riposo lungo?"
+      },
+      "RestSpendHitDice": {
+        "Title": "Consumi Dadi Vita?",
+        "Content": "Devi utilizzare almeno {num_dice} dadi vita per terminare questo riposo. Sei sicuro di volerlo fare?"
+      },
+      "RestNoHitDice": {
+        "Title": "Nessun dado vita rimasto",
+        "Content": "Devi utilizzare almeno  {num_dice} dadi vita per terminare questo riposo, ma non te ne restano più."
+      },
+      "LongRest": {
+        "ForcedNewDayTitle": "Nuovo Giorno",
+        "ForcedNewDayHint": "È l'alba di un nuovo giorno, quindi questo riposo lungo ti farà recuperare le abilità che si ripristinano ogni giorno.",
+        "Begin": "Inizia Riposo Lungo",
+        "BeginExplanation": "Cominciando il tuo riposo lungo, riguadagnerai alcuni dei tuoi dadi vita in modo da poterli tirare per recuperare i punti ferita.",
+        "CustomRules": "Stai giocando con regole personalizzate, il che significa che puoi recuperare punti ferita, dadi vita, risorse di classe, cariche di oggetti ad uso limitato e slot per incantesimi in modo diverso.",
+        "CustomRulesLink": "Dai un'occhiata alle regole personalizzate.",
+        "MinHitDiceSpend": "Devi utilizzare <strong>{min_spend}</strong> dadi vita per terminare questo riposo lungo.",
+        "MaxHitDiceSpend": "Puoi utilizzare <strong>{max_spend}</strong> dadi vita durante questo riposo lungo (<strong>{current}</strong> rimanenti).",
+        "ArmorRecovery": "Rimuovere L'Armatura Durante Il Riposo Lungo?",
+        "ArmorRecoveryHint": "Dato che stai indossando un'armatura non leggera, subirai delle penalità. Clicca sul testo arancione delle regole personalizzate per maggiori dettagli.",
+        "FinishRest": "Termina Riposo Lungo"
+      },
+      "RestSteps": {
+        "Next": "Prossimo Passo",
+        "Prev": "Passo Precedente",
+        "Rest": {
+          "Title": "Riposo"
+        },
+        "FoodWater": {
+          "Title": "Cibo e Acqua",
+          "FoodRequirement": "Devi mangiare ancora <strong>{food}1</strong> unità di cibo.",
+          "FoodSated": "Hai già mangiato abbastanza.",
+          "FoodAlmostExhaustion": "Se finisci questa giornata senza aver mangiato l'intera quantità di cibo, soffrirai automaticamente <strong>1 livello di indebolimento</strong> in <strong>{days} giorni</strong>.",
+          "FoodExhaustion": "Poiché stai morendo di fame, soffrirai automaticamente<strong>1 livello di indebolimento</strong> Se finisci questa giornata senza aver mangiato l'intera quantità di cibo richiesta.",
+          "ExternalFood": "Ha accesso a fonti alimentari esterne",
+          "ExternalFoodFull": "Mangia a sazietà",
+          "ExternalFoodHalf": "Mangia la metà della quantità necessaria",
+          "WaterRequirement": "Devi bere ancora <strong>{water}</strong> unità di acqua.",
+          "AmountToConsume": "Quantità Da Consumare",
+          "WaterSated": "Hai già bevuto abbastanza.",
+          "NoWater": "Soffrirai automaticamente <strong>{exhaustion} livelli di indebolimento</strong> Se finisci questa giornata dopo aver bevuto meno della metà della quantità di acqua richiesta.",
+          "HalfWater": "Devi fare un tiro salvezza della Costituzione DC {dc} o soffrire di <strong>{exhaustion} livelli di indebolimento</strong> Se finisci questa giornata senza bere l'intera quantità.",
+          "DragDrop": "Trascina e rilascia gli elementi da consumare o seleziona:",
+          "DayWorth": "L'uso di un oggetto vale per un'intera giornata di {type}",
+          "ExternalWater": "Ha accesso a fonti d'acqua esterna",
+          "ExternalWaterFull": "Beve a sazietà",
+          "ExternalWaterHalf": "Beve metà della quantità necessaria"
+        },
+        "SpellRecovery": {
+          "Title": "Recupero Magico",
+          "SpellSlotFeature": "Recupera slot incantesimo con {featureName}",
+          "SpellSlotRule": "Recupero Slot Incantesimo",
+          "SpellSlotsLeft": "Hai {spellSlotsLeft} livelli di slot incantesimo rimasti da recuperare.",
+          "NoFeatureUse": "Non hai più alcun uso del tuo {featureName}, quindi non puoi riguadagnare alcun slot incantesimo durante questo riposo breve.",
+          "FullSpells": "Slot incantesimo al massimo, non hai bisogno di riguadagnarne altri."
+        }
+      },
+      "LongRestSettingsDialog": {
+        "Title": "Impostazioni Riposo Lungo",
+        "Content": "Queste sono le impostazioni che il tuo GM ha configurato per i riposi lunghi in questo gioco."
+      },
+      "CharacterOwnersOffline": {
+        "Title": "Giocatori Offline",
+        "Content": "I giocatori dei seguenti personaggi a cui hai richiesto un riposo, sono offline. Vuoi terminare tu il riposo lungo per conto loro?"
+      },
+      "Resources": {
+        "Configure": "Configura Recupero Risorse",
+        "Title": "Configurazione Risorse",
+        "Name": "Nome",
+        "Value": "Valore",
+        "Short": "Breve",
+        "Long": "Lungo",
+        "RecoveryFormula": "Formula Recupero"
+      },
+      "ModuleConfig": {
+        "Title": "Configurazione Rest Recovery",
+        "General": "Generale",
+        "LongRest": "Riposo Lungo",
+        "ShortRest": "Riposo Breve",
+        "ItemNames": "Nomi delle Caratteristiche",
+        "FoodAndWater": "Cibo e Acqua",
+        "Confused": "Confuso? Troppe Opzioni?",
+        "QuickSetup": "Clicca qui per aprire la Configurazione Rapida!",
+        "Donate": "Se ti piace questo modulo, fai una donazione per mantenerlo attivo!",
+        "MoreToCome": "E con altre opzioni di configurazione a venire...",
+        "Request": "Richiedi nuove funzionalità qui.",
+        "Submit": "Invia impostazioni",
+        "ModuleProfile": "Profilo Modulo",
+        "ImportProfile": "Importa Profilo",
+        "ExportProfile": "Esporta Profilo"
+      },
+      "ItemOverrides": {
+        "Title": "Rest Recovery: Cibo e Acqua",
+        "UsesCustomRecovery": "Usa Recupero Personalizzato",
+        "Type": "Tipo:",
+        "Enabled": "Abilitato",
+        "Formula": "Formula:",
+        "IsConsumable": "L'Oggetto è consumabile",
+        "DayWorth": "Una carica basta per un'intera giornata",
+        "ChargesDescription": "Il sistema di cibo e acqua di Rest Recovery richiede che l'oggetto abbia delle cariche da utilizzare - una carica equivale a un'unità di cibo o acqua."
+      },
+      "AbilityUse": {
+        "Title": "Seleziona quanto di questo oggetto vuoi consumare:",
+        "DayWorthTitleBoth": "Questo tipo di consumabile vale un'intera giornata sia di cibo che di acqua.",
+        "DayWorthTitleFood": "Questo tipo di consumabile vale un'intera giornata di cibo.",
+        "DayWorthTitleWater": "Questo tipo di materiale di consumo vale un'intera giornata di acqua.",
+        "DayWorthTitleCont": "Non avrai bisogno di consumare nulla di quel tipo fino al giorno successivo. Non puoi mangiare metà di questo tipo di consumabile",
+        "SatedFood": "Sei già sazio, non otterrai alcun beneficio mangiando questo.",
+        "NotSatedFood": "Devi mangiare {units} unità per essere sazio.",
+        "SatedWater": "Sei già dissetato, non otterrai alcun beneficio bevendo questo.",
+        "NotSatedWater": "Hai bisogno di {units} unità d'acqua per essere sazio.",
+        "FullUnit": "Consuma interamente",
+        "HalfUnit": "Consuma metà"
+      }
+    },
+    "Traits": {
+      "Title": "Rest Recovery",
+      "HitDieBonus": {
+        "Title": "Dado Vita Bonus",
+        "Hint": "Ogni volta che questo personaggio tira un dado vita, viene applicato un bonus a quel tiro. Questa può essere una formula, come \"1d6 + 3\"."
+      },
+      "LongRestSpellPointsBonus": {
+        "Title": "Bonus di recupero tipo punti degli slot incantesimo",
+        "Hint": "Questo è un bonus che verrà aggiunto agli slot incantesimo recuperati durante un riposo lungo."
+      },
+      "LongRestSpellPointsFormula": {
+        "Title": "Formula di recupero tipo punti degli slot incantesimo.",
+        "Hint": "Questo tratto ti permette di ignorare la formula di recupero degli slot incantesimo per questo specifico personaggio."
+      },
+      "FoodUnitsPerDay": {
+        "Title": "Unità di cibo richieste al giorno",
+        "Hint": "Questo prevale su quante unità di cibo ha bisogno questo personaggio al giorno."
+      },
+      "WaterUnitsPerDay": {
+        "Title": "Unità d'acqua necessarie al giorno",
+        "Hint": "Questo prevale su quante unità d'acqua ha bisogno questo personaggio al giorno."
+      },
+      "NoFoodWater": {
+        "Title": "Disabilita il fabbisogno di cibo e acqua",
+        "Hint": "Se abilitato, questo personaggio non richiede cibo o acqua, simile alla funzione di stregone \"Natura Immortale\"."
+      }
+    },
+    "Settings": {
+      "QuickSetup": {
+        "Title": "Configurazione Rapida",
+        "Label": "Apri Configurazione Rapida",
+        "Hint": "Una UI più semplice per impostare rapidamente le impostazioni più comuni per i riposi."
+      },
+      "Configure": {
+        "Title": "Configurazione Modulo",
+        "Label": "Configura Riposo",
+        "Hint": "Puoi configurare il funzionamento dei riposo in questa finestra di dialogo."
+      },
+      "QuickHDRoll": {
+        "Title": "Quick-roll Dado Vita (salta finestra di dialogo)",
+        "Hint": "Salta la finestra di dialogo per lanciare i dadi vita e lanciali rapidamente."
+      },
+      "ShowPlayerListRestButton": {
+        "Title": "Mostra il pulsante per richiedere un riposo",
+        "Hint": "Configura se il pulsante per richiedere un riposo viene mostrato sotto i giocatori nella lista giocatori in basso a sinistra (richiede l'aggiornamento della pagina)"
+      },
+      "Debug": {
+        "Title": "Abilita debug",
+        "Label": "Stampa i messaggi di debug sulla console"
+      },
+      "RequiresModule": "Richiede {module_name}",
+      "General": {
+        "PreventUserRest": {
+          "Title": "Impedisci Riposo Utente",
+          "Hint": "Questo impedisce agli utenti di effettuare un riposo senza una tua richiesta."
+        },
+        "EnableAutoRollButton": {
+          "Title": "Abilita lancio automatico dei dadi vita",
+          "Hint": "Aggiunge un pulsante all'interfaccia utente del riposo lungo e corto in modo che i giocatori possano tirare automaticamente i dadi vita fino a quando i loro PF non sono quasi pieni."
+        },
+        "EnablePromptRestTimePassing": {
+          "Title": "Abilita il passaggio del tempo automatico quando richiedi un riposo",
+          "Hint": "Questo abilita il passaggio del tempo ogni volta che il DM richiede un riposo ai giocatori. Potrebbe far scadere gli effetti attivi basati sul tempo presenti sui personaggi."
+        },
+        "EnableSimpleCalendarIntegration": {
+          "Title": "Abilita integrazione con Simple Calendar",
+          "Hint": "Abilitando questa opzione, il pulsante \"Nuovo Giorno\" nella UI di richiesta di riposo e in quella dei giocatori, viene automatizzato in base all'ora attuale del calendario."
+        }
+      },
+      "FoodAndWater": {
+        "EnableFoodAndWater": {
+          "Title": "Abilita automazione di cibo e acqua",
+          "Hint": "Ciò consente sotto-funzioni relative all'automazione di cibo e acqua, come visto di seguito."
+        },
+        "DisableRollConsumableItems": {
+          "Title": "Disabilita tiro su consumabili al riposo",
+          "Hint": "Per impostazione predefinita, se un personaggio sceglie di consumare un oggetto durante il suo riposo lungo, verrà tirato come se il personaggio facesse clic sul suo pulsante di tiro. Questa impostazione disabiliterà questo tirp automatico."
+        },
+        "FoodUnitsPerDay": {
+          "Title": "Unità di cibo richieste al giorno",
+          "Hint": "Configura di quante unità di cibo si ha bisogno al giorno. Impostare questo su 0 disabilita del tutto il fabbisogno di cibo."
+        },
+        "WaterUnitsPerDay": {
+          "Title": "Unità d'acqua necessarie al giorno",
+          "Hint": "Configura di quante unità d'acqua si ha bisogno al giorno. Impostare questo su 0 disabilita del tutto il fabbisogno d'acqua."
+        },
+        "ExternalFoodAccess": {
+          "Title": "Accesso a risorse di cibo esterne",
+          "Hint": "Configura se i giocatori saranno in grado di scegliere \"Risorse di Cibo Esterne\" durante i riposi lunghi in sostituzione degli oggetti consumabili. \"Pieno\" significa pieno accesso come nelle locande e nelle città, \"Metà\" significa accesso limitato o cibo scadente, \"Nessuno\" significa natura selvaggia o fame."
+        },
+        "ExternalWaterAccess": {
+          "Title": "Accesso a risorse d'acqua esterne",
+          "Hint": "Come sopra, ma per l'acqua. Tieni presente che \"Metà\" e \"Nessuno\" faranno sì che i personaggi sperimentino l'indebolimento quasi immediatamente a meno che non abbiano accesso agli oggetti consumabili."
+        },
+        "AutomateFoodWaterExhaustion": {
+          "Title": "Automatizza l'esaurimento di cibo e acqua",
+          "Hint": "Abilitare questo fa sì che i personaggi subiscano l'indebolimento se non mangiano o non bevono abbastanza. Richiede l'automazione dell'indebolimento nel riposo lungo per essere abilitato."
+        },
+        "NoFoodDuration": {
+          "Title": "Giorni massimi senza cibo",
+          "Hint": "Configura quanti giorni i personaggi possono sopravvivere senza mangiare cibo prima di soffrire di indebolimento automatico."
+        },
+        "HalfWaterSaveDC": {
+          "Title": "CD indebolimento metà acqua",
+          "Hint": "Questo configura la CD del TS su Costituzione che i personaggi devono fare se bevono solo la metà della quantità di acqua richiesta."
+        }
+      },
+      "ShortRest": {
+        "IgnoreInactive": {
+          "Title": "Ignora i personaggi dei giocatori inattivi",
+          "Hint": "Se hai un bardo con il Canto di Riposo o uno Chef nel tuo gruppo, questo li considererà presenti solo se il giocatore proprietario è attivo e connesso."
+        },
+        "MaxShortRests": {
+          "Title": "Riposi Brevi massimi per riposo lungo",
+          "Hint": "Impedisce ai personaggi di fare brevi pause se raggiungono un numero di riposi brevi pari a questo numero. Riposarsi a lungo ripristina questo contatore. Mettere zero disabilita questa impostazione."
+        },
+        "MinHitDieSpend": {
+          "Title": "Numero minimo di dadi vita da utilizzare",
+          "Hint": "Impedisce ai personaggi di finire un riposo breve se non spendono questo numero di dadi vita. Mettere zero disabilita questa impostazione."
+        },
+        "MaxHitDieSpend": {
+          "Title": "Numero massimo di dadi vita da utilizzare",
+          "Hint": "Questa opzione impedisce ai personaggi di tirare ulteriori dadi vita quando ne avranno tirati un numero uguale a questa impostazione. Tale numero non potrà mai essere minore di quanto specificato nell'impostazione \"Numero minimo di dadi vita da utilizzare\"."
+        },
+        "NoHitDice": {
+          "Title": "Disabilita i tiri di dadi vita durante i riposi brevi",
+          "Hint": "Impedisce ai personaggi di tirare dadi vita durante i riposi brevi."
+        },
+        "ResourcesRecoveryFraction": {
+          "Title": "Frazione recupero risorse",
+          "Hint": "Frazione di risorse da recuperare con un riposo breve."
+        },
+        "ItemUsesRecoveryFraction": {
+          "Title": "L'oggetto utilizza frazioni di ripristino",
+          "Hint": "La frazione di utilizzo (oggetti, consumabili, ecc.) da ripristinare con un riposo breve, se l'oggetto ha cariche con usi limitati per riposo breve."
+        },
+        "FeatUsesRecoveryFraction": {
+          "Title": "L'abilità utilizza frazioni di ripristino",
+          "Hint": "Frazione di utilizzo abilità da ripristinare in un riposo breve, se la funzione ha cariche con usi limitati per riposo breve."
+        },
+        "PactSpellSlotsLongRecoveryFraction": {
+          "Title": "Frazione di recupero degli slot incantesimo del patto",
+          "Hint": "Frazione di slot incantesimo del patto del Warlock da recuperare durante un riposo breve."
+        }
+      },
+      "LongRest": {
+        "AutomateExhaustion": {
+          "Title": "Abilita automazione indebolimento",
+          "Hint": "Questo fa sì che l'indebolimento venga sottratto di 1 ogni riposo lungo."
+        },
+        "ExhaustionIntegration": {
+          "Title": "Integrazione Modulo Indebolimento",
+          "Hint": "Questa impostazione consente di utilizzare altri moduli per applicare i rispettivi effetti attivi di indebolimento sui personaggi."
+        },
+        "OneDnDExhaustion": {
+          "Title": "Abilita Indebolimento One D&D",
+          "Hint": "Nel nuovo One D&D, i livelli di indebolimento possono arrivare fino a 10 (giunto al quale, morirai comunque), e impone una penalità di -1 a: Prove di Abilità, Tiri per Colpire, Tiri Salvezza, e alla CD dei Tiri Salvezza degli Incantesimi; per ogni livello di indebolimento. Basta cambiare il livello di indebolimento dei personaggi e la penalità viene automaticamente applicata.",
+          "Hint2": "Nota: non è compatibile con le integrazioni dell'indebolimento qui sopra."
+        },
+        "RollHitDice": {
+          "Title": "Abilita tiri di dadi vita a riposo lungo",
+          "Hint": "Abilita l'interfaccia utente del lancio dei dadi vita nella finestra di dialogo Riposo Lungo."
+        },
+        "PreRegainHitDice": {
+          "Title": "Abilita il ripristino dei dadi vita prima di finire il riposo lungo",
+          "Hint": "Questo fa sì che i dadi vita vengano recuperati prima di finire il lungo riposo, in modo da poterli tirare come parte di questo riposo."
+        },
+        "PreRegainHitDiceBuffer": {
+          "Title": "Abilita il buffer massimo di dadi vita",
+          "Hint": "Questa impostazione fa sì che ogni personaggio riguadagni sempre i dadi vita, anche se metterebbe i dadi vita al di sopra del loro massimo, in modo che nessun dado vita venga sprecato. Qualsiasi dado vita inutilizzato oltre il loro massimo scomparirà una volta completato il lungo riposo."
+        },
+        "PreventRegainHitDice": {
+          "Title": "Impedisce il recupero di dadi vita durante un riposo lungo, se questi vengono tirati.",
+          "Hint": "Questa impostazione fa in modo che i personaggi che tirino uno o più dadi vita durante un riposo lungo, non ne recuperino alcuno al termine dello stesso. Non è compatibile con l'impostazione \"Abilita il ripristino dei dadi vita prima di finire il riposo lungo\"."
+        },
+        "MaxHitDieSpend": {
+          "Title": "Dadi vita massimi utilizzabili per riposo lungo",
+          "Hint": "Impedisce ai personaggi di tirare i dadi più dadi vita del numero qui impostato."
+        },
+        "HitPointsRecoveryFraction": {
+          "Title": "Frazione ripristino punti ferita",
+          "Hint": "La frazione di punti ferita da recuperare durante un riposo lungo."
+        },
+        "HitDiceRecoveryFraction": {
+          "Title": "Frazione ripristino dado vita",
+          "Hint": "Frazione di ripristino dei dadi vita per riposo lungo."
+        },
+        "HitDiceRecoveryRounding": {
+          "Title": "Arrotondamento ripristino dadi vita",
+          "Hint": "Come arrotondare il numero di dadi vita recuperati."
+        },
+        "ResourcesRecoveryFraction": {
+          "Title": "Frazione recupero risorse",
+          "Hint": "Frazione di risorse da ripristinare per riposo lungo."
+        },
+        "SpellSlotsRecoveryFraction": {
+          "Title": "Frazione ripristino slot incantesimo",
+          "Hint": "Frazione di slot incantesimo recuperati durante un riposo lungo."
+        },
+        "CustomSpellSlotRecovery": {
+          "Title": "Abilita la regola di recupero degli slot incantesimo tipo punti",
+          "Hint": "Abilitando questa impostazione, tutti coloro che hanno slot incantesimo li recupereranno con le regole della caratteristica \"Recupero Arcano\" del Mago, ovvero scegliendo quali slot incantesimo recuperare. Questa impostazione può essere abilitata solo quando \"Frazione ripristino slot incantesimo\" è impostata in maniera personalizzata. I personaggi recuperano un numero di slot incantesimo uguale all'impostazione della formula personalizzata."
+        },
+        "PactSpellSlotsLongRecoveryFraction": {
+          "Title": "Frazione di recupero degli slot incantesimo del patto",
+          "Hint": "La frazione di slot incantesimo del patto del Warlock da recuperare con un riposo lungo."
+        },
+        "ItemUsesRecoveryFraction": {
+          "Title": "L'oggetto utilizza la frazione di recupero",
+          "Hint": "Frazione di utilizzo (oggetti, consumabili, ecc.) da recuperare a riposo lungo."
+        },
+        "FeatUsesRecoveryFraction": {
+          "Title": "L'abilità utilizza frazioni di ripristino",
+          "Hint": "Frazione di utilizzo abilità da ripristinare per riposo lungo."
+        },
+        "DailyUsesRecoveryFraction": {
+          "Title": "Frazione ripristino per uso quotidiano ",
+          "Hint": "Frazione di usi giornalieri da recuperare per riposo lungo (oggetti con l'impostazione di recupero \"Giorno\")."
+        },
+        "AutomateArmor": {
+          "Title": "Automazione del riposo lungo in armatura",
+          "Hint": "Abilitando questa impostazione, indossare armature diverse da quelle leggere avrà un effetto su un riposo lungo. Configura qui sotto tale effetto."
+        },
+        "ArmorHitDiceRecoveryFraction": {
+          "Title": "Frazione di recupero dei dadi vita in armatura",
+          "Hint": "Se il personaggio indossa un'armatura diversa da una leggera durante il riposo lungo, recupererà questa frazione di dadi vita con un riposo lungo."
+        },
+        "AutomateArmorExhaustion": {
+          "Title": "L'armatura impedisce il recupero dall'indebolimento.",
+          "Hint": "Se abilitato e il personaggio indossa un'armatura non leggera durante un riposo lungo, non perde alcun livello d'indebolimento. Richiede che l'automazione indebolimento sia abilitata."
+        }
+      },
+      "ItemNames": {
+        "WizardClassName": {
+          "Title": "Nome classe Wizard",
+          "Hint": "Qui puoi configurare come viene chiamata la classe Wizard nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "DruidClassName": {
+          "Title": "Nome classe Druid",
+          "Hint": "Qui puoi configurare come viene chiamata la classe Druid nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "BardClassName": {
+          "Title": "Nome classe Bard",
+          "Hint": "Qui puoi configurare come viene chiamata la classe Bard nel tuo gioco. Questo è usato per determinare di chi è la Song of Rest da usare. Può essere una stringa localizzata."
+        },
+        "ArcaneRecovery": {
+          "Title": "Nome Arcane Recovery",
+          "Hint": "Qui puoi configurare come viene chiamata la funzione Arcane Recovery di una procedura guidata nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "PowerSurge": {
+          "Title": "Nome di Power Surge",
+          "Hint": "Qui puoi configurare come si chiama la caratteristica Power Surge nel tuo mondo. Può anche essere una stringa tradotta."
+        },
+        "NaturalRecovery": {
+          "Title": "Nome Natural Recovery",
+          "Hint": "Qui puoi configurare come viene chiamata la funzione di recupero naturale di un druido nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "SongOfRest": {
+          "Title": "Nome Song of Rest",
+          "Hint": "Qui puoi configurare come viene chiamata la funzione Song of Rest di un bardo nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "ChefFeat": {
+          "Title": "Nome Talento Chef",
+          "Hint": "Qui puoi configurare come viene chiamato il talento Chef nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "ChefTools": {
+          "Title": "Nome Chef Tools",
+          "Hint": "Qui puoi configurare come viene chiamato l'oggetto chef tools nel tuo gioco. Può essere una stringa localizzata. Lascia questo vuoto se vuoi disabilitare lo chef che richiede strumenti per usare l'impresa."
+        },
+        "DurableFeat": {
+          "Title": "Nome Talento Durable",
+          "Hint": "Qui puoi configurare come viene chiamato il talento Durable nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "PeriaptItem": {
+          "Title": "Nome Periapt of Wound Closure",
+          "Hint": "Qui puoi configurare come viene chiamato l'oggetto Periapt of Would Closure nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "WoundClosureBlessing": {
+          "Title": "Nome Blessing of Wound Closure",
+          "Hint": "Qui puoi configurare come viene chiamato il privilegio Blessing of Would Closure nel tuo gioco. Può essere una stringa localizzata."
+        },
+        "BlackBloodFeature": {
+          "Title": "Nome Black Blood Healing",
+          "Hint": "Qui puoi configurare come viene chiamata il privilegio Verdan's Black Blood Healing nel tuo gioco. Può essere una stringa localizzata."
+        }
+      }
+    }
+  }
+}

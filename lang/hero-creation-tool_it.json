@@ -1,0 +1,269 @@
+{
+  "HCT": {
+    "ActorsDirectoryButton": "Strumento Creazione Eroe",
+    "ActorLevelUpButton": "Sali di Livello",
+    "CreationWindowTitle": "Creazione Eroe",
+    "LevelUpWindowTitle": "Sali di Livello - {actorName}",
+    "Setting": {
+      "DefaultGoldDice": {
+        "Name": "Tiro per la quantità d'oro iniziale",
+        "Hint": "Puoi personalizzare i dadi per stabilire la quantità d'oro iniziale"
+      },
+      "ShowRolls": {
+        "Name": "Mostra i tiri nella chat",
+        "Hint": "Mostra i punteggio di caratteristica,  PF per livello e i tiri per l'oro iniziale come messaggi di chat"
+      },
+      "IndividualPanelScroll": {
+        "Name": "Barre scorrimento indipendenti",
+        "Hint": "Nelle schede con i pannelli sinistro e destro, fai in modo che ogni lato abbia le barre di scorrimento indipendenti"
+      },
+      "AllowAbilityRolling": {
+        "Name": "Consenti tiro punteggi caratteristiche"
+      },
+      "AllowAbilityStandardArray": {
+        "Name": "Consenti valori standard caratteristiche"
+      },
+      "AllowAbilityPointBuy": {
+        "Name": "Consenti acquisto punti caratteristiche"
+      },
+      "AllowAbilityInput": {
+        "Name": "Consenti inserimento manuale caratteristiche"
+      },
+      "UseTokenizer": {
+        "Name": "Usa Tokenizer se disponibile",
+        "Hint": "Come impostazione predefinita per generare le immagini dell'avatar e del token verrà usato il modulo Tokenizer, in caso sia presente, "
+      },
+      "TokenNameMode": {
+        "Name": "Modalità visualizzazione nome token"
+      },
+      "TokenBarMode": {
+        "Name": "Modalità visualizzazione token bar 1"
+      },
+      "EquipmentBlacklist": {
+        "Name": "Lista Nera Attrezzature",
+        "Hint": "Oggetti (Attrezzature) non mostrati per l'acquisto, per nome (con distinzione tra maiuscole e minuscole, separati da ';', gli spazi sono ok). Vengono mostrati solo gli oggetti di rarità \"comuni\", ma questo elenco esclude i pochi oggetti comuni magici/irragionevoli. Predefinito - 'Potion of Climbing; Potion of Healing; Spell Scroll 1st Level; Spell Scroll Cantrip Level; Unarmed Strike'"
+      },
+      "SubraceNameBlacklist": {
+        "Name": "Lista Nera Nomi Sottorazza",
+        "Hint": "Elementi esclusi per nome dalle sottorazze (con distinzione tra maiuscole e minuscole, separati da ';', gli spazi sono ok). Usato per impostazione predefinita per escludere cose come Gnome Cunning dalla registrazione come sottoclassi di Gnome. Predefinito - 'Gnome Cunning; Halfling Nimbleness'"
+      },
+      "ButtonOnDialogInsteadOfActorsDirectory": {
+        "Name": "Pulsante Crea Personaggio",
+        "Hint": "Se il pulsante interferisce con altri moduli o preferisci l'estetica di avere un singolo pulsante \"crea personagio\" per non confondere i tuoi giocatori"
+      },
+      "PointBuyLimit": {
+        "Name": "Limite Acquisto in Punti"
+      },
+      "AbilityRollFormula": {
+        "Name": "Formula utilizzata per ottenere le caratteristiche (per caratteristiche)"
+      },
+      "Sources": {
+        "Name": "Compendium Sorgenti",
+        "Hint": "Seleziona i compendi da utilizzare come fonte dati per i diversi passaggi di creazione",
+        "Label": "Seleziona sorgenti",
+        "Save": "Salva",
+        "RaceCompendia": "Compendium Razze",
+        "RacialFeatureCompendia": "Compendium Caratteristiche Razze",
+        "ClassCompendia": "Compendium Classi",
+        "SubclassCompendia": "Compendium Sottoclasse",
+        "ClassFeatureCompendia": "Compendium Privilegi di Classe",
+        "BackgroundCompendia": "Compendium Background",
+        "SpellCompendia": "Compendium Incantesimi",
+        "FeatCompendia": "Compendium Talenti",
+        "EquipmentCompendia": "Compendium Equipaggiamento"
+      },
+      "TrimSubclasses": {
+        "Name": "Accorcia Nomi Sottoclassi",
+        "Hint": "Mostra i nomi delle sottoclassi senza l'ultima parte tra parentesi, principalmente per le sottoclassi di DDBImporter come 'Assassino (Ladro)' che diventa 'Assassino' (non modifica gli oggetti aggiunti all'attore, ma appaiono come vengono mostrati nello strumento)"
+      }
+    },
+    "Permissions": {
+      "NeedCreateActorError": "L'utente richiede l'autorizzazione \"Crea Nuovi Personaggi\". Chiedi al tuo DM di aggiungerlo al tuo ruolo",
+      "NeedCreateItemWarn": "Utente senza autorizzazione \"Crea Nuovi Oggetti\". Non sarai in grado di creare Funzionalità personalizzate",
+      "NeedFileUploadWarn": "Utente senza autorizzazione \"Usa il File Browser\". Potresti riscontrare problemi nella selezione delle immagini",
+      "NeedFileBrowseWarn": "Utente senza autorizzazione \"Carica nuovi files\". Potresti riscontrare problemi nella selezione delle immagini"
+    },
+    "Integration": {
+      "Tokenizer": {
+        "WarningOn": "Il modulo Tokenizer è impostato come preferito, puoi fare clic tenendo premuto il tasto Maiusc per utilizzare il selettore file predefinito",
+        "NeedActorName": "Tokenizer ha bisogno di un nome per il personaggio; per favore inseriscilo prima di proseguire",
+        "Error": {
+          "ModuleNotFound": "Tokenizer non trovato, verrà utilizzato il FilePicker come  predefinito",
+          "ModuleInactive": "Tokenizer trovato ma non attivo, verrà utilizzato il FilePicker come predefinito",
+          "VersionUnobtainable": "Errore durante il recupero della versione di Tokenizer, verrà utilizzato il FilePicker come predefinito",
+          "VersionIncompatible": "La versione di Tokenizere deve essere più recente della versione {version}"
+        }
+      }
+    },
+    "Common": {
+      "RequiredName": "Nome (obbligatorio)",
+      "Desc": "Descrizione",
+      "ProfDialogTitle": "Aggiungi Competenza",
+      "ProfDialogContent": "Selezionare una competenza esistente o definirne una personalizzata?",
+      "Proficiencies": "Competenze",
+      "ProficiencyMulti": "Competenza in",
+      "SelectPlaceholder": "Scegli...",
+      "SelectCreateOne": "Crea nuovo",
+      "SkillProficiencies": "Competenze Abilità",
+      "LanguageProficiencies": "Competenze Lingue",
+      "ToolProficiencies": "Competenza Strumenti",
+      "WeaponProficiencies": "Competenze Armi",
+      "ArmorProficiencies": "Competenze Armature",
+      "AddCustom": "Personalizzato",
+      "AddStandard": "Seleziona",
+      "Feat": "Talenti",
+      "Feature": "Caratteristica",
+      "Features": "Caratteristiche",
+      "Movement": {
+        "walk": "Camminare"
+      },
+      "Senses": {
+        "darkvision": "Scurovisione"
+      },
+      "Searchbar": {
+        "Placeholder": "Digita per cercare..",
+        "ClearList": "Pulisci Elenco"
+      }
+    },
+    "Error": {
+      "IndexEntryNotFound": "No index entry for uuid {uuid}",
+      "ActorCreationError": "Si è verificato un errore durante la creazione del personaggio con nome {nome}, interruzione in corso..",
+      "UpdateValueLoad": "{valore} non caricato per l'aggiornamento dei valori",
+      "RenderLoad": "{valore} non caricato per i dati di rendering",
+      "CustomItemWithoutName": "Impossibile creare funzionalità personalizzate su {origin} - Il nome dell'oggetto è obbligatorio (l'articolo verrà saltato)",
+      "RequiredOptionNotFulfilled": "L'opzione {opt} è obbligatoria ma non soddisfatta."
+    },
+    "Custom": "Personalizzato",
+    "Next": "Avanti",
+    "Back": "Indietro",
+    "Start": {
+      "Title": "Inizia",
+      "Welcome": "Benvenuto in Hero Creation Tool per DnD 5e",
+      "p1": "Hero Creation Tool ti guida passo passo nella creazione di un nuovo PG da usare nei tuoi giochi. Le modifiche vengono salvate man mano che avanzi, ma la creazione avverrà solo al completamento.",
+      "p2": "Di default il tool supporta il materiale SRD disponibile all'interno di FoundryVTT. Puoi aggiungere ulteriori contenuti definendo nelle impostazioni i compendi sorgente con le tue razze, classi, privilegi e altro.",
+      "Remark": "L'avventura ti aspetta! Inizia facendo clic su Avanti.",
+      "Faq": "Se hai dei dubbi, controlla le nostre FAQ.",
+      "HowTo": "Se sei un DM e desideri aggiungere razze, classi o altro personalizzato, leggi il nostro How-To."
+    },
+    "Basics": {
+      "Title": "Base",
+      "Avatar": "Avatar",
+      "Token": "Token",
+      "Preview": "Anteprima",
+      "PickButton": "Seleziona",
+      "NoName": "L'eroe non ha nome"
+    },
+    "Race": {
+      "Title": "Razza",
+      "DescriptionPlaceholder": "Seleziona una razza per vederne la descrizione (la sottorazza viene mostrata alla fine)",
+      "Select.Default": "Seleziona la razza...",
+      "ASI": "Aumento Punteggi Caratteristica",
+      "Size": "Taglia",
+      "Senses": "Sensi",
+      "Movement": "Movimento",
+      "InvalidProfKeys": "valori di competenza non validi modeKey[{modeKey}], proficiencyKey[{proficiencyKey}] e proficiency[{proficiency}]"
+    },
+    "Class": {
+      "Title": "Classe",
+      "DescriptionPlaceholder": "Seleziona una classe per vederne la descrizione",
+      "Select.Default": "Seleziona la classe...",
+      "Subclass": "Sottoclasse",
+      "Select.DefaultSubclass": "Seleziona la sottoclasse..",
+      "SavingThrows": "Tiri Salvezza",
+      "HitPoints": "Punti Ferita",
+      "FirstLevelHp": "Primo livello",
+      "HigherLevelsHp": "Livelli superiori",
+      "HpCalcAvg": "Media",
+      "HpCalcRoll": "Tiro",
+      "HitPointsBlob": "+ il tuo modificatore di Costituzione",
+      "HpRollChatFlavor": "Tiro PF per livello {lv}",
+      "Level": "Livello {lv}",
+      "HitPointsAdvancementMissingError": "La classe {className} non possiede HitPointsAdvancement; salto della configurazione."
+    },
+    "Abilities": {
+      "Title": "Caratteristiche",
+      "Method": "Come calcolare le caratteristiche?",
+      "Values": "Valori Caratteristiche",
+      "Str": "Forza",
+      "Dex": "Destrezza",
+      "Con": "Costituzione",
+      "Int": "Intelligenza",
+      "Wis": "Saggezza",
+      "Cha": "Carisma",
+      "Buttons": {
+        "Info": "Info",
+        "Roll": "Tira {dice}",
+        "StandardArray": "Valori Standard",
+        "PointBuy": "Acquisto in Punti",
+        "ManualEntry": "Inserimento Manuale"
+      },
+      "RollChatFlavor": "Punteggi di caratteristica risultanti",
+      "SelectPlaceholder": "Seleziona...",
+      "PointBuy": {
+        "Score": "Totale Acquisto Punti:",
+        "OverLimit": "Hai superato il numero massimo di punti consentito per l'acquisto"
+      }
+    },
+    "Background": {
+      "Title": "Background",
+      "DescriptionPlaceholder": "Seleziona un background per vederne la descrizione",
+      "Select.Default": "Seleziona il background..",
+      "Alignment": "Allineamento",
+      "NoFeatureSelected": "Nessuna background selezionato"
+    },
+    "Equipment": {
+      "Title": "Equipagg.",
+      "StartingGoldTitle": "Oro Iniziale",
+      "Roll": "Tira",
+      "RollChatFlavor": "Oro iniziale risultante",
+      "ManualInput": "Manuale",
+      "Additional": "Addizionale",
+      "TotalGoldLabel": "Totale:",
+      "RemainingGoldLabel": "Rimanente:",
+      "RemainingGoldCheckboxLabel": "Aggiungi l'oro rimanente al personaggio",
+      "StartingItemsTitle": "Oggetti Iniziali"
+    },
+    "Spells": {
+      "Title": "Incantesimi",
+      "SpellcastingAbilityBlob": "<p>Hai selezionato {class} - la tua abilità da incantatore è <b>{spa}</b></p>",
+      "NoSpellcastingClass": "Nessuna classe da incantatore selezionata",
+      "SpellCount": "Numero di Incantesimi",
+      "SpellList": "Incantesimi Iniziali",
+      "Spellcasting": "Lanciare Incantesimi",
+      "SelectItemError": "Nome oggetto errato nella voce di ricerca della scheda Incantesimi",
+      "Cantrips": "Trucc.",
+      "Superscript": {
+        "1": "°",
+        "2": "°",
+        "3": "°",
+        "4": "°",
+        "5": "°",
+        "6": "°",
+        "7": "°",
+        "8": "°",
+        "9": "°"
+      }
+    },
+    "Bio": {
+      "Title": "Biografia",
+      "AppearanceTitle": "Aspetto",
+      "PersonalityTraitsTitle": "Tratti della Personalità",
+      "IdealsTitle": "Ideali",
+      "BondsTitle": "Legami",
+      "FlawsTitle": "Difetti",
+      "BiographyPlaceholder": "Biografia."
+    },
+    "Submit": {
+      "Button": "Invia",
+      "Title": "Confermare le scelte?",
+      "Content": "<p>Puoi tornare indietro e rivedere e/o cambiare qualsiasi cosa prima che l'eroe venga creato.</p>",
+      "YesLabel": "Crea Eroe",
+      "NoLabel": "Torna indietro"
+    },
+    "Migrations": {
+      "Info1": "Hero Creation Tool :: Migrazione 1 - Ripristino dell'impostazione predefinita delle Compendium sorgenti per evitare errori nel passaggio dalla v0.8.x alla v9",
+      "Info2": "Hero Creation Tool :: Migrazione 2 - Aggiunti ai sorgenti i compendi di oggetti e regole 5e",
+      "Info3": "Hero Creation Tool :: Migrazione 3 - Aggiornamento fonti per l'avanzamento"
+    }
+  }
+}

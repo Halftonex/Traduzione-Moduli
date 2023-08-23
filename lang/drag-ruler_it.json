@@ -1,0 +1,121 @@
+{
+	"drag-ruler": {
+		"dependencies": {
+			"ok": "Ok",
+			"terrain-ruler": {
+				"title": "Come misurare il terreno difficile con Drag Ruler",
+				"text": "Il modulo {moduleName} è attivo. Drag Ruler è in grado di calcolare il terreno difficile piazzato con l'utilizzo di quel modulo. Per far si che ciò sia possibile Drag Ruler utilizza il modulo Terrain Ruler. Se Terrain Ruler è installato e attivo Drag Ruler considererà il terreno difficile nelle sue misurazioni.",
+				"neverShowAgain": "Non mostrarlo mai più"
+			},
+			"socketlib": {
+				"title": "Modulo Socketlib mancante",
+				"text": "Drag Ruler richiede il modulo socketlib per funzionare correttamente. Si prega di attivare il modulo socketlib in questo mondo."
+			}
+		},
+		"resetMovementHistory": "Azzera storico movimento",
+		"genericSpeedProvider": {
+			"settings": {
+				"dashMultiplier": {
+					"name": "Moltiplicatore Scatto",
+					"hint": "Può essere usato per dare ai token una velocità secondaria durante la colorazione del percorso misurato. Impostalo a 0 per disabilitare la velocità secondaria."
+				},
+				"speedAttribute": {
+					"name": "Attributo di Velocità",
+					"hint": "L'attributo che definisce la velocità di camminata di un token. Viene utilizzato durante la colorazione del percorso misurato."
+				}
+			},
+			"speeds": {
+				"walk": "cammina",
+				"dash": "scatto"
+			}
+		},
+		"keybindings": {
+			"cancelDrag": "Annulla trascinamento",
+			"createWaypoint": "Crea connessione",
+			"deleteWaypoint": "Elimina connessione",
+			"disableSnap": {
+				"name": "Disabilita Aggancia alla Griglia",
+				"hint": "Lo scatto verrà temporaneamente disabilitato finché verrà premuto questo tasto."
+			},
+			"moveWithoutAnimation": {
+				"name": "Disabilita Animazione Token",
+				"hint": "Quando viene premuto rilasciando un token, quest'ultimo si sposterà nella posizione bersaglio senza animazione."
+			},
+			"togglePathfinding": {
+				"name": "Abilita/disabilita Ricerca Percorso",
+				"hint": "Quando viene premuto trascinando un token, la funzione di ricerca del percorso verrà temporaneamente abilitata/disabilitata."
+			}
+		},
+		"settings": {
+			"allowPathfinding": {
+				"name": "Abilita Ricerca Percorso per i giocatori",
+				"hint": "Consente ai giocatori di utilizzare la funzionalità di ricerca del percorso di Drag Ruler in questo mondo. Tieni presente che la ricerca del percorso può attraversare la nebbia di guerra inesplorata e i muri eterei, che potrebbero rivelare segreti ai tuoi giocatori in anticipo."
+			},
+			"alwaysShowSpeedForPCs": {
+				"name": "Mostra la velocità del PG a tutti",
+				"hint": "Se abilitato, la colorazione in base alla velocità dell'attore per i personaggi dei giocatori verrà mostrata a chiunque, anche nella situazione in cui non abbiano il permesso di osservatore per la scheda del personaggio."
+			},
+			"autoStartMeasurement": {
+				"name": "Avvia automaticamente la misurazione",
+				"hint": "Se abilitato, Drag Ruler inizierà a misurare non appena il token viene trascinato. Se disabilitato, Drag Ruler rimarrà inattivo e inizierà a misurare solo una volta premuto il pulsante per aggiungere un waypoint."
+			},
+			"autoPathfinding": {
+				"name": "Ricerca Percorso Predefinita",
+				"hint": "Se abilitato, trascinare un token utilizzerà in automatico il righello della ricerca del percorso."
+			},
+			"enableMovementHistory": {
+				"name": "Abilita la cronologia dei movimenti durante il combattimento",
+				"hint": "Se abilitato, Drag Ruler ricorderà il percorso che ha seguito un token durante il suo turno in combattimento e lo mostrerà quando il token viene riportato indietro."
+			},
+			"rightClickAction": {
+				"name": "Azione tasto destro",
+				"hint": "Quale azione verrà eseguita quando si preme il tasto destro mentre si trascina un token?",
+				"choices": {
+					"create": "Crea connessione",
+					"delete": "Elimina connessione",
+					"cancel": "Annulla trascinamento"
+				}
+			},
+			"showGMRulerToPlayers": {
+				"name": "Mostra il la misurazione DM ai giocatori",
+				"hint": "Se disabilitata il righello del DM non sarà mostrato ai giocatori che non sono DM."
+			},
+			"speedProviderSettings": {
+				"name": "Impostazioni Speed Provider",
+				"hint": "Le impostazioni dello speed provider contengono tutte le impostazioni specifiche del sistema di gioco.",
+				"button": "Impostazioni Speed Provider",
+				"windowTitle": "Impostazioni Speed Provider",
+				"headers": {
+					"speedProvider": "Speed Provider",
+					"speedProviderSettings": "Impostazioni Specifiche Speed Provider"
+				},
+				"activeProvider": {
+					"name": "Speed Provider Attivo",
+					"hint": "Le impostazioni mostrate di seguito dipendono dallo speed provider attivo. Se il DM seleziona uno speed provider diverso, le impostazioni disponibili potrebbero cambiare."
+				},
+				"noSettings": "Questo speed provider non offre alcuna opzione di configurazione.",
+				"color": {
+					"name": "Colore per {colorName}",
+					"hint": "Il colore che verrà utilizzato per colorare i quadrati che si trovano all'interno del raggio {colorName}.",
+					"unreachable": {
+						"name": "non raggiungibile",
+						"hint": "Il colore degli spazi che non sono raggiungibili dal token trascinato."
+					}
+				},
+				"speedProvider": {
+					"name": "Impostazioni Speed Provider",
+					"hint": "Selziona chi fornisce l'informazione sulla velocità dei token durante la colorazione. Drag Ruler offre un generico speed provider che fornisce funzionalità base il quale dovrebbe funzionare su tutti i sistemi di gioco se configurato correttamente. Ulteriori speed provider possono essere resi disponibili attraverso sistemi di gioco o moduli installati. Selezionare uno speed provider differente, rispetto a quello generico, potrebbe offrire un'integrazione migliore delle regole del sistema di gioco che si sta utilizzando. Le opzioni sottostanti sono dipendenti dallo speed provider selezionato qui.",
+					"choices": {
+						"module": "Modulo {name}",
+						"native": "Generico",
+						"system": "Sistema {name}"
+					}
+				}
+			},
+			"useGridlessRaster": {
+				"name": "Usa snap basato sulla velocità",
+				"hint": "Nelle scene senza griglia, questo fa sì che i token si aggancino agli intervalli di velocità del token."
+			}
+		}
+	}
+}

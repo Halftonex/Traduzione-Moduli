@@ -1,0 +1,93 @@
+{
+  "dnd5e": {
+    "system": "dnd5e",
+    "topology": "standard",
+    "quantity" : "quantity",
+    "aliases": {
+      "Lanterna, Hooded": "Hooded Lantern",
+      "Lantern, Bullseye": "Bullseye Lantern"
+    },
+    "sources": {
+      "Candela": {
+        "name": "Candela",
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          { "bright": 1.5, "dim": 3, "angle": 360 }
+        ]
+      },
+      "Torcia": {
+        "name": "Torcia",
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          { "bright": 6, "dim": 12, "angle": 360 }
+        ]
+      },
+      "Lampada": {
+        "name": "Lampada",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          { "bright": 4.5, "dim": 13.5, "angle": 360 }
+        ]
+      },
+      "Lanterna a Lente Sporgente": {
+        "name": "Lanterna a Lente Sporgente",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          { "bright": 18, "dim": 36, "angle": 57 }
+        ]
+      },
+      "Lanterna Schermabile": {
+        "name": "Lanterna Schermabile",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          { "bright": 9, "dim": 18, "angle": 360 },
+          { "bright": 0, "dim": 1.5, "angle": 360 }
+        ]
+      },
+      "Luce": {
+        "name": "Luce",
+        "type": "cantrip",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          { "bright": 6, "dim": 12, "angle": 360 }
+        ]
+      },
+      "Luci Danzanti": {
+        "name": "Luci Danzanti",
+        "type": "cantrip",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          { "bright": 1.5, "dim": 3, "angle": 360 }
+        ]
+      }                
+    }
+  },
+  "default": {
+    "system": "default",
+    "topology": "none",
+    "quantity" : "quantity",
+    "sources": {
+      "Self": {
+        "name": "Self",
+        "type": "none",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {"bright": 9, "dim":18, "angle": 360}
+        ]
+      }            
+    }
+  }
+}

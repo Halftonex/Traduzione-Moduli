@@ -1,0 +1,67 @@
+{
+	"pings": {
+		"settings": {
+			"minMovePermission": {
+				"title": "Permesso Minimo di Spostamento",
+				"hint": "Il permesso minimo per consentire agli utenti di spostare lo schermo con un ping. Ad esempio, se viene selezionato ASSISTANT, solo i Gamemaster e i loro Assistenti sono autorizzati a eseguire un ping che sposta gli schermi di tutti."
+			},
+			"mouseButton": {
+				"title": "Pulsante del Mouse da Premere per un Ping",
+				"hint": "Il pulsante del mouse che deve essere tenuto premuto per un determinato tempo (configurabile di seguito) per eseguire un ping. 0 = sinistro, 1 = centrale, 2 = destro. Premi il pulsante del mouse desiderato (con modificatori come shift/ctrl se vuoi) in questo campo, usa il tasto Esc per cancellarlo nuovamente."
+			},
+			"mouseButtonMove": {
+				"title": "Pulsante del Mouse per un Ping con Spostamento dello Schermo",
+				"hint": "Il pulsante del mouse che deve essere tenuto premuto per un determinato tempo (configurabile di seguito) per eseguire un ping che sposta anche tutti gli schermi dei giocatori al ping. 0 = sinistro, 1 = centrale, 2 = destro. Premi il pulsante del mouse desiderato (con modificatori come shift/ctrl se vuoi) in questo campo, usa il tasto Esc per cancellarlo nuovamente."
+			},
+			"mouseButtonDuration": {
+				"title": "Durata Premere Pulsante del Mouse",
+				"hint": "Il tempo in millisecondi che devi tenere premuto il pulsante del mouse prima che venga eseguito un ping."
+			},
+			"key": {
+				"title": "Tasto da Premere per un Ping",
+				"hint": "Il tasto da premere per eseguire un ping nella posizione attuale del cursore del mouse. Premi il tasto desiderato (con modificatori come shift/ctrl se vuoi) in questo campo, usa il tasto Esc per cancellarlo nuovamente."
+			},
+			"keyMove": {
+				"title": "Tasto per un Ping con Spostamento dello Schermo",
+				"hint": "Il tasto da premere per eseguire un ping nella posizione attuale del cursore del mouse che sposta anche tutti gli schermi dei giocatori al ping. Premi il tasto desiderato (con modificatori come shift/ctrl se vuoi) in questo campo, usa il tasto Esc per cancellarlo nuovamente."
+			},
+			"showName": {
+				"title": "Mostra Nome Giocatore",
+				"hint": "Se il nome del giocatore dovrebbe essere mostrato sotto il ping."
+			},
+			"image": {
+				"title": "Immagine Ping",
+				"hint": "L'immagine da utilizzare come alternativa al ping predefinito. Verrà applicata una tinta in base al colore del giocatore, quindi tutto tranne la scala di grigi apparirà male."
+			},
+			"scale": {
+				"title": "Scala",
+				"hint": "Quanto grande, in griglie, dovrebbe essere il ping."
+			},
+			"duration": {
+				"title": "Durata",
+				"hint": "Quanto tempo dovrebbe essere mostrato il ping, in secondi."
+			},
+			"rotate": {
+				"title": "Rotazione",
+				"hint": "Se l'immagine del ping dovrebbe ruotare."
+			},
+			"rotateSpeed": {
+				"title": "Velocità di Rotazione",
+				"hint": "Quanti secondi dovrebbe impiegare l'immagine del ping per ruotare di 360 gradi."
+			},
+			"sizeChange": {
+				"title": "Cambio Dimensioni",
+				"hint": "Se l'immagine del ping dovrebbe cambiare leggermente dimensione."
+			},
+			"sizeChangeAmount": {
+				"title": "Quantità di Cambio Dimensioni",
+				"hint": "Quanta della dimensione totale dovrebbe essere cambiata."
+			},
+			"sizeChangeSpeed": {
+				"title": "Velocità di Cambio Dimensioni",
+				"hint": "Quanto tempo in secondi dovrebbe durare un ciclo di cambio dimensioni."
+			},
+			"handledByPings": "Gestito dal modulo \"Pings\""
+		}
+	}
+}

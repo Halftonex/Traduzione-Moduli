@@ -1,0 +1,254 @@
+{
+	"module-credits": {
+		"title": "Module Management+",
+		"settings": {
+			"storePreviousOnPreset": {
+				"name": "Salva Punto di Ripristino durante il Caricamento Preset",
+				"hint": "Quando questa opzione è attiva, verrà creato un punto di ripristino quando si attiva un preset o quando ne si importa uno"
+			},
+			"keepPresetsRollbacks": {
+				"name": "Numero di Punti di Ripristino da mantenere?",
+				"hint": "Questa impostazione indica il numero di punti ripristino del modulo che si possono salvare compresi tra 0 e 10. Se questo valore è impostato su 0, verranno salvati un numero infinito di punti di ripristino. È consigliato non utilizzare questo comportamento in quanto l'accumulo di dati sale a dismisura."
+			},
+			"disableLockedModules": {
+				"name": "Disabilitare Moduli Bloccati?",
+				"hint": "Questa impostazione disabiliterà la casella di spunta dei moduli bloccati. Questo per evitare che si tolga inavvertitamente la spunta ad un modulo bloccato."
+			},
+			"hideLockedSettings": {
+				"name": "Nascondi Impostazioni Bloccate",
+				"hint": "Questa opzione nasconderà le impostazioni che sono state bloccate dai giocatori."
+			},
+			"showNewChangelogsOnLoad": {
+				"name": "Mostra Nuovi Changelog al Caricamento",
+				"hint": "Se un changelog è segnato come non letto e questa opzione è attiva, verrà mostrata una finestra con tutti i changelog di cui non è stata ancora presa visione."
+			},
+			"bigPictureMode": {
+				"name": "Modalità Big Picture",
+				"hint": "Abilitare questa funzione imposterà le finestre di \"Module Management\" e di \"Impostazioni di Configurazione\" con l'altezza totale della finestra di foundry."
+			},
+			"showActiveModules": {
+				"name": "Mostra Moduli Attivi",
+				"hint": "Quando abilitato mostrerà una lista di moduli attivi nella scheda delle impostazioni della barra laterale.",
+				"choices": {
+					"hidden": "Nascosto",
+					"button": "Su Pulsante",
+					"default": "Predefinito Core"
+				}
+			},
+			"enableGlobalConflicts": {
+				"name": "Abilita Conflitti Globali",
+				"hint": "Quando questa opzione è abilitata, MM+ otterrà i conflitti da un foglio google pubblico. Questa funzione comporta che Google riceverà il vostro indirizzo IP. Se non ti senti confortevole con questo, disabilita questa funzione."
+			},
+			"addGoogleSheetButton": {
+				"name": "Aggiungere Foglio Google",
+				"hint": "Quando questa opzione è abilitata sarà aggiunto un link al foglio google nella finestra di Module Management."
+			},
+			"disableSyncPrompt": {
+				"name": "Disabilita Suggerimento durante Sincronizzazione Impostazioni",
+				"hint": "Questo eviterà che gli utenti ottengano notifiche che chiedano loro di confermare se un'impostazione debba essere sincronizzata o meno. Invece verrà forzata l'impostazione senza la comparsa di una finestra."
+			},
+			"autoPrefixModules": {
+				"name": "Auto Prefisso Moduli",
+				"hint": "Questo aggiungerà un prefisso al titolo dei moduli con qualunque titolo del modulo richiesto."
+			},
+			"smartLabels": {
+				"name": "Etichette Intelligenti",
+				"hint": "Quando abilitato aggiungerà un prefisso ai moduli con un'icona a forma di freccia, ad indicare che il modulo è raggruppato con quello al di sopra. Passando sopra questa icona con il mouse appariranno tutti i moduli richiesti."
+			},
+			"smartPrefix": {
+				"name": "Prefisso Intelligente",
+				"hint": "Questa opzione proverà ad aggiungere un prefisso al titolo basato su ciò che pensa sia quello più adatto. Ad esempio i moduli con la bandiera della libreria avranno il prefisso \"Libreria\", e i moduli con la parola UI nel titolo avranno il prefisso \"UI\". Questo potrebbe non portare ad un corretta categorizzazione dei moduli, puoi comunque sovrascrivere il prefisso cliccando col tasto destro e assegnando un nome differente.",
+				"prefixes": {
+					"library": "Libreria",
+					"maps": "Mappe",
+					"ui": "Interfaccia Utente"
+				}
+			},
+			"dependencyDialogType": {
+				"name": "Tipologia Finestra per le Dipendenze Estese del Modulo",
+				"hint": "Questa opzione permette di scegliere la tipologia di finestra di dialogo che verrà usata quando si abilitano/disabilitano i moduli usando le Dipendenze Estese del Modulo.",
+				"choices": {
+					"prompt": "Finestra",
+					"confirm": "Conferma"
+				}
+			}
+		},
+		"dialog": {
+			"generic": {
+				"activeModules": "Moduli Attivi"
+			},
+			"titles": {
+				"export": "Esporta Moduli",
+				"import": "Importa Moduli",
+				"presets": "Gestisci Preset"
+			},
+			"moduleManagement": {
+				"lockedModules": "Moduli Bloccati",
+				"rollback": "Ripristina Lista Moduli Precedenti",
+				"dependencies": {
+					"requires": "Richiede",
+					"recommends": "Suggeriti",
+					"optional": "Opzionale",
+					"headerTextEnable": "{title} ha {number} dipendenze inattive che potrebbero non essere più richieste. Lista qui sotto.",
+					"headerTextDisable": "{title} ha {number} dipendenze attive che potrebbero non essere più richieste. Lista qui sotto.",
+					"actionTextEnable": "Abilitare i moduli selezionati?",
+					"actionTextDisable": "Disabilitare i moduli selezionati?"
+				},
+				"buttons": {
+					"deactivateModules": "Disattiva Tutti i Moduli Sbloccati",
+					"deactivateModulesAlt": "Tieni Premuto CTRL per Disabilitare Tutti i Moduli",
+					"spreadsheet": "Foglio Conflitti Globali"
+				},
+				"conflicts": {
+					"core": "Core",
+					"system": "Sistema",
+					"undefinedReason": "IL MOTIVO NON È PRESENTE"
+				},
+				"contextMenu": {
+					"renameModule": "Rinomina Modulo",
+					"restoreModuleName": "Ripristina Nome Modulo Predefinito",
+					"lockModule": "Blocca Modulo",
+					"unlockModule": "Sblocca Modulo",
+					"reportConflict": "Riferisci Conflitto"
+				},
+				"tooltips": {
+					"managePresets": "Gestisci Preset",
+					"exportModules": "Esporta Moduli",
+					"importModules": "Importa Moduli",
+					"moduleLocked": "Questo modulo non verrà disattivato quando si disattivano i moduli."
+				},
+				"tags": {
+					"socket": "Il Modulo usa Socket API",
+					"library": "È un modulo con Collezione",
+					"authors": "Autori (clicca per mostrare)",
+					"url": "Visita Sito Web",
+					"readme": "Mostra Leggimi",
+					"changelog": "Mostra Changelog",
+					"attributions": "Mostra Attribuzioni",
+					"issues": "Riferisci/Visualizza Bug",
+					"bugReporter": "Riferisci Bug con 🐛 Bug Reporter"
+				}
+			},
+			"clientSettings": {
+				"syncSetting": {
+					"askPermission": "Permetti al GM di determinare le seguenti impostazioni al posto tuo?",
+					"sendToAll": "Inviare queste impostazioni a tutti gli altri utenti?"
+				},
+				"tooltips": {
+					"worldSetting": "Impostazione Mondo",
+					"clientSetting": "Impostazione Client",
+					"syncSetting": "Impostazione Sync",
+					"lockSetting": "Impostazione Blocco",
+					"unlockSetting": "Impostazione Sblocco"
+				}
+			},
+			"preview": {
+				"search": "Cerca Changelog",
+				"collapseModeLabel": "Comprimere Barra Laterale",
+				"navLabel": "Tabella dei Contenuti",
+				"markAsSeen": "Segna come Letto",
+				"previousPage": "Pagina Precedente",
+				"nextPage": "Pagina Successiva"
+			},
+			"presets": {
+				"title": "Nome Preset",
+				"tooltips": {
+					"info": "Info",
+					"update": "Aggiorna",
+					"delete": "Elimina",
+					"activate": "Attiva"
+				},
+				"buttons": {
+					"create": "Crea Nuovo Preset"
+				},
+				"info": {
+					"description": "Moduli presenti nel preset <strong>{name}</strong>.",
+					"installedModules": "Moduli Installati",
+					"uninstalledModules": "Moduli Non Installati"
+				},
+				"update": {
+					"description": "Aggiornare questo Preset con i Moduli seguenti?"
+				},
+				"delete": {
+					"description": "Sei sicuro di voler eliminare il preset denominato <strong>{name}</strong>?",
+					"warning": "Questa azione <strong>NON</strong> può essere invertita!</div>"
+				},
+				"activate": {
+					"description": "Questo preset attiverà i seguenti Moduli?"
+				},
+				"create": {
+					"title": "Crea Nuovo Preset",
+					"placeholder": "Titolo Preset",
+					"notification": {
+						"noTitleError": "Inserisci un Titolo per il Preset."
+					}
+				}
+			},
+			"export": {
+				"title": "Esporta i tuoi Moduli Attivi!",
+				"bugsUrl": "URL Bug",
+				"notification": {
+					"copied": "La lista dei Moduli Attivi è stata copiata nei tuoi Appunti!"
+				},
+				"buttons": {
+					"copy": "Copia",
+					"export": "Esporta"
+				}
+			},
+			"import": {
+				"tidyUI": {
+					"title": "Tipologia Importazione TidyUI",
+					"message": "Quando si importa un file TidyUI non sarai in grado di importare le impostazioni del Client o del Mondo."
+				},
+				"table": {
+					"moduleTitle": "Titolo Modulo",
+					"client": "Client",
+					"world": "Mondo"
+				},
+				"notInstalled": "Modulo Non Installato",
+				"buttons": {
+					"keep": "Mantieni i Moduli Correnti Attivi",
+					"import": "Importa"
+				}
+			},
+			"bugReporter": {
+				"selectLabel": "Seleziona Pacchetti in Conflitto*",
+				"optGroup": {
+					"core": "Core",
+					"system": "Sistema",
+					"modules": "Moduli"
+				},
+				"toggle": {
+					"preview": "Anteprima",
+					"write": "Scrivi"
+				}
+			}
+		},
+		"lib-themer": {
+			"cssTidyMMW": {
+				"name": "Finestra Tidy Module Management",
+				"hint": "Questo foglio di stile è ideato per dare alla finestra di Module Management un interfaccia più pulita e moderna.",
+				"settings": {
+					"cssTidyMMWAltCheckbox": {
+						"name": "Stile Casella di Spunta Alternativo",
+						"hint": "Questa opzione darà alla casella di spunta uno stile più pulito e moderno (secondo il parere di Mouse0270)."
+					}
+				}
+			}
+		},
+		"migration": {
+			"v204": {
+				"starting": "Migrazione Impostazioni Blocco, Attendere prego.",
+				"complete": "La migrazione alla versione 2.0.3 è completa e richiede che la pagina sia ricaricata."
+			},
+			"v212": {
+				"enableGlobalConflicts": "Vuoi attivare Conflitti Globali?",
+				"googleIPWarning": "Tieni presente che MM+ otterrà i conflitti da un foglio google pubblico. Questa funzione comporta che Google riceverà il vostro indirizzo IP. Se non ti senti confortevole con questo, disabilita questa funzione.",
+				"developersAreFriends": "Conflitti Globali non ha l'intento di essere un metodo accurato per tracciare gli errori, al contempo vuole essere un modo per informarti degli errori che potrebbero essere presenti. Gli errori forniti attraverso Conflitti Globali potrebbero essere obsoleti. Ti preghiamo di non molestare gli sviluppatori riguardo le informazioni ottenute attraverso MM+."
+			},
+			"v214": {
+				"smartLabels": "Migrazione da Auto Prefisso Moduli a Etichette Intelligenti. Questo sostituirà Etichette Intelligenti all'impostazione Auto Prefisso precedente. Puoi cambiare questa opzione nella finestra delle impostazioni."
+			}
+		}
+	}
+}

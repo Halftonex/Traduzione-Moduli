@@ -1,0 +1,48 @@
+{
+    "betterroofs.settings.fogVisibility.name": "Visibilità dei Tiles Attraverso la Nebbia",
+    "betterroofs.settings.fogVisibility.hint": "Quanto sono visibili (o percettibilmente chiari) i tiles mostrati attraverso la nebbia?",
+
+    "betterroofs.settings.forceFallback.name": "Modalità Performante",
+    "betterroofs.settings.forceFallback.hint": "Modalità Nascondi forzata per tutti i tetti, da abilitare se si nota un calo di prestazioni",
+
+    "betterroofs.settings.roomPreview.name": "Modalità Avanzata",
+    "betterroofs.settings.roomPreview.hint": "Quando si apre una configurazione di un tile, mostra ciò che il rilevamento dell'edificio ha calcolato come edificio. Espone anche i controlli per l'impostazione manuale del poligono per la stanza. Utile per il debug",
+
+    "betterroofs.settings.wbIntegration.name": "Integrazione di Weather Blocker",
+    "betterroofs.settings.wbIntegration.hint": "Se il modulo Weather Blocker è installato, nascondi dinamicamente gli effetti atmosferici all'interno degli edifici. Richiede riavvio",
+
+    "betterroofs.settings.occlusionRadius.name": "Raggio Occlusione",
+    "betterroofs.settings.occlusionRadius.hint": "Moltiplicatore raggio per la modalità di occlusione radiale",
+
+    "betterroofs.tokenConfig.occlusionRadius.name": "Raggio Occlusione",
+    "betterroofs.tokenConfig.occlusionRadius.placeholder": "Predefinito",
+
+    "betterroofs.tileConfig.showInFog.name": "Rivela Nebbia di Guerra",
+    "betterroofs.tileConfig.showInFog.hint": "Quando un token ha visione di questo tile, quest'ultimo sarà visibile attraverso la Nebbia di Guerra. Non funziona con Luci.",
+    "betterroofs.tileConfig.brMode.name": "Modalità Tetto Migliorata",
+    "betterroofs.tileConfig.brMode.option0": "Nessuno (Impostazione predefinita)",
+    "betterroofs.tileConfig.brMode.option1": "Mostra (Mostra tile attraverso la nebbia)",
+    "betterroofs.tileConfig.brMode.option2": "Nascondi (Nasconde il tile alla vista)",
+    "betterroofs.tileConfig.brMode.option3": "Maschera (Ritaglio sulla vista)",
+    "betterroofs.tileConfig.manualPoly.name": "Mura Selezionate",
+    "betterroofs.tileConfig.definePoly.name": "Definisci Poligono",
+    "betterroofs.tileConfig.clearPoly.name": "Cancella Poligono",
+    "betterroofs.tileConfig.definePoly.notify": "Seleziona le mura che desideri utilizzare per il poligono, quindi fai nuovamente clic sul pulsante \"Definisci Poligono\" per confermare",
+    "betterroofs.tileConfig.occlusionLinkId": "Id Riferimento Occlusione",
+    "betterroofs.tileConfig.occlusionLinkIdHint": "Può essere qualsiasi testo. Quando un tile con 'Ha un Riferimento Occlusione?' è occluso (ha un token sotto di esso) verranno occluse anche tutti i tiles con lo stesso \"ID Collegamento Occlusione\". Esempio di utilizzo: collegare tra loro i tetti.",
+    "betterroofs.tileConfig.occlusionLinkSource": "Ha un Riferimento Occlusione?",
+
+    "betterroofs.tileConfig.isbroken": "Il rilevamento automatico del poligono per questo tile potrebbe non essere riuscito. Abilita la modalità avanzata nelle impostazioni del modulo e definisci manualmente il poligono.",
+
+    "betterroofs.wallConfig.externalWall.name":"E' un Muro Esterno?",
+
+    "betterroofs.scenecontrols.walledges": "Mura fuori dai bordi della scena",
+
+    "betterroofs.yesnodialog.yes": "Conferma",
+    "betterroofs.yesnodialog.no": "Annulla",
+    "betterroofs.yesnodialog.title": "Mura fuori dai bordi della scena",
+    "betterroofs.yesnodialog.desc": "Sei sicuro di voler creare delle mura lungo i bordi della scena?",
+
+    "betterroofs.bulk.notification": "ATTENZIONE: Questa operazione modificherà tutte le impostazioni per tutti i tile sopraelevati selezionati. Se non vengono selezionati tiles, verranno invece elaborati tutti i tiles sopraelevati. I tile sopraelevati in modalità \"Tetto Migliorato\" impostata su \"Nessuno\" saranno escluse dalle modifiche",
+    "betterroofs.bulk.title": "Cambio massivamente Tetti Migliorati nella scena"
+}

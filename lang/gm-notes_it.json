@@ -1,0 +1,9 @@
+{
+    "GMNote.label":"GM Notes",
+    "GMNote.title":"Note GM per {document}",
+    "GMNote.setting":"Nascondi Etichetta Nota GM",
+    "GMNote.settingHint":"Se attivato apparirà solamente l'icona",
+    "GMNote.colorSetting":"Cambia il Colore quando sono presenti delle Note",
+    "GMNote.moveToDescription":"Sposta Note GM nella Descrizione",
+    "GMNote.moveToNote":"Sposta Descrizione sulle Note GM"
+}

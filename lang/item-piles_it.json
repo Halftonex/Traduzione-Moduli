@@ -1,0 +1,842 @@
+{
+  "ITEM-PILES": {
+    "Items": "Oggetti",
+    "Currencies": "Valuta",
+    "Currency": "Valuta",
+    "ContextMenu": {
+      "ShowToPlayers": "Mostra ai Giocatori",
+      "RequestTrade": "Richiedi Commercio"
+    },
+    "HeaderButtons": {
+      "ShowToPlayers": "Mostra ai Giocatori"
+    },
+    "Types": {
+      "pile": "Item Pile",
+      "container": "Contenitore",
+      "merchant": "Mercante",
+      "vault": "Cassaforte"
+    },
+    "Notifications": {
+      "SystemSupportFound": "Supporto del sistema trovato! Applicazione delle impostazioni predefinite del sistema a Item Piles...",
+      "UpdateItemPileSuccess": "Pila oggetti aggiornata con successo.",
+      "UpdateMerchantSuccess": "Negoziante aggiornato con successo.",
+      "ItemTransferred": "{item_name} di {source_actor_name} è stato dato a {target_actor_name}.",
+      "ItemAdded": "{item_name} è stato aggiunto a {target_actor_name}.",
+      "GiveItemAccepted": "{user_name} ha accettato l'oggetto da te offerto.",
+      "ShownToPlayers": "{actor_name} viene mostrato ai giocatori",
+      "CreatedJournal": "Creata la voce Diario per la Cassaforte di Item Piles."
+    },
+    "Errors": {
+      "DisallowedItemDrop": "Non puoi rilasciare oggetti di tipo \"{type}\"",
+      "DisallowedItemTrade": "Non puoi trattare oggetti di tipo \"{type}\"",
+      "DisallowedItemSell": "Questo negoziante non accetta oggetti di tipo \"{type}\"",
+      "NoSourceDrop": "Non puoi rilasciare oggetti dalla barra degli oggetti a meno che tu non sia un GM.",
+      "PileTooFar": "Sei troppo lontano per interagire con questa pila.",
+      "NoTokenFound": "Non si trova un token o un personaggio che ti rappresenti.",
+      "PileLocked": "Questo contenitore è bloccato e non può essere aperto - non puoi rilasciare oggetti al suo interno.",
+      "DropNoToken": "Non hai un token su questa scena, quindi non puoi rilasciare alcun oggetto qui.",
+      "NoVaultAccess": "Non hai il permesso di accedere a questa cassaforte.",
+      "NoVaultAccessActor": "{actor_name} non ha il permesso di accedere a questa cassaforte."
+    },
+    "Warnings": {
+      "NoGMsConnected": "ATTENZIONE - Nessun Game Master connesso - Item Piles richiede che un GM sia connesso affinché i giocatori possano utilizzare la maggior parte delle funzionalità del modulo.",
+      "GiveItemNoGM": "Non c'è un GM attivo per far ricevere il tuo oggetto.",
+      "GiveItemDeclined": "{user_name} ha rifiutato l'oggetto da te offerto.",
+      "NoPlayersActive": "Non ci sono giocatori attivi per fare questa azione.",
+      "NoGMsConnectedAction": "ATTENZIONE - Impossibile eseguire l'azione \"{action}\" poiché non ci sono Game Master attivi.",
+      "VaultFull": "Questa cassaforte è piena!",
+      "VaultItemNotExpander": "Quell'oggetto non è un espansore di cassaforte."
+    },
+    "Inspect": {
+      "Title": "Ispezione Contenuto Pila",
+      "AsActor": "Stai ispezionando questa pila come {actorName}.",
+      "Owner": "Come proprietario di questa pila oggetti, puoi modificarne il contenuto.",
+      "Empty": "Questa Pila è vuota",
+      "Destroyed": "Questa pila non esiste più e giace inerte",
+      "TakeAll": "Prendi Tutti gli Oggetti",
+      "Take": "Prendi",
+      "Close": "Chiudi",
+      "Leave": "Lascia",
+      "NoShareLeft": "Non è rimasta alcuna quota...",
+      "NoneLeft": "Non è rimasto nulla...",
+      "OpenSheet": "Apri Scheda",
+      "AddCurrency": "Agg. Importo",
+      "SplitAll": "Dividi in {num_players} parti",
+      "SplitItems": "Dividi oggetti in {num_players} parti",
+      "SplitCurrencies": "Dividi importo in {num_players} parti"
+    },
+    "Trade": {
+      "Title": "Item Piles: Trattativa",
+      "Accept": "Accetta",
+      "Decline": "Rifiuta",
+      "Mute": "Muta",
+      "AutoDecline": "Non hai risposto alla richiesta di trattativa abbastanza rapidamente, è stata quindi rifiutata automaticamente.",
+      "Declined": "L'altro utente ha rifiutato la richiesta di trattativa.",
+      "SameActor": "Lo stesso personaggio non può essere impersonato da più utenti - non si può commerciare da E verso lo stesso personaggio. Smettila.",
+      "Private": "Rendi privata questa trattativa",
+      "PrivateExplanation": "Nessuna scheda viene pubblicata in chat e nessuno può essere spettatore",
+      "Over": "Questa trattativa non è più attiva.",
+      "Between": "Trattativa tra {actor_1} e {actor_2}",
+      "DragDrop": "Trascina gli oggetti per iniziare la trattativa",
+      "Prompt": {
+        "Title": "Item Piles: Invia Richiesta Trattativa",
+        "User": "Seleziona l'utente con cui vuoi trattare:",
+        "PickActor": "Seleziona quale personaggio rappresenterai nella trattativa:",
+        "PickedActor": "Il personaggio che rappresenterai nella trattativa:",
+        "PickToken": "Seleziona il token",
+        "DropActor": "Trascina qui il personaggio",
+        "Label": "Invia richiesta di trattativa"
+      },
+      "NoActiveUsers": {
+        "Title": "Item Piles: Nessun utente attivo",
+        "Content": "Non c'è nessun giocatore attivo, quindi non hai nessuno con cui trattare."
+      },
+      "Request": {
+        "Title": "Item Piles: Richiesta Trattativa",
+        "Content": "{trading_actor_name} ({trading_user_name}) vuole trattare con te.",
+        "PrivateContent": "{trading_actor_name} ({trading_user_name}) vuole trattare con te <strong>privatamente</strong>. ",
+        "AcceptQuery": "Accetti?"
+      },
+      "OngoingRequest": {
+        "Content": "In attesa di risposta da {user_name}...",
+        "Label": "Annulla la trattativa"
+      },
+      "CancelledRequest": {
+        "Content": "La richiesta trattativa è stata annullata da {user_name}."
+      },
+      "AddCurrency": {
+        "Title": "Agg. Importo",
+        "Content": "Aggiungi importo alla trattativa attiva con {trader_actor_name}",
+        "Label": "Modifica Importo"
+      },
+      "GMAddCurrency": "Agg. Importo (modalità GM)",
+      "Closed": {
+        "Title": "Trattativa Chiusa",
+        "You": "Hai chiuso la finestra di trattativa, quindi lo scambio è stato annullato.",
+        "Them": "L'utente \"{user_name}\" ha chiuso la finestra di trattativa, quindi lo scambio è stato annullato.",
+        "Someone": "Uno degli utenti ha chiuso la finestra di trattativa, quindi lo scambio è stato annullato."
+      },
+      "Disconnected": "Uno degli utenti si è disconnesso, quindi lo scambio è stato annullato.",
+      "UserCharacterWarning": "Hai scelto il personaggio \"{actor_name}\" che è il personaggio assegnato al giocatore \"{player_name}\".<br><br>Sicuro di volerlo fare?",
+      "UserActiveCharacterWarning": "Hai scelto il personaggio \"{actor_name}\" che è il personaggio assegnato al giocatore \"{player_name}\", attualmente<strong>attivo</strong>.<br><br>Sicuro di volerlo fare?",
+      "ActorOwnerWarning": "Non possiedi questo personaggio, quindi non puoi trattare con esso."
+    },
+    "Merchant": {
+      "Title": "Negoziante: {actor_name}",
+      "BuyItems": "Compra Oggetti",
+      "BuyServices": "Compra Servizi",
+      "SellItems": "Vendi Oggetti",
+      "PopulateItems": "Carica Oggetti",
+      "AllTypes": "Tutti i Tipi",
+      "Buy": "Compra",
+      "NoMatchFound": "Non c'è nulla che corrisponda alla tua ricerca.",
+      "NoItemsForSale": "il Negoziante non ha niente da offrire",
+      "NoItemsToSell": "Non hai nulla da vendere a questo negoziante.",
+      "OpenTimes": "Orari di Apertura",
+      "OpenCloseAuto": "Automatico",
+      "Open": "Aperto",
+      "Closed": "Chiuso",
+      "Hours": "Ore",
+      "Minutes": "Minuti",
+      "MerchantClosed": "Il Negoziante è chiuso, passa più tardi.",
+      "Sell": "Vendi",
+      "Description": "Descrizione",
+      "Settings": "Impostazioni",
+      "Override": "Sovrascrivi",
+      "EditTypePrices": "Aggiorna Modificatori di prezzo Per Tipo",
+      "EditTypePricesExplanation": "Attiva/Disattiva la visibilità di cursori per tipo nella scheda Acquista Oggetti",
+      "BuyNoItems": "Il Negoziante non ha oggetti.",
+      "CurrentItems": "Oggetti Selezionati",
+      "CurrentServices": "Current services",
+      "NoRollTables": "Non è stata definita alcuna tabella di tiro, creane una per cominciare",
+      "ClickRoll": "Cliccare tiro per cominciare",
+      "RolledTimes": "Tirato {rolls} volte",
+      "KeepRolled": "Continua a tirare",
+      "AddAll": "Aggiungi Tutti gli Oggetti",
+      "ClearAllItems": "Rimuovi Tutti gli Oggetti dei Personaggi",
+      "ClearAllServices": "Cancella Tutti i Servizi dell'Attore",
+      "AddItem": "Aggiungi",
+      "RemoveItem": "Elimina",
+      "ItemFree": "Gratuito",
+      "RollableTables": "Tabelle di Tiro",
+      "Service": "Servizio",
+      "AddTable": "Aggiungi Tabella",
+      "RollAllTables": "Tira su tutte le Tabelle",
+      "ToolTipRemoveTable": "Rimuovi Tabella",
+      "TooltipConfigureTable": "Configura Tabella",
+      "TooltipRollTable": "Usa Tabella",
+      "ToolTipRemoveAllRolledItems": "Rimuovi Tutti gli Oggetti Estratti",
+      "ShoppingAs": "Acquisto come {actorName}",
+      "TableAddAllItems": "Aggiungi tutti gli oggetti:",
+      "TableTimesToRoll": "Numero di volte per lanciare il dado sulla tabella:",
+      "TableCustomCategory": "Aggiungi oggetti alla categoria personalizzata:"
+    },
+    "Vault": {
+      "VaultTab": "Cassaforte",
+      "ExpandersTab": "Espansori",
+      "LogTab": "Registri",
+      "ViewingAs": "Visualizzazione come {actor_name}",
+      "NeedsCapacity": "Questa cassaforte ha una capacità totale di {total_capacity}, ma nessuna di essa è disponibile finché non vengono aggiunti espansori di cassaforte",
+      "CapacityLeft": "Questa cassaforte ha una capacità di {capacity}, con un massimo di {total_capacity}, trascina e rilascia gli espansori di cassaforte per aumentare la capacità",
+      "CapacityFull": "Questa cassaforte ha raggiunto la sua capacità massima di {total_capacity}",
+      "ExpandsCols": "{cols} colonne",
+      "ExpandsRows": "{rows} righe",
+      "Withdraw": "Prelevo",
+      "Deposit": "Deposito",
+      "LogUserActor": "{actor_name} ({user_name})",
+      "Deposited": "depositati",
+      "Withdrew": "prelevati",
+      "LogEntry": "{instigator} {action} {quantity}{item_name}",
+      "LogQuantity": "{quantity} x "
+    },
+    "Dialogs": {
+      "TypeWarning": {
+        "Title": "Avviso Tipo Oggetto",
+        "DropContent": "Stai rilasciando un oggetto di tipo (\"{type}\") che normalmente non può essere eliminato. Sei sicuro di volerlo fare?",
+        "TradeContent": "Stai tentando di scambiare un oggetto di tipo (\"{type}\") che normalmente non può essere scambiato. Sei sicuro di volerlo fare?",
+        "SellContent": "Stai tentando di vendere un oggetto di tipo (\"{type}\") che normalmente il negoziante non accetta. Sei sicuro di volerlo fare?"
+      },
+      "ResetSettings": {
+        "Title": "Ripristina Impostazioni Modulo",
+        "Content": "Sei sicuro di voler ripristinare tutte le impostazioni del modulo Item Piles alle impostazioni predefinite del sistema corrente?<strong> NON PUÒ ESSERE ANNULLATO!</strong>",
+        "Confirm": "Ripristina Impostazioni Modulo"
+      },
+      "LinkedActorWarning": {
+        "Title": "Item Piles & Personaggi Collegati",
+        "Content": "Sei sicuro di voler trasformare questo <strong>personaggio</strong> In una pila di oggetti? Il token di questo personaggio è collegato e tutti i suoi token condivideranno il suo inventario e i suoi importi."
+      },
+      "NoSystemFound": {
+        "Title": "Sistema Non Riconosciuto",
+        "Content": "Questo sistema non è attualmente pienamente supportato. Ciò significa che il modulo non sa come gestire al meglio gli elementi di questo sistema, ma può comunque funzionare in modo limitato.<br><br>Puoi configurare tu stesso le impostazioni del modulo, ma richiede un po' di know-how tecnico.<br><br>Se hai domande, ping <strong>Wasp#2005</strong> sul discord di Foundry."
+      },
+      "NewSystemVersion": {
+        "Title": "Nuova Versione di Sistema",
+        "Content": "Le impostazioni predefinite per il sistema usato con Item Piles sono state aggiornate, vuoi sovrascrivere le impostazioni specifiche con quelle aggiornate?",
+        "Content2": "Non farlo potrebbe pregiudicare il funzionamento di Item Piles - per risolvere ripristinare le impostazioni specifiche del modulo.",
+        "Confirm": "Applica Impostazioni Aggiornate"
+      },
+      "ResetSharingData": {
+        "Title": "Ripristina Condivisione Dati",
+        "Content": "Questo resetterà tutta la storia dei giocatori che hanno preso la loro parte da questa pila.<br><br>Sei sicuro di volerlo fare?",
+        "Confirm": "Ripristina Condivisione Dati"
+      },
+      "ClearAllItems": {
+        "Title": "Rimuovi Tutti gli oggetti dei personaggi",
+        "Content": "Verranno rimossi gli oggetti di tutti i personaggi, siete sicuro di volerlo fare?"
+      },
+      "ClearAllServices": {
+        "Title": "Cancella tutti i servizi dell'attore",
+        "Content": "Questo cancellerà tutti i servizi del mercante, sei sicuro di voler procedere?"
+      },
+      "GiveItemUserNotActive": {
+        "Title": "Dare Oggetto",
+        "Content": "\"{actor_name}\" è di propietà del giocatore \"{user_name}\" ma non sono attivi, e non puoi dare loro questo oggetto."
+      },
+      "RemoveMerchantTable": {
+        "Title": "Rimuovi Tabella Negoziante",
+        "Content": "Sei sicuro di voler rimuovere la tabella \"{table_name}\" da questo negoziante? Non è possibile annullare."
+      },
+      "CantRemoveVaultExpander": {
+        "Title": "Impossibile rimuovere l'espansore",
+        "Content": "Non puoi rimuovere questo espansore, gli oggetti nella cassaforte non ci starebbero senza di esso. Rimuovi {num_items} oggetti prima di tentare di rimuovere questo espansore!"
+      },      
+      "ReceiveItem": {
+        "Title": "Ricevere Oggetto",
+        "Header": "Item Piles: Ricevere Oggetto",
+        "Content": "{source_actor_name} vuole dare un oggetto a {target_actor_name}, accetti?",
+        "Ignore": "Ignora Utente"
+      },
+      "TextEditor": {
+        "Title": "Editor di Testo"
+      },
+      "UserSelect": {
+        "Title": "Seleziona Utenti",
+        "Content": "Mostrare a quali utenti?"
+      },
+      "ClearVaultLog": {
+        "Title": "Cancellare il registro della cassaforte?",
+        "Content": "Sei sicuro di voler cancellare il registro della cassaforte \"{actor_name}\"?"
+      }
+    },
+    "Applications": {
+      "DropItem": {
+        "Title": "Rilascia Oggetto",
+        "Header": "Stai rilasciando: {item_name}",
+        "Content": "Stai aggiungendo questo oggetto alla pila di oggetti \"{target_name}\".",
+        "ContentMultipleQuantity": "Hai {quantity} di questo oggetto, quanti ne vuoi rilasciare?",
+        "ContentInfiniteQuantity": "Quanti ne vuoi rilasciare?",
+        "Submit": "Agg. alla Pila",
+        "SubmitNoTarget": "Crea nuova pila"
+      },
+      "GiveItem": {
+        "Title": "Dare Oggetto",
+        "Header": "Stai dando: {item_name}",
+        "Content": "Vuoi veramente dare questo oggetto a \"{target_name}\"?",
+        "ContentMultipleQuantity": "Hai {quantity} di questo oggetto, quanti ne vuoi dare?",
+        "ContentInfiniteQuantity": "Quanti ne desideri dare a \"{target_name}\"?",
+        "Submit": "Dai"
+      },
+      "DepositItem": {
+        "Title": "Deposita Oggetto",
+        "Header": "Stai depositando: {item_name}",
+        "Content": "Desideri depositare questo oggetto in \"{target_name}\"?",
+        "ContentMultipleQuantity": "Hai {quantity} di questo oggetto, quanti ne desideri depositare?",
+        "ContentInfiniteQuantity": "Quanti ne desideri depositare?",
+        "Submit": "Deposita"
+      },
+      "WithdrawItem": {
+        "Title": "Preleva Oggetto",
+        "Header": "Stai prelevando: {item_name}",
+        "Content": "Vuoi veramente prelevare questo oggetto da \"{target_name}\"?",
+        "ContentMultipleQuantity": "Ci sono {quantity} di questo oggetto, quanti ne vuoi prelevare?",
+        "ContentInfiniteQuantity": "",
+        "Submit": "Preleva"
+      },
+      "SplitItem": {
+        "Title": "Dividi Pila di Oggetti",
+        "Header": "Stai dividendo una pila di {item_name}",
+        "Content": "Desideri dividere questo oggetto impilato?",
+        "ContentMultipleQuantity": "Ci sono {quantity} di questo oggetto, quanti ne desideri nella nuova pila?",
+        "ContentInfiniteQuantity": "",
+        "Submit": "Dividi Pila"
+      },
+      "EditCurrencies": {
+        "Title": "Modifica Valute",
+        "Content": "Come Game Master, puoi aggiornare le valute in questa pila di oggetti:",
+        "Secondary": "Valute Secondarie:",
+        "Submit": "Invia"
+      },
+      "DropCurrencies": {
+        "Title": "Inserisci Valuta",
+        "Content": "Puoi aggiungere le seguenti valute a questa pila di oggetti:",
+        "NoCurrency": "{actor_name} non ha valuta valida...",
+        "Submit": "Aggiungi"
+      },
+      "DepositCurrencies": {
+        "Title": "Deposito Valute",
+        "Content": "Puoi depositare le seguenti valute in questa cassaforte:",
+        "NoCurrency": "{actor_name} non ha valute da depositare.",
+        "Submit": "Deposita"
+      },
+      "WithdrawCurrencies": {
+        "Title": "Preleva Oggetto",
+        "Content": "Puoi prelevare le seguenti valute da questa cassaforte:",
+        "NoCurrency": "Non ci sono valute da prelevare.",
+        "Submit": "Preleva"
+      },
+      "TradeMerchantItem": {
+        "Title": "Trattando Oggetto: {item_name}",
+        "BuyItem": "Compra Oggetto",
+        "SellItem": "Vendi Oggetto",
+        "YouPay": "Paghi",
+        "YouReceive": "Ricevi",
+        "TheyReceive": "Ricevono",
+        "Quantity": "Quantità",
+        "Change": "Cambio",
+        "YouCantAfford": "Non puoi permetterti questa somma",
+        "TheyCantAfford": "Non possono permettersi questa somma",
+        "YouLackQuantity": "Non hai abbastanza unità di questo oggetto da vendere, ne hai {quantity}, ma ne servono {requiredQuantity}",
+        "TheyLackQuantity": "Non hanno abbastanza unità di questo oggetto da vendere, ne hanno {quantity}, ma ne servono {requiredQuantity}",
+        "MaxQuantity": "Max {quantity}"
+      },
+      "Settings": {
+        "Title": "Configurazione Modulo Item Piles",
+        "Local": "Impostazione Locale",
+        "Module": "Impostazione Modulo",
+        "Styles": "Impostazioni di Stile",
+        "System": "Impostazioni Specifiche di Sistema",
+        "Export": "Esporta Impostazioni",
+        "Import": "Importa Impostazioni",
+        "Donate": "Se ti piace questo modulo, fai una donazione per mantenerlo attivo!",
+        "MoreToCome": "E con altre opzioni di configurazione a venire...",
+        "Request": "Richiedi nuove funzionalità qui.",
+        "Submit": "Invia impostazioni"
+      },
+      "CurrenciesEditor": {
+        "Title": "Editor di Valute di Item Piles",
+        "TitleActor": "Editor di Valute di Item Piles: {actor_name}",
+        "Explanation": "Qui puoi definire quali valute in possesso dei personaggi possono essere prelevate per item piles, come valuta corrente.",
+        "ExplanationSmallAttributes": "In D&D5e, le valute dei personaggi si trovano nell'attributo sul percorso \"actor.system.currency.gp\", e potete aggiungere la vostra con il nome \"Gold Coins\" e percorso attributo \"system.currency.gp\". Aggiungetene una cliccando il più nella testata.",
+        "ExplanationSmallItems": "In altri sistemi, potrebbero essere oggetti presenti addosso al personaggio - in tal caso, puoi trascinare oggetti nella lista per aggiungerli alle valute.",
+        "DragDrop": "Trascina un oggetto per aggiungerlo alla lista",
+        "Name": "Nome Valuta",
+        "Exchange": "Cambio",
+        "Data": "Dati",
+        "Icon": "Icona",
+        "AddNew": "Agg. nuova valuta"
+      },
+      "SecondaryCurrenciesEditor": {
+        "Title": "Editor delle Valute Secondarie delle Pile di Oggetti",
+        "TitleActor": "Editor delle Valute Secondarie delle Pile di Oggetti: {actor_name}",
+        "Explanation": "Qui puoi definire quali valute secondarie possono essere raccolte e rilasciate dai personaggi."
+      },
+      "ItemEditor": {
+        "Title": "Editor di Oggetti per Item Piles: {item_name}",
+        "Update": "Aggiorna Oggetto",
+        "General": "Generale",
+        "Price": "Impostare il Prezzo",
+        "Vault": "Impostazioni Cassaforte",
+        "NotForSale": "Oggetto Non in Vendita",
+        "NotForSaleExplanation": "Se abilitato, questo oggetto non è in vendita e non può essere acquistato. Appare comunque nella lista degli oggetti del negoziante a meno che non sia anche nascosto.",
+        "CustomCategory": "Categoria Personalizzata Oggetti",
+        "CustomCategoryExplanation": "Quando non è vuoto, questo oggetto verrà elencato sotto una differente tipologia rispetto a quella a cui appartiene.",
+        "Hidden": "Oggetto Nascosto",
+        "HiddenExplanation": "Quando abilitato, questo oggetto non appare nella lista degli oggetti del negoziante.",
+        "DisplayQuantity": "Visibilità della Quantità di Oggetti",
+        "DisplayQuantityExplanation": "Configura in se e in che modo venga visualizzata la quantità di oggetti nel negozio.",
+        "DisplayQuantityDefault": "Impostazioni del negozio predefinite",
+        "DisplayQuantityYes": "Sì, mostra sempre la quantità",
+        "DisplayQuantityNo": "No, nascondi sempre la quantità",
+        "InfiniteQuantity": "Quantità Infinita",
+        "InfiniteQuantityExplanation": "Quando è abilitata, questo oggetto non può terminare dopo una vendita.",
+        "InfiniteQuantityDefault": "Impostazioni del negozio predefinite",
+        "InfiniteQuantityYes": "Si, quantità infinita",
+        "InfiniteQuantityNo": "No, quantità standard",
+        "KeepZero": "Mantenere Quantità Zero",
+        "KeepZeroExplanation": "Quando è stato tutto venduto, il negoziante non rimuove questo oggetto, ma lo mette come non in vendita.",
+        "KeepOnMerchant": "Mantieni sul Mercante",
+        "KeepOnMerchantExplanation": "Quando gli oggetti vengono cancellati nella scheda \"Popola oggetti\" dei mercanti o tramite l'integrazione di aggiornamento inventario di Simple Calendar (vedi la configurazione del mercante in fondo), questo oggetto non verrà rimosso.",
+        "PriceExplanation": "In questa scheda, puoi configurare il prezzo di questo oggetto, incluso il fatto che tale oggetto possa richiedere l'acquisto di altri oggetti per essere acquistato.",
+        "BasePrice": "Prezzo Base",
+        "BasePriceExplanation": "Configura il prezzo normale di questo oggetto.",
+        "QuantityForPrice": "Quantità per il Prezzo",
+        "QuantityForPriceExplanation": "Questa configurazione definisce quante unità di questo oggetto si riceveranno quando lo si acquista.",
+        "Service": "L'oggetto è un Servizio",
+        "ServiceExplanation": "La scelta fa in modo che questo oggetto non venga aggiunto all'inventario dell'acquirente. Il servizio \"oggetto\" può anche avere una quantità, ma se termina non verrà cancellato dalla lista del negoziante, ma solo impostato come non commerciabile.",
+        "PurchaseMacro": "Macro di Acquisto",
+        "PurchaseMacroExplanation": "Nome della macro da eseguire quando l'oggetto viene acquistato.",
+        "Free": "L'oggetto è Gratuito",
+        "FreeExplanation": "Quando è abilitato, questo oggetto non costa soldi per essere acquistato dal negoziante.",
+        "DisableNormalCost": "Disabilita Prezzo Normale",
+        "DisableNormalCostExplanation": "Quando è abilitato, l'oggetto non può essere acquistato con la valuta primaria e deve essere comprato tramite una delle opzioni di acquisto che seguono.",
+        "PurchaseOptions": "Opzioni di Acquisto",
+        "PurchaseOptionsExplanation": "Configura i modi alternativi per l'acquisto di questo oggetto. Ogni gruppo rappresenta un modo differente che possa usare un personaggio per acquistare questo oggetto da altri",
+        "CantBeSoldToMerchants": "Non può essere venduto a Negozianti",
+        "CantBeSoldToMerchantsExplanation": "Quando è abilitato, l'oggetto non può essere rivenduto a negozianti, solo acquistato.",
+        "AddPurchaseOption": "Aggiungi Opzione di Acquisto",
+        "DropMeClickMe": "Clicca per aggiungere un attributo o trascina un oggetto da aggiungere",
+        "PricePreset": "O seleziona un prezzo preimpostato:",
+        "SelectPreset": "Seleziona prezzo preimpostato",
+        "CanStack": "Può Essere Impilato",
+        "CanStackExplanation": "Questa configurazione definisce se questo oggetto si impilerà con altri oggetti simili quando viene aggiunto ad una cassaforte.",
+        "CanStackDefault": "Impostazione predefinita della cassaforte",
+        "CanStackYes": "Sì, può sempre impilarsi",
+        "CanStackNo": "No, non può impilarsi",
+        "VaultExpander": "Espansore di Cassaforte",
+        "VaultExpanderExplanation": "Quando questa opzione è attivata, questo oggetto non agisce come un oggetto normale in una cassaforte, ma aumenta invece il numero di slot disponibili, come determinato di seguito.",
+        "ExpandColumnsRows": "Espansione Colonne e Righe",
+        "ExpandColumnsRowsExplanation": "Quando l'opzione sopra è attivata, questa imposta quante colonne e/o righe diventano disponibili nella cassaforte. Questo non può estendersi oltre la capacità della cassaforte."
+      },
+      "FilterEditor": {
+        "Title": "Editor dei Filtri di Item Piles",
+        "TitleActor": "Editor dei Filtri di Item Piles: {actor_name}",
+        "Explanation": "Qui puoi definire più tipi di filtri che escluderanno determinati tipi di oggetto. In base al percorso degli attributi indicato, la pila di oggetti potrebbe trovare il \"tipo\" di un elemento e in base ai filtri, nasconde quegli elementi nell'interfaccia utente dell'inventario della pila di oggetti.",
+        "Filters": "Filtri",
+        "Path": "Percorso attributo",
+        "AddNew": "Agg. nuovo filtro"
+      },
+      "SimilaritiesEditor": {
+        "Title": "Editor di Similarità di Item Piles",
+        "Explanation": "Qui puoi definire diversi tipi di identificatori che aiutano Item Piles a differenziare oggetti simili. Nella maggior parte dei sistemi, gli oggetti possono essere differenziati con il loro \"nome\" e \"tipo\". Tuttavia, in alcuni casi, come in Pathfinder 2nd Editione, gli oggetti temporanei potrebbero condividere questi attributi con gli oggetti permanenti. Pertanto, aggiungendo \"system.temporary.value\", i tuoi oggetti temporanei verranno considerati \"unici\" e separati da quelli permanenti.",
+        "Path": "Percorso attributo"
+      },
+      "CustomItemCategoriesEditor": {
+        "Title": "Editor delle Categorie Personalizzate degli Oggetti",
+        "Explanation": "Qui puoi configurare quali categorie personalizzate degli oggetti sono disponibili nel tuo mondo. Vengono aggiunte dinamicamente quando ne aggiungi una nuova per un oggetto.",
+        "Category": "Categoria"
+      },
+      "UnstackableItemTypesEditor": {
+        "Title": "Editor dei Tipi di Oggetti non Impilabili",
+        "Explanation": "Qui puoi definire quali tipi di oggetti non possono essere impilati.",
+        "Type": "Tipo di Oggetto"
+      },
+      "VaultStylesEditor": {
+        "Title": "Editor degli Stili delle Pile di Oggetti nelle Cassaforti",
+        "Explanation": "Qui puoi definire stili multipli per gli oggetti nelle cassaforti. Ad esempio, puoi creare uno stile basato sull'attributo \"system.rarity\" per indicare \"raro\", e applicare uno stile agli oggetti che corrispondono alla configurazione.",
+        "Path": "Percorso Attributo",
+        "Value": "Valore Corrispondente",
+        "Style": "Configura Stile",
+        "AddNew": "Aggiungi nuova regola di stile"
+      },
+      "StylesEditor": {
+        "Title": "Editor degli Stili",
+        "Style": "Stile",
+        "Variable": "Variabile",
+        "Value": "Valore"
+      },
+      "ItemTypePriceModifiersEditor": {
+        "Title": "Editor di Modificatori di Prezzi per Tipi di Oggetto",
+        "TitleActor": "Editor di Modificatori di Prezzi per Tipi di Oggetto: {actor_name}",
+        "Explanation": "Qui puoi definire il prezzo e i modificatori per il prezzo di vendita per questo negoziante relativi agli specifici tipi di oggetto . L'impostazione \"Sovrascrivi\" significa che sostituisce i modificatori di prezzo consueti del negoziante.",
+        "ItemType": "Tipo di Oggetto",
+        "Override": "Sovrascrivi"
+      },
+      "PriceModifiersEditor": {
+        "Title": "Editor di Modificatori di Prezzo di Item Piles",
+        "TitleActor": "Editor di Modificatori di Prezzo di Item Piles: {actor_name}",
+        "Explanation": "Qui puoi definire il prezzo e i modificatori per il prezzo di vendita per questo negoziante relativi a personaggi specifici. L'opzione \"Sovrascrivi\" significa che sostituisce i modificatori di prezzo consueti del negoziante, inclusi i modificatori di prezzo specifici per il tipo di oggetto.",
+        "DragDrop": "Trascina un personaggio per aggiungerlo alla lista",
+        "Actor": "Personaggio",
+        "Override": "Sovrascrivi"
+      },
+      "ItemPileConfig": {
+        "Title": "Configurazione Item Pile: {actor_name}",
+        "Configure": "Item Pile",
+        "Update": "Aggiorna Item Pile",
+        "Main": {
+          "Title": "Impostazioni Pricipali",
+          "EnabledPile": "Abilitato",
+          "EnabledPileExplanation": "Se questo debba fungere da pila di oggetti.",
+          "InspectItems": "Abilita Ispezione Oggetto",
+          "InspectItemsExplanation": "Cliccando sul nome degli oggetti si aprirà la scheda ",
+          "DisplayItemTypes": "Separa oggetti per tipo",
+          "DisplayItemTypesExplanation": "Visualizza ogni tipo di oggetto separatamente nella pila oggetti, ordinati per tipo.",
+          "Distance": "Distanza Interazione",
+          "GridUnits": "Unità Griglia (lascia vuoto per infinito)",
+          "Macro": "Macro all'Interazione",
+          "MacroExplanation": "Nome della macro da eseguire quando si interagisce con questa pila.",
+          "MacroPlaceholder": "Inserisci nome macro",
+          "EditDescription": "Modifica Descrizione",
+          "EditDescriptionExplanation": "Questa descrizione appare nelle opportune interfacce Quando viene visualizzata la pila oggetti",
+          "DeleteWhenEmpty": "Elimina quando è vuoto",
+          "DeleteWhenEmptyExplanation": "Fa sì che la pila di oggetti venga eliminata automaticamente una volta vuota.",
+          "DeleteWhenEmptyDefault": "Impostazioni predefinite modulo",
+          "DeleteWhenEmptyYes": "Sì, elimina quando è vuota",
+          "DeleteWhenEmptyNo": "No, non eliminare quando è vuota",
+          "OverrideCurrencies": "Sovrascrivi Valuta",
+          "OverrideCurrenciesExplanation": "Configura se questa pila dovrebbe poter trasferire valute differenti da quelle predefinite.",
+          "ConfigureOverrideCurrencies": "Configura Sovrascrivi Valuta",
+          "OverrideSecondaryCurrencies": "Sovrascrivi Valute Secondarie",
+          "OverrideSecondaryCurrenciesExplanation": "Configura le sovrascritture delle valute secondarie per questa pila di oggetti.",
+          "ConfigureOverrideSecondaryCurrencies": "Configura Sovrascrivi Valute Secondarie",
+          "OverrideItemFilters": "Sovrascrivi Filtri Oggetto",
+          "OverrideItemFiltersExplanation": "Configura se quests pila dovrebbe essere in grado di trasferire oggetti di altro tipo rispetto a quelli predefiniti.",
+          "ConfigureOverrideItemFilters": "Configura Sovrascrivi Filtri Oggetto"
+        },
+        "Other": {
+          "Title": "Altre Impostazioni",
+          "Type": "Tipo di Pila di Oggetti",
+          "TypeExplanation": "Questo configura il modo in cui questa pila di oggetti verrà visualizzata."
+        },
+        "SingleItem": {
+          "Title": "Impostazioni Oggetto Singolo",
+          "DisplayOneContainerWarning": "Attenzione! Hai abilitato sia \"Visualizza immagine articolo singolo\" che \"Contenitore\". In questo caso, le immagini del contenitore hanno la priorità.",
+          "DisplayOne": "Visualizza l'immagine dell'oggetto singolo",
+          "DisplayOneExplanation": "Se la pila è composta da un singolo oggetto, imposta l'immagine dell'oggetto come immagine del token della pila .",
+          "OverrideScale": "Ignora la scala dei token dell'elemento singolo",
+          "Scale": "Scala token oggetto singolo",
+          "ItemName": "Usa Nome Oggetto",
+          "ItemNameExplanation": "Fa sì che la pila di oggetti prenda il nome dal singolo oggetto che contiene."
+        },
+        "Container": {
+          "Title": "Impostazioni Contenitore",
+          "IsContainer": "E' un contenitore",
+          "Locked": "E' Chiuso a Chiave",
+          "Closed": "E' Chiuso",
+          "ClosedImagePath": "Percorso Immagine se Chiuso",
+          "EmptyImagePath": "Percorso Immagine se Vuoto",
+          "OpenedImagePath": "Percorso Immagine se Aperto",
+          "LockedImagePath": "Percorso Immagine se Chiuso a Chiave",
+          "CloseSoundPath": "Percorso Suono Chiusura",
+          "OpenSoundPath": "Percorso Suono Apertura",
+          "LockedSoundPath": "Percorso Suono di Chiusura a Chiave"
+        },
+        "Sharing": {
+          "Title": "Impostazioni Condivisioni",
+          "ShareItemsEnabled": "Condivisione Abilitata: Oggetti",
+          "ShareItemsEnabledExplanation": "Quando questo è abilitato, i giocatori possono prendere solo la loro parte della quantità di oggetti. Se disabilitata, possono prendere quanto vogliono.",
+          "ShareCurrenciesEnabled": "Condivisione Abilitata: Valuta",
+          "ShareCurrenciesEnabledExplanation": "Quando questo è abilitato, i giocatori possono prendere solo la loro parte dell'importo. Se disabilitata, possono prendere quanto vogliono.",
+          "TakeAllEnabled": "Abilita il pulsante Prendi tutto",
+          "TakeAllEnabledExplanation": "Abilita il pulsante \"Prendi tutto\" quando saccheggi questa pila di oggetti. Richiede che entrambe le impostazioni di condivisione di cui sopra siano disabilitate.",
+          "SplitAllEnabled": "Abilita il pulsante Dividi Tra Giocatori",
+          "SplitAllEnabledExplanation": "Abilita il pulsante \"Dividi in [numero] parti\" quando si saccheggia questa pila di oggetti. Premendo questo pulsante tutti i giocatori (o solo i giocatori attivi, vedi sotto) ricevono la loro parte dalla pila degli oggetti.",
+          "InactivePlayers": "Dividi solo tra i giocatori attivi",
+          "InactivePlayersExplanation": "Solo i giocatori che sono attivi quando questa pila di oggetti viene saccheggiata riceveranno la loro parte della pila.",
+          "ResetSharingData": "Ripristina Condivisione Dati",
+          "ResetSharingDataExplanation": "Se il contenuto della pila è stato modificato manualmente mentre le persone lo stavano saccheggiando, i dati di condivisione potrebbero non essere sincronizzati con le condivisioni effettive dei giocatori. Premendo questo pulsante verrà ripristinata la quota di tutti in questa pila."
+        },
+        "Merchant": {
+          "Title": "Impostazioni Negoziante",
+          "Enabled": "È Negoziante",
+          "EnabledExplanation": "I giocatori non possono prelevare oggetti da negozianti, ma devono invece acquistarli",
+          "MerchantImage": "Immagine del Negoziante",
+          "MerchantImageExplanation": "Questa è l'immagine che verrà visualizzata nell'interfaccia del negoziante",
+          "InfiniteQuantity": "Quantità Infinita",
+          "InfiniteQuantityExplanation": "Quando è abilitata questo negoziante non può rimanere senza oggetti.",
+          "InfiniteCurrency": "Valuta Infinita",
+          "InfiniteCurrencyExplanation": "Se abilitata, la vendita di articoli a questo commerciante non sottrarrà moneta dalle sue valute.",
+          "KeepZero": "Mantenere Quantità Zero",
+          "KeepZeroExplanation": "Quando gli oggetti sono stati tutti venduti, il negoziante non li rimuove, ma li mette come non in vendita.",
+          "DisplayQuantity": "Visibilità della Quantità di Oggetti",
+          "DisplayQuantityExplanation": "Configura se e come debba essere visualizzata la quantità di oggetti nel negozio.",
+          "DisplayQuantityYes": "Sì, mostra la quantità (a meno che non sia indicato diversamente sull'oggetto)",
+          "DisplayQuantityNo": "No, non mostrare la quantità (a meno che non sia indicato diversamente sull'oggetto)",
+          "DisplayQuantityYesAlways": "Sì, mostra sempre la quantità",
+          "DisplayQuantityNoAlways": "No, non mostrare mai la quantità",
+          "PurchaseOnly": "Solo Acquisto",
+          "PurchaseOnlyExplanation": "Se abilitato, i personaggi non possono vendere oggetti a questo negoziante.",
+          "HideNewItems": "Nascondi Nuovi Oggetti",
+          "HideNewItemsExplanation": "Se abilitato, qualsiasi oggetto venduto a questo negoziante verrà tenuto nascosto.",
+          "HideItemsWithZeroCost": "Nascondi Oggetti con Costo Zero",
+          "HideItemsWithZeroCostExplanation": "Quando abilitato, ciò impedisce ai clienti di acquistare o vendere oggetti che non hanno un costo (gratuiti).",
+          "OnlyAcceptBasePrice": "Accetta Solo a Prezzo Base",
+          "OnlyAcceptBasePriceExplanation": "Se abilitato, tutti gli oggetti venduti a questo negoziante devono quotarsi al prezzo base, senza considerare le modifiche.",
+          "OpenTimes": "Orari di Apertura",
+          "OpenTimesExplanation": "Se abilitato, il negoziante può interagire con i giocatori solo a certe ore del giorno.",
+          "OpenStatus": "Status di Apertura",
+          "OpenStatusExplanation": "Configura lo stato corrente del negoziante (Aperto / Chiuso). Se è abilitato l'Orario di Apertura, ed è abilitato il modulo Simple Calendar, puoi configurarlo come automatico.",
+          "OpenStatusOpen": "Aperto",
+          "OpenStatusClosed": "Chiuso",
+          "OpenStatusAuto": "Automatico (Simple Calendar)",
+          "ClosedDays": "Giorni di Chiusura (Simple Calendar)",
+          "ClosedDaysExplanation": "Nei giorni selezionati, il mercante sarà chiuso (se lo stato di apertura del mercante è impostato su automatico).",
+          "ClosedHolidays": "Giorni di Chiusura per le Festività (Simple Calendar)",
+          "ClosedHolidaysExplanation": "Nei giorni in cui ci sono note con la categoria di nota specificata, il mercante sarà chiuso (se lo stato di apertura del mercante è impostato su automatico).",
+          "RefreshItemsWarning": "Con tutte le opzioni sottostanti, gli oggetti esistenti verranno ELIMINATI e non potranno essere recuperati. Gli oggetti singoli possono essere configurati per essere mantenuti; gli oggetti impostati come servizi, mantenimento della quantità zero e mantenimento sul mercante rimarranno.",
+          "RefreshItemsOnOpen": "Aggiorna Gli Oggetti All'Orario di Apertura (Simple Calendar)",
+          "RefreshItemsOnOpenExplanation": "Quando l'orario del calendario va oltre l'orario di apertura del mercante, l'inventario del mercante verrà aggiornato.",
+          "RefreshItemsDays": "Aggiorna Gli Oggetti Nei Giorni Feriali (Simple Calendar)",
+          "RefreshItemsDaysExplanation": "Quando il calendario supera i giorni selezionati, l'inventario del mercante verrà aggiornato. Questo avviene all'orario di apertura del mercante o a mezzanotte se non ha un orario di apertura/chiusura.",
+          "RefreshItemsHolidays": "Aggiorna Gli Oggetti Nei Giorni Festivi (Simple Calendar)",
+          "RefreshItemsHolidaysExplanation": "Quando il calendario supera le note con la categoria di nota specificata, l'inventario del mercante verrà aggiornato. Questo avviene all'orario della nota o a mezzanotte se la nota è impostata come per l'intera giornata.",
+          "PriceModifierTitle": "Modificatori di Prezzo di Acquisto e Vendita",
+          "PriceModifierExplanation": "Configura i modificatori di costo di tutti gli oggetti del negozio. Puoi anche configurare modificatori per tipo oggetto, e anche per i personaggi specifici (come i bardi dalla lingua argentata). Non sei limitato al 200%, scrivi nel campo per andare oltre.",
+          "BuyPriceModifier": "Modificatore di Prezzo di Acquisto (%)",
+          "SellPriceModifier": "Modificatore di Prezzo di Vendita (%)",
+          "ItemTypeModifier": "Modificatore di Prezzo per Tipo",
+          "ItemTypeModifiersExplanation": "In questo dialogo puoi configurare modificatori di prezzo per singoli tipi di oggetto.",
+          "ConfigureItemTypePriceModifiers": "Configura i Modificatori di Prezzo per il Tipo di Oggetto",
+          "ActorPriceModifiers": "Sovrascrittura dei Modificatori di Prezzo per Personaggio",
+          "ActorPriceModifiersExplanation": "Qui puoi configurare se certi tipi di Personaggio dovrebbero avere modificatori di prezzo differenti rispetto ai precedentemente descritti modificatori di prezzo.",
+          "ConfigureActorPriceModifiers": "Configura i Modificatori di Prezzo dell'Attore",
+          "MerchantColumns": "Colonne del Mercante",
+          "MerchantColumnsExplanation": "Qui puoi configurare le colonne specifiche del sistema visualizzate nell'interfaccia utente del mercante, come la rarità degli oggetti.",
+          "ConfigureMerchantColumns": "Configura le Colonne del Mercante"
+        },
+        "Vault": {
+          "Title": "Impostazioni Cassaforte",
+          "Layout": "Layout",
+          "LayoutExplanation": "Questo determina quante colonne e righe saranno visibili nella cassaforte.",
+          "Columns": "Colonne",
+          "Rows": "Righe",
+          "CanStackItems": "Oggetti Impilabili",
+          "CanStackItemsExplanation": "Quando abilitato, gli oggetti aggiunti alla cassaforte verranno impilati con oggetti simili. Questo può anche essere controllato per ogni oggetto nella loro configurazione.",
+          "EnableExpansion": "Abilita Oggetti di Espansione",
+          "EnableExpansionExplanation": "Quando abilitato, gli oggetti configurati come espansori di cassaforte espanderanno lo spazio disponibile nella cassaforte.",
+          "BaseExpansion": "Espansione di Base",
+          "BaseExpansionExplanation": "Questo rappresenta quanti colonne e righe sono abilitate di default senza alcun oggetto di espansione.",
+          "RestrictAccess": "Limita Accesso alla Cassaforte",
+          "RestrictAccessExplanation": "Di default, chiunque può accedere alle casseforti se le può vedere nella barra laterale o può avvicinarsi ad esse in una scena. Quando questa impostazione è abilitata, la cassaforte sarà visibile solo dal proprietario del personaggio della cassaforte o dagli utenti/personaggi impostati nell'Editor di Accesso (vedi sotto).",
+          "Access": "Accesso dei Personaggi e Giocatori",
+          "AccessExplanation": "Questo configura quali personaggi e giocatori possono accedere e modificare l'inventario e le valute della cassaforte. Se un giocatore è proprietario del personaggio della cassaforte, avrà sempre pieno accesso.",
+          "ManageAccess": "Gestisci Accesso",
+          "LogVaultAccess": "Registra Accesso alla Cassaforte",
+          "LogVaultAccessExplanation": "Quando abilitato, questa cassaforte creerà un registro e creerà log con timestamp ogni volta che la cassaforte viene interagita.",
+          "ClearVaultLog": "Cancella Log della Cassaforte",
+          "ClearVaultLogExplanation": "Questo cancellerà i log della cassaforte, rimuovendo tutte le voci. Questo non può essere annullato.",
+          "LoggingFormat": "Formato dei Log",
+          "LoggingFormatExplanation": "Questo configura come il nome utente e il nome del personaggio vengono visualizzati nel log.",
+          "LoggingFormatUserActor": "Mostra nome utente e nome del personaggio",
+          "LoggingFormatUser": "Mostra solo il nome utente",
+          "LoggingFormatActor": "Mostra solo il nome del personaggio"
+        }
+      },
+      "VaultAccessEditor": {
+        "Title": "Editor di Accesso alla Cassaforte",
+        "TitleActor": "Editor di Accesso alla Cassaforte: {actor_name}",
+        "Explanation": "Questo configura quali personaggi e giocatori possono accedere e modificare l'inventario e le valute della cassaforte. Se un giocatore è proprietario del personaggio della cassaforte, avrà sempre pieno accesso.",
+        "Character": "Giocatore/Personaggio",
+        "View": "Visualizza",
+        "Organize": "Organizza",
+        "Withdraw": "Preleva",
+        "Deposit": "Deposita"
+      },
+      "MerchantColumnsEditor": {
+        "Title": "Colonne del Mercante",
+        "TitleActor": "Colonne del Mercante: {actor_name}",
+        "Explanation": "Questo configura le colonne visibili nell'interfaccia utente del mercante, oltre al nome dell'oggetto, alla quantità e al prezzo.",
+        "Label": "Etichetta",
+        "PropertyPath": "Percorso Proprietà Oggetto",
+        "Formatting": "Formattazione",
+        "Buying": "Acquisto",
+        "Selling": "Vendita",
+        "ConfigureMapping": "Configura Mappatura",
+        "MappingTitle": "Mappatura Colonne del Mercante: {label}",
+        "MappingContent": "Questo configura la mappatura tra il valore della proprietà e un'etichetta. Questa etichetta può essere una stringa localizzata."
+      },
+      "PricePresetEditor": {
+        "Title": "Editor di Prezzi Preimpostati",
+        "Update": "Aggiorna Preimpostazioni",
+        "Explanation": "Qui puoi creare molteplici prezzi predefiniti che possono facilmente usati come prezzi specifici per oggetto."
+      }
+    },
+    "HUD": {
+      "ToggleLocked": "Attiva/Disattiva Chiusura a Chiave",
+      "ToggleClosed": "Attiva/Disattiva Chiusura",
+      "Configure": "Configura Pila"
+    },
+    "Chat": {
+      "Pickup": "{name} ha raccolto i seguenti oggetti:",
+      "Split": "Il contenuto di una pila di oggetti è stato diviso tra {num_players}  giocatori e ognuno ha ricevuto:",
+      "TradeComplete": "{party_1} e {party_2} hanno completato una trattativa.",
+      "TradeStarted": "{party_1} e {party_2} hanno aperto una trattativa.",
+      "TradeStartedButton": "Fai clic sul pulsante qui sotto per assistere:",
+      "TradeSpectate": "Assisti alla Trattativa",
+      "SpectateDisabled": "Trattativa Conclusa",
+      "PrivateTrade": "Trattativa Privata",
+      "ExpandTrade": "Visualizza i dettagli della trattativa",
+      "MerchantTraded": "{name} ha acquistato le cose seguenti da {merchant}:",
+      "GaveItems": "{source} ha dato alcuni oggetti a {target}:"
+    },
+    "VaultLog": {
+      "Withdraw": "{actor_name} ({user_name}) **withdrew** {item_name} x {quantity} ({date})",
+      "Deposit": "{actor_name} ({user_name}) *deposited* {item_name} x {quantity} ({date})"
+    },
+    "Settings": {
+      "Configure": {
+        "Title": "Configurazione Modulo",
+        "Label": "Configura Modulo",
+        "Hint": "In questo dialogo puoi configurare Item Piles."
+      },
+      "Reset": {
+        "Title": "Ripristina ai Valori Iniziali le Impostazioni Specifiche",
+        "Label": "Ripristina Impostazioni",
+        "Hint": "Verranno ripristinate tutte le impostazioni di Item Piles alle impostazioni predefinita del sistema di gioco corrente."
+      },
+      "ActorClass": {
+        "Title": "Tipo classe personaggio",
+        "Hint": "Questa impostazione definisce il tipo di attore che verrà utilizzato per la pila di oggetti predefinita creata al primo trascinamento di un oggetto. Nel caso di D&D5e, questo sarà \"personaggio\", in quanto non esiste un tipo dedicato."
+      },
+      "Quantity": {
+        "Title": "Attributo quantità oggetto",
+        "Hint": "Qui puoi configurare qual è il percorso dati dell'attributo usato per la quantità di ciascun oggetto. Ad esempio, nel sistema D&D5e, la quantità di ogni oggetto viene memorizzata nell'attributo \"item.system.quantity\" dell'elemento, quindi si dovrebbe inserire \"system.quantity\" in questa impostazione."
+      },
+      "Price": {
+        "Title": "Attributo Prezzo dell'oggetto",
+        "Hint": "Qui puoi configurare il percorso dell'attributo per ciascun prezzo di oggetto. Per esempio, nel sistema D&D5e, la quantità di ogni oggetto è registrata negli attributi \"item.system.price\" dell'oggetto, dovrete dunque scrivere \"system.price\" in questa impostazione."
+      },
+      "QuantityForPrice": {
+        "Title": "Quantità dell'oggetto per attributo prezzo",
+        "Hint": "Qui puoi configurare quale percorso attributo rappresenta la quantità di oggetti che ottieni per il prezzo. Ad esempio, nel sistema PF2e c'è una proprietà \"per\" sugli oggetti, che determina quale quantità di oggetti ottieni per il prezzo dell'oggetto, che è memorizzato nell'attributo \"item.system.price.per\" dell'oggetto, quindi dovresti inserire \"system.price.per\" in questa impostazione."
+      },
+      "Currencies": {
+        "Title": "Valuta",
+        "Label": "Configura Valuta",
+        "Hint": "Questa impostazione definisce le valute idonee al prelevamento, che potrebbero non essere oggetti effettivi ma input numerici sulla scheda dei personaggi."
+      },
+      "SecondaryCurrencies": {
+        "Title": "Valute Secondarie",
+        "Label": "Configura Valute Secondarie",
+        "Hint": "Questa impostazione definisce le valute secondarie, simili ma separate dalle valute regolari. Queste non possono avere tassi di cambio o essere suddivise in altre valute personalizzate."
+      },
+      "CurrencyDecimalDigits": {
+        "Title": "Cifre Decimali della Valuta",
+        "Hint": "Questa impostazione definisce la cifra decimale di minor valore alla quale arrotondare le valute usate. Per esempio in una impostazione moderna con valute moderne, '0.01' consente due cifre decimali. Questa non viene usata se avete più di una valuta."
+      },
+      "ItemFilters": {
+        "Title": "Filtri Oggetto",
+        "Label": "Configura Filtri Oggetto",
+        "Hint": "Qui puoi configurare quali oggetti vengono ignorati e non elencati nelle finestre di dialogo della pila."
+      },
+      "ItemSimilarities": {
+        "Title": "Similarità Oggetto",
+        "Label": "Configura Similiartà Oggetto",
+        "Hint": "Qui puoi configurare come gli oggetti vengono rilevati simili in questo sistema. Alcuni sistemi potrebbero avere dati che distinguono gli oggetti in modo diverso rispetto ad altri, come ad esempio gli oggetti temporanei."
+      },
+      "UnstackableItemTypes": {
+        "Title": "Tipi di Oggetti non Impilabili",
+        "Label": "Configura Tipi non Impilabili",
+        "Hint": "Qui puoi configurare quali tipi di oggetti sono considerati unici, indipendentemente da tutto. I tipi configurati qui non possono essere impilati e possono avere solo una quantità di 1."
+        },
+        "CssVariables": {
+        "Title": "Stili con Variabili CSS",
+        "Label": "Configura Variabili CSS",
+        "Hint": "Questo ti consente di configurare le diverse variabili CSS che gestiscono i colori e altri stili nelle interfacce delle casseforti degli oggetti."
+        },
+        "VaultStyles": {
+        "Title": "Stili della Cassaforte",
+        "Label": "Configura Stili della Cassaforte",
+        "Hint": "Questo ti consente di aggiungere regole che stileranno gli oggetti in base a percorsi di proprietà e valori sugli stessi oggetti."
+        },
+      "PricePresets": {
+        "Title": "Prezzi Preimpostati",
+        "Label": "Configura Prezzi Preimpostati",
+        "Hint": "Qui puoi configurare Prezzi Preimpostati facilmente importabili negli oggetti."
+      },
+      "CustomItemCategories": {
+        "Title": "Categorie Personalizzate di Oggetti",
+        "Label": "Configura Categorie di Oggetti",
+        "Hint": "In questo modo puoi configurare le categorie personalizzate di oggetti, che vengono mostrate come suggerimenti nell'editor di oggetti."
+      },
+      "EnableDroppingItems": {
+        "Title": "Abilita Rilascio Oggetti",
+        "Hint": "Questo consente agli utenti di poter rilasciare gli oggetti a terra per creare le proprie casseforti di oggetti: con questa opzione disabilitata, gli utenti non possono creare nuove casseforti."
+      },
+      "EnableGivingItems": {
+        "Title": "Abilita a Dare Oggetti",
+        "Hint": "Ciò abilita gli utenti a rilasciare oggetti su token altrui per darli a costoro - se questa è disabilitata, gli utenti non possono dare oggetti ad altri utenti."
+      },
+      "EnableTrading": {
+        "Title": "Abilita Trattative",
+        "Hint": "Ciò consente le trattative - se disabilitato, nessuno può avviare alcuna trattativa."
+      },
+      "ShowTradeButton": {
+        "Title": "Mostra Pulsante Trattativa",
+        "Hint": "Abilitando questa opzione, verrà visualizzato un pulsante di trattativa appena sotto l'elenco dei giocatori in basso a sinistra."
+      },
+      "InspectItemsTrade": {
+        "Title": "Abilita l'Ispezione di Oggetti Durante le Transazioni",
+        "Hint": "Abilitare questa scelta fa in modo che gli utenti possano cliccare gli oggetti commerciati e aprire la scheda dell'oggetto per vederli in anteprima."
+      },
+      "OutputToChat": {
+        "Title": "Invia alla chat",
+        "Hint": "Ogni volta che un giocatore raccoglie oggetti da una pila di oggetti, verrà visualizzato un messaggio chat che mostra cosa è stato raccolto.",
+        "Off": "Disattivo - disattiva i messaggi",
+        "Public": "Pubblico - tutti possono vedere i messaggi",
+        "SelfGM": "Privato: solo i GM e l'utente possono vedere i messaggi",
+        "Blind": "Cieco - solo i GM possono vedere i messaggi"
+      },
+      "HideTokenBorder": {
+        "Title": "Nascondi i Bordi del Token delle Casseforti di Oggetti",
+        "Hint": "Questo controlla se il bordo del token viene nascosto quando si passa il mouse sopra ai token delle casseforti di oggetti. Selezionando il token si mostreranno sempre i bordi.",
+        "HideEveryone": "Nascosto per tutti",
+        "HidePlayers": "Nascosto per i giocatori",
+        "Show": "Mostra i bordi (comportamento di base)"
+      },
+      "InvertSheetOpen": {
+        "Title": "Inverti Ctrl + Doppio clic Apri",
+        "Hint": "Normalmente, devi tenere premuto control quando vuoi aprire la scheda personaggio di una pila di oggetti. Abilitando questo, la scheda personaggio del mucchio di oggetti viene aperta per impostazione predefinita e tenendo premuto control si apre l'interfaccia utente dell'inventario della pila."
+      },
+      "HideHeaderButtonText": {
+        "Title": "Nascondi il testo del pulsante testata",
+        "Hint": "Nasconde il testo \"Item Piles\" nella testata dei personaggi e degli oggetti - utile se avete troppi moduli, e la testata si riempie."
+      },
+      "HideHeaderButton": {
+        "Title": "Nascondi il pulsante testata",
+        "Hint": "Nasconde il pulsante \"Item Piles\" nella testata dei personaggi e degli oggetti. Questo renderà difficoltosa la configurazione di nuove pile e oggetti."
+      },
+      "DeleteEmptyPiles": {
+        "Title": "Elimina automaticamente pile vuote",
+        "Hint": "Questa impostazione fa sì che le item piles si eliminino da sole una volta esauriti gli oggetti. Può essere sovrascritto su singole pile di oggetti."
+      },
+      "PreloadFiles": {
+        "Title": "Pre-carica Files",
+        "Hint": "Abilita il pre-caricamento dei file (immagini e audio) delle pile, risultando in un'esperienza senza soluzione di continuità."
+      },
+      "Debug": {
+        "Title": "Abilita debug",
+        "Hint": "Stampa i messaggi di debug sulla console"
+      },
+      "DebugHooks": {
+        "Title": "Abilita il debug degli hook",
+        "Hint": "Stampa gli hook delle casseforti di oggetti e il loro contenuto sulla console"
+      },
+      "PopulationTablesFolder": {
+        "Title": "Cartelle di Tabelle di Tiro per \"Carica Oggetti\"",
+        "Hint": "Titolo delle cartelle per selezionare la tabelle di tiro nella scheda \"Carica Oggetti\" del negoziante",
+        "AllTables": "Tutte le Tabelle"
+      }
+    }
+  }
+}

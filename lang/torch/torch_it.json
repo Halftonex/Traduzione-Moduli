@@ -1,0 +1,23 @@
+{
+	"I18N.LANGUAGE": "Italiano",
+	"I18N.MAINTAINERS": "Halftone",
+
+	"torch.playerTorches.name": "Giocatori",
+	"torch.playerTorches.hint": "Consenti ai giocatori di accendere/spegnere le proprie torce.",
+	"torch.brightRadius.hint": "Quante unità di griglia di luce intensa emettere.",
+	"torch.dimRadius.hint": "Quante unità di griglia di luce fioca emettere.",
+	"torch.gmUsesInventory.name": "GM Consuma Inventario",
+	"torch.gmUsesInventory.hint": "Se attiva, quando un GM accende una torcia, verrà scalata dall'invetario dell'attore.",
+	"torch.gmInventoryItemName.name": "Nome dell'oggetto dell'inventario da usare",
+	"torch.gmInventoryItemName.hint": "Nome dell'oggetto dell'inventario da consumare se \"GM Consuma Inventario\" è attiva.",
+	"torch.turnOffAllLights": "Forza luce intensa e fioca ai valori \"off\" configurati.",
+	"torch.holdCtrlOnClick": "Premi <span class=\"key\">Ctrl</span> al Click",
+	"torch.dancingLightVision.name": "Visione delle Luci Danzanti",
+	"torch.dancingLightVision.hint": "Quando abilitato, ogni Luce Danzante avrà una visione, quindi potrà essere utilizzata per rivelare aree della mappa che i giocatori non possono effettivamente vedere.",
+	"torch.playerUsesInventory.name": "Giocatore Consuma Inventario",
+	"torch.playerUsesInventory.hint": "Se attiva, quando un giocatore accende una torcia, verrà scalata dall'invetario dell'attore.",
+	"torch.gameLightSources.name": "Fonti di Luce Addizionali",
+	"torch.gameLightSources.hint": "File JSON contenente fonti di luce addizionali da usare in aggiunta a quelle fornite",
+	"torch.brightRadius.name": "Raggio Luce Intensa",
+	"torch.dimRadius.name": "Raggio Luce Fioca"
+}

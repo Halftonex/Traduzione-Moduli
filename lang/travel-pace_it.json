@@ -1,0 +1,51 @@
+{
+  "TravelPace.ButtomName": "Passo di Viaggio",
+  "TravelPace.RequestorName": "Calcolo Tempo di Viaggio",
+  "TravelPace.Pace": "Marcia",
+  "TravelPace.Dialog.Total": "Tempo di Viaggio",
+  "TravelPace.Settings.ButtomName": "Barra Strumenti Sinistra: Passo di Viaggio",
+  "TravelPace.Settings.ButtomNameHint": "Aggiunge dei pulsanti nella barra strumenti sinistra per calcolare il tempo di viaggio dei giocatori",
+  "TravelPace.Settings.ForcedMarchDialog": "Marcia Forzata in Chat",
+  "TravelPace.Settings.ForcedMarchDialogHint": "Se abilitato, mostra le regole sulla marcia forzata nella chat.",
+  "TravelPace.Settings.MetricSystem": "Converti al Sistema Metrico",
+  "TravelPace.Settings.MetricSystemHint": "Se attivata, il sistema di misurazione metrico (m/km) verrà utilizzato al posto di quello imperiale (ft/mi).",
+
+  "TravelPace.PaceSlow": "Passo Lento",
+  "TravelPace.PaceFast": "Passo Veloce",
+  "TravelPace.PaceNormal": "Passo Normale",
+  "TravelPace.RatioNormal": "Normale (SRD)",
+  "TravelPace.Ratio2": "1/2 Normale",
+  "TravelPace.Ratio4": "1/4 Normale",
+  "TravelPace.Ratio6": "1/6 (Icewind Dale: Rime of the Frostmaiden)",
+
+  "TravelPace.feets": "piedi",
+  "TravelPace.meters": "metri",
+  "TravelPace.miles": "miglia",
+  "TravelPace.kilometers": "km",
+  "TravelPace.feetsAbbr": "ft",
+  "TravelPace.metersAbbr": "m",
+  "TravelPace.milesAbbr": "mi",
+  "TravelPace.kilometersAbbr": "km",
+
+  "TravelPace.Dialog.Who": "Calcolo del tempo di viaggio.",
+  "TravelPace.Dialog.Journey": "{hour}h {min}min",
+  "TravelPace.Dialog.JourneyDay": " in {days} giorno",
+  "TravelPace.Dialog.JourneyDays": " in {days} giorni",
+
+  "TravelPace.Dialog.PreviewSpeed": "Velocità di Movimento: {units_feetAbbr}",
+  "TravelPace.Dialog.PreviewOnroad": "{units_miles} su strada/sentiero",
+  "TravelPace.Dialog.PreviewOffroad": "{units_miles} su terreno difficile",
+  "TravelPace.Dialog.PreviewTime": "Tempo Stimato",
+  "TravelPace.Dialog.PreviewRatio": "Rapporto Velocità",
+  "TravelPace.Dialog.SlowEffects": "Consente l'utilizzo di furtività",
+  "TravelPace.Dialog.FastEffects": "Penalità di -5 ai punteggi di Saggezza (Percezione) passiva",
+
+  "TravelPace.Dialog.ForcedMarch": "Marcia Forzata",
+  "TravelPace.Dialog.ForcedMarchAlert": "Il calcolo di “Passo di Viaggio” presume che i personaggi viaggino per 8 ore al giorno. Possono spingersi oltre quel limite, ma rischiano l’indebolimento.",
+  "TravelPace.Dialog.ForcedMarchAlertAdd": "Per ogni ora di viaggio aggiuntiva oltre le 8 ore, i personaggi coprono la distanza indicata dalla colonna “Ora” relativa al loro passo e ogni personaggio deve effettuare un tiro salvezza su Costituzione alla fine dell’ora. La CD è pari a 10 + 1 per ogni ora oltre l’ottava. In caso di tiro salvezza fallito, un personaggio subisce un livello di indebolimento.",
+  "TravelPace.Dialog.Narrative": "Il gruppo si sposta ad una velocità media di {marchSpeed} {units_feetAbbr}, viaggiando per {marchOnRoad} {units_miles} su strade e {marchOffRoad} {units_miles} su terreno difficile."
+
+}
+
+  
+

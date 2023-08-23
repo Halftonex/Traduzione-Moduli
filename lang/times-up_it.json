@@ -1,0 +1,6 @@
+{
+  "times-up.Debug.Name": "Debug",
+  "times-up.Debug.Hint": "Scegli il livello di debug da visualizzare",
+  "times-up.DisablePassiveEffects.Name": "Disabilita Effetti Passivi alla Scadenza",
+  "times-up.DisablePassiveEffects.Hint": "Invece di eliminare gli effetti passivi (creati quando si aggiunge un oggetto/abilità/incantesimo) alla scadenza, contrassegnali come disabilitati. Quando questa opzione è attiva, abilitare un effetto passivo reimposterà il suo inizio tempo/round/turno."
+}

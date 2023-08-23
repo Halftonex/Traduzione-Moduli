@@ -1,0 +1,619 @@
+{
+	"TIDY5E.Tidy5eSheet": "Scheda Personaggio Tidy 5e",
+	"TIDY5E.Tidy5eNPC": "Scheda PNG Tidy 5e",
+	"TIDY5E.Tidy5eItemSheet": "Scheda Oggetto Tidy 5e",
+	"TIDY5E.Tidy5eVehicle": "Scheda Veicolo Tidy 5e",
+	"TIDY5E.PlayerName": "Nome Giocatore",
+	"TIDY5E.Gender": "Genere",
+	"TIDY5E.Age": "Età",
+	"TIDY5E.Weight": "Peso",
+	"TIDY5E.Height": "Altezza",
+	"TIDY5E.Eyes": "Occhi",
+	"TIDY5E.Skin": "Pelle",
+	"TIDY5E.Hair": "Capelli",
+	"TIDY5E.Subclass": "Sottoclasse",
+	"TIDY5E.EditActorImage": "tasto sinistro: modifica immagine",
+	"TIDY5E.ShowActorImage": "tasto destro: mostra ritratto PG",
+	"TIDY5E.ShowPortraitArt": "mostra ritratto",
+	"TIDY5E.ShowTokenArt": "mostra token",
+	"TIDY5E.ShowItemImage": "clic destro: mostra arte dell'oggetto",
+	"TIDY5E.ShowItemArt": "mostra immagine",
+
+	"TIDY5E.Exhaustion0": "Nessun effetto negativo",
+	"TIDY5E.Exhaustion1": "Svantaggio Sulle Prove di Caratteristica",
+	"TIDY5E.Exhaustion2": "Velocità dimezzata",
+	"TIDY5E.Exhaustion3": "Svantaggio sui Tiri per Colpire e sui Tiri Salvezza",
+	"TIDY5E.Exhaustion4": "Punti ferita massimi dimezzati",
+	"TIDY5E.Exhaustion5": "Velocità ridotta a 0",
+	"TIDY5E.Exhaustion6": "Morte",
+
+	"TIDY5E.AbbrInitiative": "Ini",
+
+	"TIDY5E.RestHint": "Riposati",
+	"TIDY5E.RestS": "Riposo Breve",
+	"TIDY5E.RestL": "Riposo Lungo",
+	"TIDY5E.HitDiceRollAverage": "Clic destro: Media",
+
+	"TIDY5E.Journal": "Diario",
+
+	"TIDY5E.RestoreOnRest": "Ripristina dopo un riposo",
+
+	"TIDY5E.JournalPoi": "Persone di interesse",
+	"TIDY5E.JournalLoi": "Luoghi di interesse",
+	"TIDY5E.JournalQuests": "Missioni",
+	"TIDY5E.JournalMisc": "Miscellanea",
+	"TIDY5E.JournalEntries": "Appunti Diario",
+	"TIDY5E.TogglePersonalityInfo": "Attiva/disattiva le informazioni sulla personalità",
+
+	"TIDY5E.EnableEdit": "Abilita Modifica",
+	"TIDY5E.DisableEdit": "Disabilita Modifica",
+	"TIDY5E.EditHint": "Attiva/disattiva la visibilità dei pulsanti di aggiunta/eliminazione e delle sezioni vuote",
+
+	"TIDY5E.Equip": "Equipaggia Oggetto",
+	"TIDY5E.Unequip": "Disequipaggia Oggetto",
+	"TIDY5E.Attune": "Sintonizza all'Oggetto",
+	"TIDY5E.Deattune": "Interrompi Sintonia",
+	"TIDY5E.Prepare": "Prepara Incantesimo",
+	"TIDY5E.Unprepare": "Rimuovi Preparazione",
+
+	"TIDY5E.EmptySection": "Questa sezione è vuota. Sblocca il foglio per modificare.",
+	"TIDY5E.GmOnlyEdit": "Solo il tuo GM può modificare questa sezione.",
+
+	"TIDY5E.AttunementWarning": "Avviso su \"sintonizzazione\": non puoi sintonizzarti su più di {number} oggetti!",
+	"TIDY5E.AttunementItems": "Oggetti Sincronizzati",
+	"TIDY5E.AttunementMax": "Massimi Sincronizzati",
+
+	"TIDY5E.GridLayout": "Layout a Griglia",
+	"TIDY5E.ListLayout": "Layout a Lista",
+
+	"TIDY5E.Encumbrance": "Ingombro",
+
+	"TIDY5E.EditSpell": "Modifica Incantesimo",
+	"TIDY5E.DeleteSpell": "Elimina Incantesimo",
+	"TIDY5E.AddFav": "Aggiungi ai Preferiti",
+	"TIDY5E.isFav": "Preferito",
+	"TIDY5E.RemoveFav": "Rimuovi dai Preferiti",
+
+	"TIDY5E.ToggleInfo": "Attiva/disattiva Info",
+
+	"TIDY5E.Show": "mostra/modifica",
+	"TIDY5E.Hide": "nascondi",
+	"TIDY5E.Edit": "Modifica",
+	"TIDY5E.TraitsEmpty": "nessun tratto",
+
+	"TIDY5E.Abilities": "Caratteristiche",
+
+	"TIDY5E.Environment": "Ambiente",
+
+	"TIDY5E.SearchItem": "cerca oggetto",
+	"TIDY5E.SearchSpell": "cerca incantesimo",
+	"TIDY5E.SearchFeat": "funzionalità ricerca",
+	"TIDY5E.SearchClear": "pulisci ricerca",
+	"TIDY5E.SearchHint": "Inizia a digitare ciò che stai cercando.",
+
+	"TIDY5E.ItemCardsKeyHint": "tieni premuto il tasto per interagire con la carta.",
+	"TIDY5E.ItemCardsMouseHint": "tasto centrale mouse per visualizzare/modificare l'elemento.",
+
+	"TIDY5E.AbbrMod": "Mod",
+	"TIDY5E.AbbrSavingThrow": "Salva",
+	"TIDY5E.SpellAttackMod": "Mod Attacco",
+	"TIDY5E.PreparedSpells": "Incantesimi Preparati",
+	"TIDY5E.PreparedSpellsMax": "Maximum for prepared spells (Note: do not use 'Override' mode on the active effect')",
+	"TIDY5E.Components": "Comp.",
+	"TIDY5E.SpellSchool": "Scuola",
+
+	"TIDY5E.TokenLinked": "Token collegato all'attore",
+	"TIDY5E.TokenUnlinked": "Token non collegato all'attore",
+
+	"TIDY5E.ItemDetailsHeadline": "Meccaniche/Note di Colore",
+
+	"TIDY5E.Class": "Classe",
+	"TIDY5E.SpellClass": "Classe Incantesimo",
+	"TIDY5E.Spellbook": "Libro Incantesimi",
+
+	"TIDY5E.ClassArtificer": "Artificiere",
+	"TIDY5E.ClassBarbarian": "Barbaro",
+	"TIDY5E.ClassBard": "Bardo",
+	"TIDY5E.ClassCleric": "Chierico",
+	"TIDY5E.ClassCustom": "Personalizzata",
+	"TIDY5E.ClassDruid": "Druido",
+	"TIDY5E.ClassFighter": "Guerriero",
+	"TIDY5E.ClassMonk": "Monaco",
+	"TIDY5E.ClassPaladin": "Paladino",
+	"TIDY5E.ClassRanger": "Ranger",
+	"TIDY5E.ClassRogue": "Ladro",
+	"TIDY5E.ClassSorcerer": "Stregone",
+	"TIDY5E.ClassWarlock": "Warlock",
+	"TIDY5E.ClassWizard": "Mago",
+
+	"TIDY5E.OriginSummaryConfig": "Configurazione Riassunto Origine",
+
+	"TIDY5E.LevelBump": "Aumento Livello",
+	"TIDY5E.LevelBumpTooltip": "Quando stai lanciando un incantesimo, puoi lanciarlo di un livello superiore gratuitamente.",
+
+	"TIDY5E.Settings.GlobalLabel": "Globale",
+	"TIDY5E.Settings.DebugLabel": "Debug",
+	"TIDY5E.Settings.UserLabel": "Utente",
+	"TIDY5E.Settings.PcLabel": "PG",
+	"TIDY5E.Settings.NpcLabel": "PNG",
+	"TIDY5E.Settings.VehicleLabel": "Veicoli",
+	"TIDY5E.Settings.MulticlassSpellbookFilterLabel": "Filtro Libro degli Incantesimi Multiclasse",
+	"TIDY5E.Settings.ColorPickerLabel": "Personalizza il colore (È consigliabile installare il modulo 'Color Settings')",
+
+	"TIDY5E.Settings.SheetMenu": {
+		"name": "Impostazioni Scheda Tidy",
+		"hint": "Personalizza la tua versione di Tidy",
+		"label": "Impostazioni Scheda",
+		"title": "Tidy5e Impostazioni Scheda"
+	},
+	"TIDY5E.Settings.TabPlayers": {
+		"tabLabel": "Giocatori",
+		"header": "Schede Personaggi Giocanti"
+	},
+	"TIDY5E.Settings.TabNPCsVehicles": {
+		"tabLabel": "PNG/Veicoli",
+		"header": "Schede PNG/Veicoli",
+		"labelNPCs": "PNG",
+		"labelVehicles": "Veicoli"
+	},
+	"TIDY5E.Settings.TabGM": {
+		"tabLabel": "Opzioni DM",
+		"header": "Opzioni Scheda DM"
+	},
+  	"TIDY5E.Settings.TabHomebrewRules": {
+		"tabLabel": "Regole Homebrew",
+		"header": "Regole Homebrew",
+		"labelHBUpcastFreeSpell": "Incantesimo Gratuito di Potenziamento"
+	},
+	"TIDY5E.Settings.TabModules": {
+		"tabLabel": "Moduli",
+		"header": "Opzioni Modulo",
+		"labelActionsFavorites": "Aggiungi Azioni/Favorite",
+		"labelMidiQoL": "Midi Qol",
+		"labelLazyMoney": "Lazy Money"
+	},
+	"TIDY5E.Settings.TabLocks": {
+		"tabLabel": "Blocco",
+		"header": "Opzioni di Blocco",
+		"hint": "Impedisce ai giocatori di apportare modifiche a aspetti delle loro schede dei personaggi che dovrebbero cambiare raramente, e fornisce l'opzione di nascondere completamente alcuni elementi che non si desidera utilizzare affatto. Sono disponibili impostazioni per personalizzare esattamente cosa è bloccato / nascosto e stabilire chi ha il permesso di rendere le schede modificabili tramite un pulsante di attivazione.",
+		"hint2": "Tieni presente che questo non è un blocco sicuro e i giocatori potrebbero aggirare le restrizioni, quindi non è una risposta sufficiente se i tuoi giocatori sono malintenzionati. Questo è pensato per giochi in cui i giocatori sono inesperti (di D&D e/o nell'uso del computer) per evitare che commettano errori (ad esempio, aggiungere/rimuovere accidentalmente la competenza nel tiro salvezza).",
+		"labelGeneralLocks": "Blocco Generale",
+		"labelInventoryLocks": "Blocco Inventario",
+		"labelFeaturesLocks": "Blocco Abilità"
+	},
+	"TIDY5E.Settings.TabInfo": {
+		"tabLabel": "Info",
+		"header": "Info"
+	},
+	"TIDY5E.Settings.ItemCardsForAllItems": {
+		"name": "Mostra carta informazioni oggetto in tutti i layout",
+		"hint": "Disabilita se desideri che le schede informative a lato degli elementi siano solo nel layout a griglia."
+	},
+	"TIDY5E.Settings.ItemCardsForNpcs": {
+		"name": "Mostra carta informazioni oggetto per PNG/veicoli",
+		"hint": "Disabilita se non vuoi che le schede informative a lato compaiano sugli oggetti per NPC/Veicoli."
+	},
+	"TIDY5E.Settings.ItemCardsAreFloating": {
+		"name": "Le schede informative degli oggetti fluttuano accanto al cursore.",
+		"hint": "Abilita per rimuovere le schede informative degli oggetti dalla scheda e posizionarle accanto al cursore. Meglio se usata con un delay. Utile anche quando la scheda viene visualizzata in popout."
+	},
+	"TIDY5E.Settings.ItemCardsDelay": {
+		"name": "Ritardo nel mostrare le carte delle informazioni.",
+		"hint": "La carta informazioni verrà mostrata quando passi sopra un oggetto per un valore di millisecondi (0=nessun ritardo, 300 è il predefinito)."
+	},
+	"TIDY5E.Settings.ItemCardsFixKey": {
+		"name": "Tasto da tenere premuto per l'interazione con la scheda oggetto.",
+		"hint": "Immettere un tasto (ad esempio: x) da utilizzare per l'interazione con la scheda oggeto. Può essere qualsiasi tasto tranne i tasti funzione (ctrl, alt, ecc.)"
+	},
+
+	"TIDY5E.Settings.SheetTheme": {
+		"name": "Tidy 5e colore tema.",
+		"hint": "Seleziona il tema di colore chiaro predefinito o quello alternativo scuro.",
+		"default": "Predefinito (chiaro)",
+		"dark": "Alternativo (scuro)"
+	},
+
+	"TIDY5E.Settings.ClassicControls": {
+		"name": "Utilizza i controlli degli elementi classici nella visualizzazione ad elenco.",
+		"hint": "Mostra sempre i controlli dell'oggetto, questo non disabiliterà il menu del clic destro. Si applica solo all'inventario degli oggetti/incantesimi per PC nella disposizione a elenco."
+	},
+	"TIDY5E.Settings.HideIconsNextToTheItemName": {
+		"name": "Nascondi icone accanto al nome dell'oggetto",
+		"hint": "Se abilitata, questa impostazione nasconde le icone di supporto presenti accanto al nome dell'oggetto (Preferito, Attunamento, ecc.), di solito è utile insieme all'impostazione 'Utilizza i controlli classici degli oggetti nella visualizzazione a elenco' abilitata per evitare una ridondanza di icone..."
+	},
+	"TIDY5E.Settings.RollButtonsToCard": {
+		"name": "Mostra il bottone Oggetto MidiQol nella carta informazioni oggetto",
+		"hint": "I pulsanti di tiro predefiniti vengono visualizzati nella descrizione dell'articolo. Abilita per spostarli nella scheda informativa dell'elemento. Funziona in tutte le modalità di layout."
+	},
+	"TIDY5E.Settings.TraitLabels": {
+		"name": "Mostra Etichette Tratti",
+		"hint": "Disabilita per mostrare solo le icone per i tratti PG/PNG."
+	},
+
+	"TIDY5E.Settings.PlayerName": {
+		"name": "Mostra Nome Giocatore",
+		"hint": "Abilita per mostrare un campo per il nome del giocatore sotto il nome del personaggio."
+	},
+	"TIDY5E.Settings.JournalTab": {
+		"name": "Nascondi il diario dei personaggi.",
+		"hint": "Abilita per nascondere la scheda del diario del personaggio."
+	},
+	"TIDY5E.Settings.JournalTabNPCDisabled": {
+		"name": "Nascondi diario PNG.",
+		"hint": "Abilita per nascondere la scheda del diario dei PNG."
+	},
+	"TIDY5E.Settings.ClassList": {
+		"name": "Nascondi la lista di classi del personaggio",
+		"hint": "Abilita l'occultamento della lista di classi sotto il nome del personaggio."
+	},
+	"TIDY5E.Settings.InspirationAnimation": {
+		"name": "Disabilita animazione per il tracciamento dell'ispirazione.",
+		"hint": "Permette di disabilitare l'animazione illuminata dell'ispirazione."
+	},
+	"TIDY5E.Settings.HideIfZero": {
+		"name": "Nascondi l'indicatore di indebolimento e ispirazione se = 0.",
+		"hint": "Seleziona per nascondere gli indicatori di indebolimento  e ispirazione se = 0. Apparirà al passaggio del mouse."
+	},
+	"TIDY5E.Settings.InspirationOnHover": {
+		"name": "Mostra l'indicatore di ispirazione solo al passaggio del mouse.",
+		"hint": "Seleziona per mostrare l'indicatore di ispirazione solo quando passi il mouse sopra il ritratto."
+	},
+	"TIDY5E.Settings.ExhaustionOnHover": {
+		"name": "Mostra l'indicatore di indebolimento solo al passaggio del mouse.",
+		"hint": "Seleziona per mostrare l'indicatore di indebolimento solo quando passi il mouse sopra il ritratto."
+	},
+	"TIDY5E.Settings.HpBar": {
+		"name": "Disabilita la barra della salute.",
+		"hint": "Permette di nascondere la barra colorata che indica i PF rimanenti (i numeri della salute saranno ancora visibili)."
+	},
+	"TIDY5E.Settings.HpOverlay": {
+		"name": "Nascondi la sovrapposizione dei punti ferita.",
+		"hint": "Permette di nascondere la sovrapposizione dei PF per questo tipo di attore."
+	},
+	"TIDY5E.Settings.TraitsTogglePc": {
+		"name": "Alterna i tratti del personaggio vuoti.",
+		"hint": "Per default i tratti vuoti sono sempre visibili. Abilita per aggiungere un bottone alterna."
+	},
+	"TIDY5E.Settings.TraitsMovedBelowResource": {
+		"name": "Sposta i tratti sotto le risorse.",
+		"hint": "Permette di spostare i tratti dal lato sinistro sotto le risorse."
+	},
+	"TIDY5E.Settings.AmmoEquippedOnly": {
+		"name": "Mostra solo munizioni equipaggiate.",
+		"hint": "Abilita per mostrare solo le munizioni attualmente equipaggiate nel selettore di munizioni per armi."
+	},
+
+	"TIDY5E.Settings.TraitsAlwaysShown": {
+		"name": "Mostra sempre i tratti.",
+		"hint": "Di default i tratti vuoti sono nascosti da un bottone alterna. Abilita per non nasconderli mai."
+	},
+	"TIDY5E.Settings.SkillsAlwaysShown": {
+		"name": "Mostra sempre le abilità.",
+		"hint": "Di default le abilità senza competenza sono nascoste da un bottone alterna. Abilita per non nasconderle mai."
+	},
+	"TIDY5E.Settings.HideSpellbookTabNpc": {
+		"name": "Nascondi scheda Libro degli Incantesimi sui PNG",
+		"hint": "Di default, la scheda del Libro degli Incantesimi sui PNG viene spostata nella scheda Attributi. Disabilita questa opzione per evitare che ciò avvenga."
+	},
+
+	"TIDY5E.Settings.ActiveEffectsMarker": {
+		"name": "Mostra un indicatore degli effetti attivi sugli oggetti.",
+		"hint": "Abilita se vuoi vedere gli oggetti con i loro effetti attivi (solo per la vista a lista)."
+	},
+	"TIDY5E.Settings.RightClickDisabled": {
+		"name": "Disabilita il tasto destro per il menu contestuale.",
+		"hint": "In caso di conflitti tra moduli o preferenze, puoi disabilitare il menu contestuale del clic destro."
+	},
+	"TIDY5E.Settings.ExpandedSheet": {
+		"name": "Visualizzazione limitata espansa per le schede dei personaggi.",
+		"hint": "Mostra l'intera scheda del personaggio (meno il diario) ai giocatori con permessi limitati."
+	},
+	"TIDY5E.Settings.PortraitStyle": {
+		"name": "Stile ritratto tondo.",
+		"hint": "Imposta per abilitare i ritratti/icone tondi per i persnaggi",
+		"all": "Tutti i Personaggi",
+		"pc": "PG",
+		"npc": "PNG/Veicoli",
+		"none": "nessuno",
+		"default": "nessuno"
+	},
+	"TIDY5E.Settings.HpOverlayBorder": {
+		"name": "Offset per la sovrapposizione dei PF.",
+		"hint": "Immettere il valore di offset per compensare le cornici verticali e prevenire la colorazione."
+	},
+	"TIDY5E.Settings.EditTotalLock": {
+		"name": "Blocca campi sensibili.",
+		"hint": "Consente di impedire la modifica accidentale di valori sensibili, per lo più statici."
+	},
+	"TIDY5E.Settings.EditGmAlways": {
+		"name": "Il DM può sempre modificare le schede dei PG.",
+		"hint": "Seleziona per permettere al DM di modificare le schede dei PG senza attivare il pulsante di blocco/sblocco"
+	},
+	"TIDY5E.Settings.EditEffectsGmOnly": {
+		"name": "Solo il DM può modificare gli effetti attivi.",
+		"hint": "Abilita per negare ai giocatori la modifica degli effetti attivi sulle loro schede. Continueranno a vedere gli effetti applicati."
+	},
+	"TIDY5E.Settings.QuantityAlwaysShown": {
+		"name": "Mostra sempre la quantità degli oggetti.",
+		"hint": "Seleziona per non nascondere mai la quantità degli oggetti."
+	},
+	"TIDY5E.Settings.InspirationDisabled": {
+		"name": "Disattiva l'indicatore di ispirazione.",
+		"hint": "Se la tua campagna non usa i punti ispirazione puoi disabilitare completamente l'indicatore."
+	},
+	"TIDY5E.Settings.ExhaustionEffects": {
+		"name": "Effetti Automatici Indebolimento",
+		"hint": "Scegli come applicare gli effetti di indebolimento corrispondenti ai livelli (richiede midiQol per i tiri di svantaggio)",
+		"default": "Nessun effetto di indebolimento automatico",
+		"tidy5e": "Tidy 5e: applica effetti integrati (utilizza effetti attivi)",
+		"dfredce": "DFreds Convenient Effects - Usa i tuoi effetti",
+		"cub": "CUB - Usa i tuoi effetti",
+		"custom": "Personalizzato: usa i tuoi effetti (richiede CUB)"
+	},
+	"TIDY5E.Settings.CustomExhaustionIcon": {
+		"name": "Personalizza l'icona dell'effetto di indebolimento.",
+		"hint": "Imposta l'icona dell'effetto di indebolimento personalizzato fornendo un URL dell'immagine. Disponibile solo quando Effetti Automatici Indebolimento è impostato su \"tidy 5e\" (es .: modules/tidy 5e-sheet/images/exhaustion.svg)."
+	},
+	"TIDY5E.Settings.CustomExhaustionEffect": {
+		"name": "Nome Effetto Indebolimento CUB Personlizzato",
+		"hint": "Imposta il nome per il tuo effetto di indebolimento personalizzato: deve essere lo stesso definito in CUB ma SENZA numero di livello. (ad es. \"Indebolimento\")",
+		"tiers": "Numero di livelli di indebolimento CUB personalizzati. Valore predefinito = 5",
+		"warning": "Non riesco a trovare il token del personaggio a cui applicare l'effetto di indebolimento!"
+	},
+	"TIDY5E.Settings.ExhaustionDisabled": {
+		"name": "Disabilita indicatore di indebolimento",
+		"hint": "Se la tua campagna non utilizza l'indebolimento puoi disabilitare completamente l'indicatore."
+	},
+	"TIDY5E.Settings.RestingForNpcs": {
+		"name": "Riposo per i PNG.",
+		"hint": "Seleziona per mostrare l'icona/pulsanti di riposo nelle schede dei PNG."
+	},
+	"TIDY5E.Settings.RestingForNpcsChat": {
+		"name": "Nascondi il messaggio chat per il riposo dei PNG.",
+		"hint": "Seleziona per nascondere il messaggio in chat per il riposo dei PNG (si applica a DM e giocatori)."
+	},
+	"TIDY5E.Settings.LinkMarker": {
+		"name": "Contrassegna i PNG collegati/non collegati.",
+		"hint": "Aggiunge un bordo colorato e un'icona alle schede dei PNG collegati/non collegati.",
+		"default": "Nessun indicatore di collegamento (predefinito)",
+		"unlinked": "Evidenzia i token non collegati",
+		"linked": "Evidenzia i token collegati",
+		"both": "Evidenzia i token collegati e non collegati"
+	},
+	"TIDY5E.Settings.DefaultActionsTab": {
+		"name": "Tab predefinito quando si apre la scheda per la prima volta.",
+		"hint": "Scegli tra \"Azioni\" e \"Attributi\".",
+		"default": "",
+		"attributes": "Attributi",
+		"inventory": "Inventario",
+		"spellbook": "Libro Incantesimi",
+		"features": "Caratteristiche",
+		"effects": "Effetti",
+		"biography": "Biografia",
+		"journal": "Diario",
+		"actions": "Azioni"
+	},
+	"TIDY5E.Settings.HiddenDeathSaves": {
+		"name": "Nascondi TS contro Morte per i Giocatori",
+		"hint": "Abilita per rendere visibili solo al GM i salvataggi contro morte e i rispettivi risultati."
+	},
+	"TIDY5E.Settings.HideSpellSlotMarker": {
+		"name": "Nascondi Marcatori Slot Incantesimi sulla scheda.",
+		"hint": "Abilita per nascondere il marcatore colorato degli slot incantesimi, di solito è utile quando viene utilizzata la regola variante dei punti incantesimo."
+	},
+	"TIDY5E.Settings.EnableSpellLevelButtons": {
+		"name": "Abilita Pulsanti Livello Incantesimi.",
+		"hint": "Abilita per sostituire il menu a tendina di selezione del livello degli incantesimi con dei pulsanti."
+	},
+	"TIDY5E.Settings.HideStandardEncumbranceBar": {
+		"name": "Rimuovi/Nascondi la barra standard dell'ingombro dalla scheda del personaggio",
+		"hint": "Se abilitata, nasconderà la barra standard dell'ingombro; se stai utilizzando il modulo 'Variant Encumbrance' probabilmente NON È NECESSARIO."
+	},
+	"TIDY5E.Settings.npsSheetWidth": {
+		"name": "Larghezza predefinita della scheda PNG.",
+		"hint": "La larghezza della scheda PNG in pixel, richiede un aggiornamento per avere effetto (predefinito 740)."
+	},
+	"TIDY5E.Settings.playerSheetWidth": {
+		"name": "Larghezza scheda giocatore predefinita.",
+		"hint": "La larghezza della scheda giocatore in pixel, richiede un aggiornamento per avere effetto (predefinito 740)."
+	},
+	"TIDY5E.Settings.vehicleSheetWidth": {
+		"name": "Larghezza predefinita della scheda veicolo.",
+		"hint": "La larghezza della scheda veicolo in pixel, richiede un aggiornamento per avere effetto (predefinito 740)."
+	},
+	"TIDY5E.Settings.SpellClassFilterSelect": {
+		"name": "Abilita filtro Libro degli Incantesimi per multiclass",
+		"hint": "Se non ne hai bisogno per il tuo personaggio, disabilitare questa opzione ti permetterà di recuperare spazio e snellire la scheda."
+	},
+	"TIDY5E.Settings.SpellClassFilterIconReplace": {
+		"name": "Sostituisci l'icona dell'incantesimo con l'icona della classe",
+		"hint": "Abilitando questa opzione cambierai la scheda del Libro degli Incantesimi in modo da visualizzare l'icona della classe dell'incantesimo anziché l'immagine dell'incantesimo stesso. Utile per gestire più elenchi senza dover passare continuamente da uno all'altro."
+	},
+	"TIDY5E.Settings.SpellClassFilterAdditionalClasses": {
+		"name": "Aggiungi classi aggiuntive per il 'filtro Libro degli Incantesimi per multiclasse'",
+		"hint": "Aggiungi classi homebrew aggiuntive al menu a tendina con questa sintassi 'id1|nome1,id2|nome2', ad esempio 'occultist|Occultista,alchemist|Alchimista'"
+	},
+	"TIDY5E.Settings.LazyHpAndExpEnable": {
+		"name": "Abilita Hp e Exp facili",
+		"hint": "Aggiungi o rimuovi facilmente HP ed Esperienza con conversione automatica e senza sovrapprezzo. Consentirà inserimenti come '+10', '-10', '=10', '010'"
+	},
+	"TIDY5E.Settings.LazyHpForceHpValueLimit1": {
+		"name": "Forza (SOLO dalla parte della scheda) di non superare il valore massimo attuale dell'HP + HP massimo temporaneo (hp.value <= hp.max + hp.tempmax)",
+		"hint": "Questa impostazione forza, se abilitata, garantisce che 'hp.value <= (hp.max + hp.tempmax)'."
+	},
+	"TIDY5E.Settings.LazyHpForceHpValueLimit2": {
+		"name": "Forza (SOLO dalla parte della scheda) di non superare il valore massimo attuale dell'HP, ma aggiungi invece punti ferita temporanei (hp.value <= hp.max && hp.temp <= hp.tempmax)",
+		"hint": "Questa impostazione forza la logica di calcolo dell'aggiunta di punti ferita temporanei forzando l'utente a compilare il campo punti ferita temporanei (hp.temp) invece di aumentare il campo punti ferita attuali (hp.value), ma per evitare controversie, per impostazione predefinita è disabilitato per rispettare il comportamento della scheda standard. Se abilitato, garantisce che l'attuale 'hp.value <= hp.max' aumentando di conseguenza i punti ferita temporanei 'hp.temp' se 'hp.value > hp.max', ma sempre con 'hp.temp <= hp.tempmax'."
+	},
+	"TIDY5E.Settings.LazyMoneyEnable": {
+		"name": "Abilita Moneta Facile",
+		"hint": "Aggiungi o rimuovi facilmente valuta con conversione automatica e senza sovrapprezzo. Consentirà inserimenti come '+10', '-10', '=10', '010'"
+	},
+	"TIDY5E.Settings.LazyMoneyAddConvert": {
+		"name": "Converti durante l'aggiunta di denaro",
+		"hint": "Converte automaticamente la valuta in denominazioni superiori quando si aggiunge denaro invece del comportamento predefinito di conservare le denominazioni ricevute."
+	},
+	"TIDY5E.Settings.LazyMoneyIgnoreElectrum": {
+		"name": "Ignora l'electrum",
+		"hint": "Durante la conversione, ignora l'electrum. Questo non influenzerà direttamente l'aggiunta o la rimozione, tranne nel caso in cui sia abilitata anche l'opzione \"Converti durante l'aggiunta di denaro\"."
+	},
+	"TIDY5E.Settings.LazyMoneyChatLog": {
+		"name": "Registro chat",
+		"hint": "Manda in privato al DM qualsiasi cambio di valuta."
+	},
+	"TIDY5E.Settings.AllowCantripToBePreparedOnContext": {
+		"name": "Consenti agli incantesimi minori di essere 'preparati' tramite clic destro",
+		"hint": "La regola opzionale 'cantrip formulas' di Tasha's Cauldron of Everything consente ai Maghi di preparare i loro incantesimi minori dopo un riposo lungo nello stesso modo in cui lo fanno con gli incantesimi di livello."
+	},
+	"TIDY5E.Settings.LockMoneyChanges": {
+		"name": "Blocca la modifica dei soldi per i non GM",
+		"hint": "Questo bloccherà l'inserimento di monete pp, gp, ep, sp, cp nella scheda ordinata per i giocatori non GM. Tutti gli altri moduli che lavorano con questi campi funzionano perfettamente."
+	},
+	"TIDY5E.Settings.LockExpChanges": {
+		"name": "Blocca la modifica dell'esperienza per i non GM",
+		"hint": "Questo bloccherà l'inserimento dell'esperienza nella scheda ordinata per i giocatori non GM. Tutti gli altri moduli che lavorano con questi campi funzionano perfettamente."
+	},
+	"TIDY5E.Settings.LockHpMaxChanges": {
+		"name": "Blocca la modifica dell'hp massimo per i non GM",
+		"hint": "Questo bloccherà l'inserimento dell'hp massimo nella scheda ordinata per i giocatori non GM. Tutti gli altri moduli che lavorano con questi campi funzionano perfettamente."
+	},
+	"TIDY5E.Settings.LockLevelSelector": {
+		"name": "Blocca il selettore di livello per i non GM",
+		"hint": "Disabilita il menu a tendina dei livelli nella scheda ordinata sotto la scheda Funzioni o Offri l'opzione di bloccare i giocatori dall'apportare modifiche. Tutti gli altri moduli che lavorano con questi campi funzionano perfettamente."
+	},
+	"TIDY5E.Settings.LockConfigureSheet": {
+		"name": "Blocca la configurazione della scheda per i non GM",
+		"hint": "Disabilita e nasconde il pulsante per la configurazione della scheda nella scheda ordinata, per evitare che i giocatori utilizzino un'altra scheda. Tutti gli altri moduli che lavorano con questi campi funzionano perfettamente."
+	},
+	"TIDY5E.Settings.LockItemQuantity": {
+		"name": "Blocca la quantità dell'oggetto per i non GM",
+		"hint": "Abilita questa opzione per bloccare l'inserimento della quantità nell'inventario e nella scheda degli oggetti nella scheda ordinata. Tutti gli altri moduli che lavorano con questi campi funzionano perfettamente."
+	},
+
+	"TIDY5E.Settings.ColorPickerEnabled": {
+		"name": "Abilita selettore di colore",
+		"hint": "Abilita/Disabilita il selettore di colori"
+	},
+	"TIDY5E.Settings.ColorPickerEquipped": {
+		"name": "Selettore di colore per 'Equipaggiato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Equipaggiato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerEquippedOutline": {
+		"name": "Selettore di colore per 'Bordo Equipaggiato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Bordo Equipaggiato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerEquippedAccent": {
+		"name": "Selettore di colore per 'Accento Equipaggiato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Accento Equipaggiato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerPrepared": {
+		"name": "Selettore di colore per 'Preparato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Preparato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerPreparedOutline": {
+		"name": "Selettore di colore per 'Bordo Preparato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Bordo Preparato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerPreparedAccent": {
+		"name": "Selettore di colore per 'Accento Preparato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Accento Preparato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerPact": {
+		"name": "Selettore di colore per 'Patto'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Patto'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerPactOutline": {
+		"name": "Selettore di colore per 'Bordo Patto'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Bordo Patto'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerPactAccent": {
+		"name": "Selettore di colore per 'Accento Patto'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Accento Patto'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerAtWill": {
+		"name": "Selettore di colore per 'A Volontà'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'A Volontà'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerAtWillOutline": {
+		"name": "Selettore di colore per 'Bordo A Volontà'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Bordo A Volontà'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerAtWillAccent": {
+		"name": "Selettore di colore per 'Accento A Volontà'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Accento A Volontà'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerInnate": {
+		"name": "Selettore di colore per 'Innato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Innato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerInnateOutline": {
+		"name": "Selettore di colore per 'Bordo Innato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Bordo Innato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerInnateAccent": {
+		"name": "Selettore di colore per 'Accento Innato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Accento Innato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerAlwaysPrepared": {
+		"name": "Selettore di colore per 'Sempre Preparato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Sempre Preparato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerAlwaysPreparedOutline": {
+		"name": "Selettore di colore per 'Bordo Sempre Preparato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Bordo Sempre Preparato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.ColorPickerAlwaysPreparedAccent": {
+		"name": "Selettore di colore per 'Accento Sempre Preparato'",
+		"hint": "Seleziona il colore che desideri utilizzare per 'Accento Sempre Preparato'. Il valore di trasparenza '#00000000' equivale a disabilitare il colore per il contesto attuale."
+	},
+	"TIDY5E.Settings.AllowHpMaxOverride": {
+		"name": "Consenti l'override dell'HP massimo sul personaggio",
+		"hint": "Se abilitato, questa impostazione del modulo consentirà al DM di cambiare manualmente il valore dell'HP massimo sulla scheda del personaggio."
+	},
+	"TIDY5E.Settings.AllowHpConfigOverride": {
+		"name": "Consenti l'override della configurazione del pannello HP sul personaggio",
+		"hint": "Di solito non è necessario, ma se abilitato, questa impostazione del modulo sostituirà il pannello di configurazione dell'HP sulla scheda del personaggio. QUESTO SOSTITUIRÀ IL COMPORTAMENTO PREDEFINITO DEL SISTEMA ED È UTILE PER EVITARE ALCUNI COMPORTAMENTI NON DESIDERATI DEL SISTEMA."
+	},
+	"TIDY5E.Settings.BetterAttackDialog": {
+		"name": "Abilita Migliore Evidenziazione dei Pulsanti di Attacco Predefiniti",
+		"hint": "I pulsanti di attacco non mostrano chiaramente l'azione suggerita. Questo aggiunge un bordo verde per l'vantaggio e rosso per lo svantaggio a seconda del pulsante evidenziato."
+	},
+	"TIDY5E.Settings.Reset": {
+		"name": "Ripristina Impostazioni",
+		"hint": "Questo ripristinerà tutte le impostazioni a quelle predefinite del sistema di gioco attivo.",
+		"dialogs": {
+			"title": "Ripristina Impostazioni Modulo",
+			"content": "Sei sicuro di voler ripristinare tutte le impostazioni del modulo alle impostazioni predefinite del sistema corrente? <strong>NON PUÒ ESSERE ANNULLATO!</strong>",
+			"confirm": "Ripristina Impostazioni Modulo",
+			"cancel": "Annulla"
+		}
+	},
+	"TIDY5E.Settings.Debug": {
+		"name": "Abilita debug",
+		"hint": "Stampa i messaggi di debug sulla console"
+	},
+	"TIDY5E.Settings.EnableSortFavoritesItemsAlphabetically": {
+		"name": "Abilita Ordinamento Alfabetico delle Preferenze",
+		"hint": "Se abilitato, questa impostazione ordinerà gli oggetti, le caratteristiche e gli incantesimi in ordine alfabetico nella modifica HTML delle preferenze."
+	},
+	"TIDY5E.Settings.EnableActionListOnFavoritePanel": {
+		"name": "Abilita Lista Azioni nel Pannello Preferiti",
+		"hint": "Mostra gli oggetti preferiti raggruppati per Azione, Azione Bonus, Reazione. È NECESSARIO IL MODULO 'Character Actions 5e Variant forked by p4535992 (https://github.com/p4535992/foundryvtt-character-actions-dnd5e)'"
+	},
+	"TIDY5E.Settings.HBEnableUpcastFreeSpell": {
+		"name": "Abilita Incantesimo Gratuitamente Potenziato",
+		"hint": "Aggiunge un pulsante aggiuntivo quando lanci un incantesimo per lanciarlo a un livello superiore gratuitamente. Questa è una regola casalinga. Ringrazia @mxfz su Discord per il codice macro e @thundershield per l'idea, puoi trovare ulteriori dettagli qui https://discord.com/channels/170995199584108546/699750150674972743/1055686421198946465"
+	},
+	"TIDY5E.Settings.HBSetFeaturesForUpcastFreeSpell": {
+		"name": "Imposta Caratteristiche per l'Incantesimo Gratuitamente Potenziato",
+		"hint": "Questa impostazione funziona solo se è abilitata l'impostazione del modulo 'Abilita Incantesimo Gratuitamente Potenziato', è una stringa di nomi di caratteristiche separati dal carattere '|', la ricerca di tali caratteristiche non fa distinzione tra maiuscole e minuscole. Se viene trovata una caratteristica 'valida', gli attori possono usare la caratteristica potenziata. SE LASCIATO VUOTO VERRÀ IGNORATO."
+	},
+	"TIDY5E.Settings.EnablePermanentUnlockOnNPCIfYouAreGM": {
+		"name": "Abilita Sblocco Permanente su Scheda PNG se sei un DM",
+		"hint": "Non dovrebbe il DM essere in grado di modificare le schede PNG anche quando sono bloccate? Se non è un bug, è possibile avere le schede PNG sbloccate per impostazione predefinita? Dovendo sbloccare le schede PNG solo per eliminare effetti attivi o oggetti ogni volta è diventato noioso."
+	},
+	"TIDY5E.Settings.EnablePermanentUnlockOnVehicleIfYouAreGM": {
+		"name": "Abilita Sblocco Permanente su Scheda Veicolo se sei un DM",
+		"hint": "Non dovrebbe il DM essere in grado di modificare le schede Veicolo anche quando sono bloccate? Se non è un bug, è possibile avere le schede Veicolo sbloccate per impostazione predefinita? Dovendo sbloccare le schede Veicolo solo per eliminare effetti attivi o oggetti ogni volta è diventato noioso."
+	}	
+}

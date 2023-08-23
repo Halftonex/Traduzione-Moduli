@@ -1,0 +1,31 @@
+{
+	"df-curvy-walls": {
+		"errorLibWrapperMissing": "'DF Curvy Walls': è' richiesto modulo 'libWrapper'. Si prega di installare e attivare libWrapper'.",
+		"cubic": "Curva di Bézier Cubica",
+		"quadratic": "Curva di Bézier Quadratica",
+		"circle": "Curva Ellittica",
+		"rectangle": "Rettangolo",
+		"increment": "Aumenta Segmenti",
+		"decrement": "Diminuisci Segmenti",
+		"apply": "Applica i muri curvi al livello",
+		"cancel": "Cancella",
+		"cubic_lock_handles": "Accoppia i controlli della curva alle estremità della linea",
+		"ellipse_close": "Chiudi il cerchio quando viene aperto",
+		"ellipse_finish_slice": "Aggiungi un muro corto al punto di apertura",
+		"ellipse_increment": "Aumenta la dimensione del passo angolare",
+		"ellipse_decrement": "Diminuisci la dimensione del passo angolare",
+		"trace_curve_with_points": "Posiziona punti sul canvas per generare una curva",
+		"SettingPreserve_Name": "Preserva Stato Tool",
+		"SettingPreserve_Hint": "Quando abilitato, lo strumento manterrà il suo stato al riutilizzo del livello Mura.",
+		"SettingDropKey_Name": "Tasto da tenere premuto quando si posiziona lo strumento",
+		"SettingDropKey_Hint": "Tasto da tenere premuto quando si fa clic su un punto sulla scheda per posizionare lo strumento configurato in precedenza.",
+		"SettingDropKey_OptionAlt": "Alt",
+		"SettingDropKey_OptionCtrl": "Ctrl",
+		"SettingSmallHandlesName": "Riduci Indicatori e Etichette",
+		"SettingSmallHandlesHint": "Riduci le dimensioni degli indicatori tondi per spostare uno strumento, così come le etichette visualizzate.",
+		"pointmapapply": "Genera il posizionamento degli strumenti dai punti",
+		"pointmap_quad": "Devi posizionare 3 punti per generare una curva quadratica Bézier.<br>Ctrl + Click per eliminare un punto. Click + Trascina per spostare un punto.",
+		"pointmap_circ": "Devi posizionare da 2 a 3 punti per generare un'ellisse.<br>Ctrl + Click per eliminare un punto. Click + Trascina per spostare un punto.",
+		"pointmap_rect": "Devi posizionare da 2 a 4 punti per generare un rettangolo.<br>Ctrl + Click per eliminare un punto. Click + Trascina per spostare un punto"
+	}
+}

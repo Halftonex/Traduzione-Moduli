@@ -1,0 +1,291 @@
+{
+  "arms-reach.noCharacterSelected": "Non è stato selezionato nessun personaggio per interagire con una porta.",
+  "arms-reach.noCharacterSelectedToCenterCamera": "Non è stato selezionato nessun personaggio per centrare la fotocamera.",
+  "arms-reach.noCharacterSelectedForStairway": "Non è stato selezionato nessun personaggio per interagire con una scala",
+
+  "arms-reach.doorIsInReachButIsLockedFor": "La porta è a portata di mano ma è chiusa per ${tokenName}",
+  "arms-reach.doorIsInReachButIsLocked": "La porta è a portata di mano ma è chiusa a chiave.",
+  "arms-reach.doorNotFoundInReach": "Non è stata trovata nessuna porta in vicinanza oppure è chiusa a chiave.",
+  "arms-reach.doorNotFoundInReachFor": "Non è stata trovata nessuna porta alla portata di {tokenName} o è chiusa a chiave",
+  "arms-reach.doorNotInReach": "Porta non raggiungibile",
+  "arms-reach.doorNotInReachFor": "La porta non è alla portata di {tokenName} o è chiusa a chiave",
+
+  "arms-reach.stairwaysNotFoundInReach": "Non è stata trovata nessuna scala a portata di mano o è bloccata.",
+  "arms-reach.stairwaysNotFoundInReachFor": "Nessuna scala è stata trovata alla portata di {tokenName} o è bloccata",
+  "arms-reach.stairwaysNotInReach": "La scala non è a portata di mano o è bloccata",
+  "arms-reach.stairwaysNotInReachFor": "La scala non è alla portata di {tokenName} o è bloccata",
+
+  "arms-reach.notesNotFoundInReach": "Nessuna nota è stata trovata a portata di mano o è bloccata.",
+  "arms-reach.notesNotFoundInReachFor": "Nessuna nota è stata trovata alla portata di {tokenName} o è bloccata",
+  "arms-reach.notesNotInReach": "La nota non è a portata di mano o è bloccata",
+  "arms-reach.notesNotInReachFor": "La nota non è alla portata di {tokenName} o è bloccata",
+
+  "arms-reach.tokensNotFoundInReach": "Nessun token è stato trovato a portata di mano o è bloccato.",
+  "arms-reach.tokensNotFoundInReachFor": "Nessun token è stato trovato alla portata di {tokenName} o è bloccato",
+  "arms-reach.tokensNotInReach": "Il token non è a portata di mano o è bloccato",
+  "arms-reach.tokensNotInReachFor": "Il token non è alla portata di {tokenName} o è bloccato",
+
+  "arms-reach.lightsNotFoundInReach": "Nessuna luce è stata trovata a portata di mano o è bloccata.",
+  "arms-reach.lightsNotFoundInReachFor": "Non è stata trovata nessuna luce alla portata di {tokenName} o è bloccata",
+  "arms-reach.lightsNotInReach": "La luce non è a portata di mano o è bloccata",
+  "arms-reach.lightsNotInReachFor": "La luce non è alla portata di {tokenName} o è bloccata",
+
+  "arms-reach.soundsNotFoundInReach": "Nessun suono è stata trovato a portata di mano o è bloccato.",
+  "arms-reach.soundsNotFoundInReachFor": "Nessun suono è stato trovato alla portata di {tokenName} o è bloccato",
+  "arms-reach.soundsNotInReach": "Il suono non è a portata di mano o è bloccato",
+  "arms-reach.soundsNotInReachFor": "Il suono non alla portata di {tokenName} o bloccato",
+
+  "arms-reach.drawingsNotFoundInReach": "Nessun disegno è stata trovato a portata di mano o è bloccato.",
+  "arms-reach.drawingsNotFoundInReachFor": "Nessun disegno è stato trovato alla portata di {tokenName} o è bloccato",
+  "arms-reach.drawingsNotInReach": "Il disegno non è a portata di mano o è bloccato",
+  "arms-reach.drawingsNotInReachFor": "Il disegno non alla portata di {tokenName} o bloccato",
+
+  "arms-reach.tilesNotFoundInReach": "Nessun tile è stata trovato a portata di mano o è bloccato.",
+  "arms-reach.tilesNotFoundInReachFor": "Nessun tile è stato trovato alla portata di {tokenName} o è bloccato",
+  "arms-reach.tilesNotInReach": "Il tile non è a portata di mano o è bloccato",
+  "arms-reach.tilesNotInReachFor": "Il tile non è alla portata di {tokenName} o è bloccato",
+
+  "arms-reach.wallsNotFoundInReach": "Nessun muro è stata trovato a portata di mano o è bloccato.",
+  "arms-reach.wallsNotFoundInReachFor": "Nessun muro è stato trovato alla portata di {tokenName} o è bloccato",
+  "arms-reach.wallsNotInReach": "Il muro non è a portata di mano o è bloccato",
+  "arms-reach.wallsNotInReachFor": "Il muro non è alla portata di {tokenName} o è bloccato",
+
+  "arms-reach.templatesNotFoundInReach": "Nessuna misurazione è stata trovata a portata di mano o è bloccato.",
+  "arms-reach.templatesNotFoundInReachFor": "Nessuna misurazione è stata trovata alla portata di {tokenName} o è bloccata",
+  "arms-reach.templatesNotInReach": "La misurazione non è a portata di mano o è bloccata",
+  "arms-reach.templatesNotInReachFor": "La misurazione non è alla portata di {tokenName} o è bloccata",
+
+  "arms-reach.warningNoSelectMoreThanOneToken": "Seleziona un singolo token",
+
+  "arms-reach.errorNoDsProperty": "Nessuna proprietà 'ds' trovata per il valore '${wallDataDs}' per id : '${wallDDataId}'",
+  "arms-reach.errorNoWallFoundForId": "Nessun muro trovato per l'id: '${wallet aId}'",
+
+  "arms-reach.settingNameEnableArmsReachFeature": "Abilita/Disabilita la funzione di portata delle braccia",
+  "arms-reach.settingHintEnableArmsReachFeature": "Consenti al GM di selezionare la distanza massima a cui i giocatori possono interagire con una porta",
+
+  "arms-reach.settingNameNotificationsFailedInteraction": "Notifiche interazioni non riuscite",
+  "arms-reach.settingHintNotificationsFailedInteraction": "Invia notifiche quando un giocatore non riesce a interagire con una porta. Utile per il debug.",
+
+  "arms-reach.settingNameGlobalMaximumInteractionDistance": "[Sconsigliato] Distanza di interazione massima globale in griglia",
+  "arms-reach.settingHintGlobalMaximumInteractionDistance": "[Non consiglio questa funzione, utilizzare invece 'Misurazione della distanza di interazione massima globale', approccio più alla  'Drag Ruler'], 0 disabiliterà questo limite di impostazione (necessita di ricaricamento), se viene utilizzato un valore > 0 ignorerà il valore dell'impostazione 'Misurazione della distanza di interazione massima globale'. Distanza massima (in tile) alla quale un token può interagire con una (porta, diario, ...). I GM ignorano questa limitazione della distanza.",
+
+  "arms-reach.settingNameGlobalMaximumInteractionMeasurement": "Misurazione della distanza di interazione massima globale (ft, mt, ...), supporto Hex Grid, Gridless e Difficult Terrain Ruler",
+  "arms-reach.settingHintGlobalMaximumInteractionMeasurement": "Distanza massima (in piedi, metri o nell'unità di griglia predefinita dal sistema che stai utilizzando) alla quale un token può interagire con un oggetto posizionabile (porta, nota, ...), 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameHotKeyForInteraction": "[Sconsigliato] Interazione porta mediante il tasto di scelta rapida 'e'",
+  "arms-reach.settingHintHotKeyForInteraction": "[Non consiglio questa funzione a causa di una certa incompatibilità con altri moduli di verifica del movimento, ma per il resto funziona] Premendo \"e\" si aprirà o chiuderà la porta più vicina. Tenendo premuto 'e' centra la vista sul token corrente.",
+
+  "arms-reach.settingNameDoubleTapInteraction": "[Sconsigliato] Interazione porta con doppio click ritardato in secondi",
+  "arms-reach.settingHintDoubleTapInteraction": "[Non consiglio questa funzione a causa di una certa incompatibilità con altri moduli di verifica del movimento, ma per il resto funziona] Cliccando due volte un tasto di movimento nulla direzione di una porta, si interagirà con essa. Questa opzione imposta il ritardo tra le pressioni dei tasti richieste (più basso è, più velocemente si dovrà cliccare). L'impostazione di questa opzione a zero disabiliterà l'interazione con il doppio click.",
+
+  "arms-reach.settingNameMaximumDoorDistanceInteraction": "[Deprecato] Distanza massima di interazione della porta in unità griglia",
+  "arms-reach.settingHintMaximumDoorDistanceInteraction": "[Utilizzare invece 'Misurazione distanza massima interazione porta'], 0 disabiliterà questo limite (Riavvio necessario).",
+
+  "arms-reach.settingNameMaximumDoorMeasurementInteraction": "[Non raccomandato] Misura massima della distanza di interazione della porta (ft, mt, ...), supporta Hex Grid,Gridless and Difficult Terrain Ruler",
+  "arms-reach.settingHintMaximumDoorMeasurementInteraction": "[Non consiglio questa funzione a causa di qualche incompatibilità con altri moduli di verifica del movimento, ma altrimenti funziona] È il calcolo della distanza utilizzato solo per l'impostazione  \"Interazione porta con il tasto di scelta rapida \"e\"\" ed è completamente indipendente dall'impostazione simile \"Misurazione della distanza di interazione massima globale\". Misura massima della distanza di interazione della porta (in piedi, metro o nella griglia predefinita dell'unità di sistema che stai utilizzando)",
+
+  "arms-reach.settingNameHotKeyToCenterCamera": "[Sconsigliato] Tasto di scelta rapida 'e' per centrare la telecamera",
+  "arms-reach.settingHintHotKeyToCenterCamera": "[Non consiglio questa funzione a causa di alcune incompatibilità con altri moduli di verifica del movimento, ma per il resto funziona] Tenendo premuto 'e' la telecamera centra il token attualmente selezionato.",
+
+  "arms-reach.settingNameDisableDoorSound": "Disabilita il suono della porta se non è raggiungibile",
+  "arms-reach.settingHintDisableDoorSound": "Questa funzione è solo per la porta, se abilitata questa impostazione disabiliterà l'interazione del suono della porta se non è a portata di mano",
+
+  "arms-reach.settingNameNotificationsFailedInteractionEvenForGM": "Notifiche interazioni fallite anche per GM",
+  "arms-reach.settingHintNotificationsFailedInteractionEvenForGM": "Visualizza notifiche quando non riesce l'interazione a distanza anche per GM. Buono per il debug. Se non viene selezionato alcun token e sei un GM, questa funzione non è attivata",
+
+  "arms-reach.settingNameAvoidSelectsTheControlledToken": "Evita deselezione token controllato all'apertura/chiusura della porta",
+  "arms-reach.settingHintAvoidSelectsTheControlledToken": "Evita la deselezione del token controllato se si apre la porta con un clic del mouse e 'Clic sinistro per rilasciare oggetti' è selezionato nel Core",
+
+  "arms-reach.settingNameUseOwnedTokenIfNoTokenIsSelected": "Usa i token di proprietà se non è selezionato alcun token",
+  "arms-reach.settingHintUseOwnedTokenIfNoTokenIsSelected": "Usa i token di proprietà se non è selezionato alcun token, ha senso per il giocatore quando di solito c'è solo un token di proprietà",
+
+  "arms-reach.settingNameAutoCheckElevationByDefault": "[Sperimentale] Controllo automatico dell'elevazione predefinito",
+  "arms-reach.settingHintAutoCheckElevationByDefault": "Rendi predefinito il controllo sull'effettivo posizionamento degli oggetti, utile se usato in combinazione con il modulo Levels",
+
+  "arms-reach.settingNameSetDistanceModeForDoorInteraction": "Imposta Modalità Distanza",
+  "arms-reach.settingHintSetDistanceModeForDoorInteraction": "Imposta la modalità distanza per l'interazione a distanza delle porte",
+
+  "arms-reach.settingNameShowDoorIconsFeature": "Forzare Visibilità Icona Porta?",
+  "arms-reach.settingHintShowDoorIconsFeature": "Il comportamento predefinito nasconde le icone della porta sul livello dei muri. Questo le rende visibili.",
+
+  "arms-reach.settingNameStairwaysIntegrationFeature": "Abilita/Disabilita Interazione Scale",
+  "arms-reach.settingHintStairwaysIntegrationFeature": "Distanza massima con cui un token può interagire con una scala... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnStairways": "Abilita il controllo della distanza delle scale anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnStairways": "Se attivata effettuerà un controllo della distanza delle scale anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameGridlessSupportFeature": "[Sperimentale] Abilita/Disabilita la funzione di supporto \"Senza Griglia\"",
+  "arms-reach.settingHintGridlessSupportFeature": "Invece di calcolare la distanza per unità della griglia quadrettata, il calcolo si basa sulla portata in mischia dell'unità del token 'ft' o 'mt'",
+
+  "arms-reach.settingNameTaggerIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger",
+  "arms-reach.settingHintTaggerIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerStairwayIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per le Scale",
+  "arms-reach.settingHintTaggerStairwayIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerTokenIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per i Token",
+  "arms-reach.settingHintTaggerTokenIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerNoteIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per le Note",
+  "arms-reach.settingHintTaggerNoteIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerLightIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per le Luci",
+  "arms-reach.settingHintTaggerLightIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerSoundIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per i Suoni",
+  "arms-reach.settingHintTaggerSoundIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerDrawingIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per il Disegno",
+  "arms-reach.settingHintTaggerDrawingIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerTileIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per i Tile",
+  "arms-reach.settingHintTaggerTileIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameTaggerWallIntegrationFeature": "Abilita/Disabilita Integrazione Modulo Tagger per le Mura",
+  "arms-reach.settingHintTaggerWallIntegrationFeature": "Tutti i calcoli della distanza sono limitati ora all'oggetto posizionabile con il tag \"armsreach\" su di esso. Ricorda che devi attivare il modulo tagger per questo",
+
+  "arms-reach.settingNameResetDoorsAndFogFeature": "Ripristina Porte e funzione Nebbia",
+  "arms-reach.settingHintResetDoorsAndFogFeature": "Aggiungi una voce nel menu contestuale per chiudere tutte le porte e ripristinare la nebbia su una scena",
+
+  "arms-reach.settingNameDoorsIntegrationFeature": "Abilita/Disabilita Interazione Porte",
+  "arms-reach.settingHintDoorsIntegrationFeature": "Distanza massima con cui un token può interagire con una porta... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnDoors": "Abilita il controllo della distanza delle porte anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnDoors": "Se attivata effettuerà un controllo della distanza delle porte anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameJournalsIntegrationFeature": "Abilita/Disabilita Interazione Diario",
+  "arms-reach.settingHintJournalsIntegrationFeature": "Distanza massima con cui un token può interagire con un diario... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnNotes": "Abilita il controllo della distanza delle note anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnNotes": "Se attivata effettuerà un controllo della distanza delle note anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameNotesIntegrationFeature": "Abilita/Disabilita Interazione Note",
+  "arms-reach.settingHintNotesIntegrationFeature": "Distanza massima con cui un token può interagire con una nota... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameTokensIntegrationFeature": "Abilita/Disabilita Interazione Token",
+  "arms-reach.settingHintTokensIntegrationFeature": "Distanza massima con cui un token può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnTokens": "Abilita il controllo della distanza dei token anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnTokens": "Se attivata effettuerà un controllo della distanza dei token anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameTokensIntegrationWithLootSheet": "Abilita Interazione Distanza per 'Loot Sheet NPC 5E'",
+  "arms-reach.settingHintTokensIntegrationWithLootSheet": "Se \"true\" per impostazione predefinita abilita l'interazione della distanza per tutti i token con la scheda attiva di 'LootSheet' (https://foundryvtt.com/packages/lootsheetnpc5e)",
+
+  "arms-reach.settingNameTokensIntegrationByPrefix": "Abilita l'interazione a distanza sul token di destinazione con un prefisso del nome specifico",
+  "arms-reach.settingHintTokensIntegrationByPrefix": "Se \"true\" per impostazione predefinita abilita l'interazione della distanza per tutti i token target con il prefisso impostato sul nome del token (non sul nome del personaggio)",
+
+  "arms-reach.settingNameTokensIntegrationExplicitName": "Imposta il nome del token di origine che desideri utilizzare per l'interazione",
+  "arms-reach.settingHintTokensIntegrationExplicitName": "Il nome del token di origine impostato qui è quello utilizzato per l'interazione a distanza con il token di destinazione (non il nome del personaggio). Per impostazione predefinita è il nome del personaggio collegato all'utente",
+
+  "arms-reach.settingNameLightsIntegrationFeature": "Abilita/disabilita Interazione Luci",
+  "arms-reach.settingHintLightsIntegrationFeature": "Distanza massima con cui una Luce può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnLights": "Abilita il controllo della distanza delle Luci anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnLights": "Se attivata effettuerà un controllo della distanza delle luci anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameSoundsIntegrationFeature": "Abilita/Disabilita Interazione Suoni",
+  "arms-reach.settingHintSoundsIntegrationFeature": "Distanza massima con cui un suono può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnSounds": "Abilita il controllo della distanza dei Suoni anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnSounds": "Se attivata effettuerà un controllo della distanza dei suoni anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameDrawingsIntegrationFeature": "Abilita/Disabilita Interazione Disegni",
+  "arms-reach.settingHintDrawingsIntegrationFeature": "Distanza massima con cui un disegno può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnDrawings": "Abilita il controllo della distanza dei Disegni anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnDrawings": "Se attivata effettuerà un controllo della distanza dei disegni anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameTilesIntegrationFeature": "Abilita/Disabilita Interazione Tile",
+  "arms-reach.settingHintTilesIntegrationFeature": "Distanza massima con cui un tile può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnTiles": "Abilita il controllo della distanza dei Tile anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnTiles": "Se attivata effettuerà un controllo della distanza dei tile anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameWallsIntegrationFeature": "Abilita/Disabilita Interazione Mura",
+  "arms-reach.settingHintWallsIntegrationFeature": "Distanza massima con cui un Muro può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnWalls": "Abilita il controllo della distanza delle Mura anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnWalls": "Se attivata effettuerà un controllo della distanza delle mura anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameTemplatesIntegrationFeature": "Abilita/Disabilita Interazione Misurazione",
+  "arms-reach.settingHintTemplatesIntegrationFeature": "Distanza massima con cui una Misurazione può interagire con un altro token... 0 disabiliterà il limite (è necessario ricaricare l'app). I GM ignorano questa limitazione di distanza.",
+
+  "arms-reach.settingNameGlobalInteractionDistanceForGMOnTemplates": "Abilita il controllo della distanza delle Misurazioni anche per il GM",
+  "arms-reach.settingHintGlobalInteractionDistanceForGMOnTemplates": "Se attivata effettuerà un controllo della distanza delle misurazioni anche per il GM, utile se il GM vuole impersonare un giocatore.",
+
+  "arms-reach.settingNameEnableInteractionForTokenOwnedByUser": "Abilita interazione per il proprietario dell'utente piuttosto che per il proprietario del token",
+  "arms-reach.settingHintEnableInteractionForTokenOwnedByUser": "Un'opzione per verificare che il token correntemente selezionato sia di proprietà del suddetto utente invece che a se stante. In questa maniera puoi far connettere i giocatori come utenti e chiunque sia in possesso del token selezionato sarà in grado di avvicinarsi ad una porta, premere \"e\" o doppiocliccare sulla freccia per far si che la porta si apra.",
+
+  "arms-reach.setting.reset.name": "Ripristina Impostazioni",
+  "arms-reach.setting.reset.label": "Ripristina Impostazioni Predefinite",
+  "arms-reach.setting.reset.hint": "Questo ripristinerà tutte le impostazioni a quelle predefinite del sistema di gioco attivo.",
+  "arms-reach.dialogs.resetsettings.title": "Ripristina Impostazioni Modulo",
+  "arms-reach.dialogs.resetsettings.content": "Sei sicuro di voler ripristinare tutte le impostazioni del modulo alle impostazioni predefinite del sistema corrente? <strong>NON PUÒ ESSERE ANNULLATO!</strong>",
+  "arms-reach.dialogs.resetsettings.confirm": "Ripristina Impostazioni Modulo",
+  "arms-reach.dialogs.resetsettings.cancel": "Annulla",
+
+  "arms-reach.setting.debug.name": "Abilita Debug",
+  "arms-reach.setting.debug.label": "Stampa i messaggi di debug sulla console",
+  "arms-reach.setting.debug.hint": " ",
+
+  "arms-reach.settingNameRangeOverlayFeature": "[Sperimentale] Abilita/Disabilita l'integrazione Range Overlay",
+  "arms-reach.settingHintRangeOverlayFeature": "",
+
+  "arms-reach.no-good-tiles": "Non ci sono tile all'interno della portata di movimento e attacco",
+  "arms-reach.controlButton": "Attiva/Disattiva \"Range Overlay\" per il combattimento",
+  "arms-reach.is-active": "Attivo?",
+  "arms-reach.is-active-hint": "L'overlay è attivo?",
+  "arms-reach.show-turn-order": "Mostrare l'ordine del turno?",
+  "arms-reach.show-turn-order-hint": "Mostra l'ordine del turno dei combattenti relativo al token attivo",
+  "arms-reach.show-potential-targets": "Indicare i potenziali bersagli?",
+  "arms-reach.show-potential-targets-hint": "Cerchia potenziali bersagli; il colore indica quante azioni di movimento sono necessarie per raggiungere il bersaglio",
+  "arms-reach.show-difficult-terrain": "Mostrare il terreno difficile?",
+  "arms-reach.show-difficult-terrain-hint": "Mostra un overlay al di sopra del terreno difficile",
+  "arms-reach.show-walls": "Mostrare i muri?",
+  "arms-reach.show-walls-hint": "Mostra un overlay al di sopra di tutti i muri",
+  "arms-reach.movement-alpha": "Opacità Overlay",
+  "arms-reach.movement-alpha-hint": "Valore più basso significa più trasparenza",
+  "arms-reach.ic_visibility": "Visibile in combattimento?",
+  "arms-reach.ic_visibility-hint": "Quando dovrebbe essere visibile l'overlay in combattimento?",
+  "arms-reach.ooc_visibility": "Visibile fuori combattimento?",
+  "arms-reach.ooc_visibility-hint": "Quando dovrebbe essere visibile l'overlay fuori dal combattimento?",
+  "arms-reach.visibilities.always": "Sempre",
+  "arms-reach.visibilities.hotkeys": "Solo con ALT o trascinando il token",
+  "arms-reach.visibilities.never": "Mai",
+  "arms-reach.visibilities.overlayVisibility.always": "Sempre",
+  "arms-reach.visibilities.overlayVisibility.hotkeys": "Solo con ALT o trascinando il token",
+  "arms-reach.visibilities.overlayVisibility.never": "Mai",
+
+  "arms-reach.ranges": "Gittata dell'arma",
+  "arms-reach.ranges-hint": "Lista delle gittate separate da virgola tra cui scegliere nella finestra delle impostazioni rapide",
+  "arms-reach.diagonals.name": "Distanza Diagonale",
+  "arms-reach.diagonals.hint": "Il modo nel quale viene calcolata la disanza del movimento diagonale",
+  "arms-reach.diagonals.fiveTenFive": "Cinque / Dieci / Cinque / ...",
+  "arms-reach.diagonals.tenFiveTen": "Dieci / Cinque / Dieci / ...",
+  "arms-reach.diagonals.five": "Cinque / Cinque / ...",
+  "arms-reach.diagonals.ten": "Dieci / Dieci / ...",
+
+  "arms-reach.quick-settings.title": "Overlay Impostazioni Rapide Distanza Combattimento",
+  "arms-reach.quick-settings.title-hint": " ",
+  "arms-reach.quick-settings.weapon-range-header": "Gittata Arma:",
+  "arms-reach.quick-settings.weapon-range-header-hint": " ",
+  "arms-reach.quick-settings.update-actor-checkbox": "Aggiornare l'attore invece del token?",
+  "arms-reach.quick-settings.update-actor-checkbox-hint": " ",
+  "arms-reach.quick-settings.speed-override": "Forza la velocità del token a:",
+  "arms-reach.quick-settings.speed-override-hint": " ",
+  "arms-reach.quick-settings.ignore-difficult-terrain": "Ignorare il terreno difficile?",
+  "arms-reach.quick-settings.ignore-difficult-terrain-hint": " ",
+
+  "arms-reach.controls.cant-open-no-selected-token": "Non puoi aprire le impostazioni rapide senza selezionare un token",
+  "arms-reach.controls.cant-reset-no-token": "Impossibile azzerare la posizione del token senza selezionarne uno",
+  "arms-reach.activated-not-visible": "L'Overlay Distanza Combattimento è ora attivo ma non ancora visibile (vedere le Impostazioni per maggiori dettagli)",
+  "arms-reach.show-weapon-range": "Mostrare la gittata dell'arma?",
+  "arms-reach.show-weapon-range-hint": "Annota il token selezionato con la gittata dell'arma corrente",
+  "arms-reach.speed-attr-path": "Percorso interno dell'Attributo per la Velocità",
+  "arms-reach.speed-attr-path-hint": "Avanzato: Attiva questa opzione se stai utilizzando un sistema che non riesce a rilevare autonomamente la velocità del token",
+  "arms-reach.info-button": "Informazioni Base",
+  "arms-reach.token-speed-warning-gm": "Non è possibile rilevare la velocità del token; impostare manualmente la velocità del tuo token e/o impostare l'Attributo Velocità nelle impostazioni del modulo (provare ad aprire un \"issue\" per aggiungere supporto al sistema in utilizzo)",
+  "arms-reach.token-speed-warning-player": "Impostare manualmente la velocità del tuo token (prova a chiedere al GM di configurare l'attributo della velocità nelle impostazioni del modulo)",
+  "arms-reach.ignore-difficult-terrain": "Ignorare il terreno difficile?",
+  "arms-reach.ignore-difficult-terrain-hint": " "
+}

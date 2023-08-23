@@ -1,0 +1,33 @@
+{
+    "wall-height": {
+        "WallHeightTopLabel": "Altezza Mura (Sopra)",
+        "WallHeightBottomLabel": "Altezza Mura (Sotto)",
+        "AdvancedVisionLabel": "Abilita Altezza Mura per questa Scena",
+        "AdvancedMovementLabel": "Abilita il Movimento Altezza Mura per questa Scena",
+        "tokenHeightLabel": "Altezza Token",
+        "tokenHeightHint": "Altezza Token Calcolata {{height}}, Elevazione Linea Visiva {{losHeight}}",
+        "tokenHeightNotes": "Questa è l'altezza di un token nella scena. Viene usata per calcolare la sua visione in relazione alle mura.",
+        "ModuleLabel": "Altezza Mura",
+        "ALGlobal": "Questa opzione è abilitata globalmente nelle impostazioni del modulo.",
+        "elevation": "Elevazione",
+        "levelsRangeTop": "Altezza (Sopra)",
+        "levelsRangeBottom": "Altezza (Sotto)",
+        "distance": "Unità Griglia",
+        "settings.globalAdvancedLighting.name": "Abilita 'Limitato dall'Elevazione' Globalmente",
+        "settings.globalAdvancedLighting.hint": "Le fonti di effetti ad area saranno limitate alle mura che corrispondono all'altezza della fonte invece che all'altezza del token controllato.",
+        "advancedLightingLabel": "Limitato dall'Elevazione",
+        "advancedLightingNotes": "Determina se l'effetto ad area per questa fonte è contenuto dalle mura che corrispondono all'altezza della fonte invece che all'altezza del token controllato.",
+        "settings.enableTooltip.name": "Abilità Tooltip",
+        "settings.enableTooltip.hint": "Abilità il tooltip sul livello dei muri, mostrandone l'altezza superiore e inferiore. Se hai correntemente la costruzione del livello mura, dovresti riavviare o spostarti su un altra scena per poi ritornare.",
+        "settings.enableWallText.name": "Mostra Altezza sui Muri",
+        "settings.enableWallText.hint": "Mostra l'elevazione superiore e inferiore delle mura sul muro stesso. (Richiede riavvio)",
+        "settings.migrateOnStartup.name": "Migrazione Dati Wall-Height All'Avvio",
+        "settings.migrateOnStartup.hint": "Migra i dati di Wall-Height dalla vecchia archittettura a quella nuova. Questo è necessario solo una volta ma puoi attivare questa impostazione e ricaricare la pagina se hai necessità di effettuarla nuovamente.",
+        "settings.blockSightMovement.name": "Struttura a Volta",
+        "settings.blockSightMovement.hint": "Permette ai token di muoversi attraverso i muri se la differenza dell'altezza tra i piedi del token e l'altezza del muro non è maggiore dell'altezza del token.",
+        "settings.autoLOSHeight.name": "Altezza Token Automatica",
+        "settings.autoLOSHeight.hint": "Calcola l'altezza del token automaticamente attraverso la taglia e scala del token.\nL'altezza del token sarà calcolata per ogni token senza un'altezza personalizzata o con un'altezza personalizzata impostata su 0. L'altezza del token predefinita verrà ignorata.",
+        "settings.defaultLosHeight.name": "Altezza Token Predefinita",
+        "settings.defaultLosHeight.hint": "L'altezza di un token (dove si trovano gli occhi di quella creatura) in unità. Predefinito: 6."
+    }
+}

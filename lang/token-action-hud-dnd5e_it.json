@@ -1,0 +1,98 @@
+{
+  "tokenActionHud": {
+    "dnd5e": {
+      "1stLevelSpells": "Incantesimi di 1° Livello",
+      "2ndLevelSpells": "Incantesimi di 2° Livello",
+      "3rdLevelSpells": "Incantesimi di 3° Livello",
+      "4thLevelSpells": "Incantesimi di 4° Livello",
+      "5thLevelSpells": "Incantesimi di 5° Livello",
+      "6thLevelSpells": "Incantesimi di 6° Livello",
+      "7thLevelSpells": "Incantesimi di 7° Livello",
+      "8thLevelSpells": "Incantesimi di 8° Livello",
+      "9thLevelSpells": "Incantesimi di 9° Livello",
+      "abilities": "Capacità",
+      "activeFeatures": "Funzionalità Attive",
+      "artifact": "Artefatto",
+      "artificerInfusions": "Infusioni dell'Artificiere",
+      "atWillSpells": "Incantesimi a Volontà",
+      "backgroundFeatures": "Funzionalità di Background",
+      "bonusActions": "Azioni Bonus",
+      "cantrips": "Cantrip",
+      "channelDivinity": "Canalizzare Divinità",
+      "check": "Verifica",
+      "checks": "Caratteristiche",
+      "classFeatures": "Abilità di Classe",
+      "common": "Comune",
+      "condition": "Condizione",
+      "conditions": "Condizioni",
+      "crewActions": "Azioni dell'equipaggio",
+      "defensiveTactics": "Tattiche Difensive",
+      "eldritchInvocations": "Invocazioni Eldritch",
+      "elementalDisciplines": "Discipline Elementali",
+      "feats": "Abilità Speciali",
+      "fightingStyles": "Stili di Combattimento",
+      "huntersPrey": "Preda del Cacciatore",
+      "innateSpells": "Incantesimi Innati",
+      "item": "Oggetto",
+      "kiAbilities": "Abilità Ki",
+      "lair": "Tana",
+      "lairActions": "Azioni di Tana",
+      "legendary": "Leggendarie",
+      "legendaryActions": "Azioni Leggendarie",
+      "magicItems": "Oggetti Magici",
+      "maneuvers": "Manovre",
+      "metamagicOptions": "Opzioni Metamagic",
+      "monsterFeatures": "Abilità del Mostro",
+      "multiattacks": "Multiattacchi",
+      "otherActions": "Altre azioni",
+      "pactBoons": "Doni del Patto",
+      "pactSpells": "Incantesimi del Patto",
+      "passiveFeatures": "Abilità Passive",
+      "psionicPowers": "Poteri Psionici",
+      "raceFeatures": "Abilità della Razza",
+      "rare": "Raro",
+      "rests": "Riposi",
+      "rollInitiative": "Tira Iniziativa",
+      "runes": "Rune",
+      "skill": "Skill",
+      "skills": "Abilità",
+      "superiorHuntersDefense": "Difesa Superiore del Cacciatore",
+      "uncommon": "Non Comune",
+      "veryRare": "Molto Raro",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "Mostra i nomi delle abilità e delle caratteristiche come abbreviazioni di tre caratteri",
+          "name": "Abbrevia Nomi delle Abilità e delle Caratteristiche"
+        },
+        "displaySpellInfo": {
+          "hint": "Mostra le informazioni sugli elementi del componente degli incantesimi, la concentrazione e lo stato rituale accanto al nome dell'incantesimo",
+          "name": "Mostra Informazioni sugli Incantesimi"
+        },
+        "showItemsWithoutActivationCosts": {
+          "hint": "Mostra gli oggetti senza costo di attivazione",
+          "name": "Mostra Oggetti senza Costi di Attivazione"
+        },
+        "showSlowActions": {
+          "hint": "Mostra le azioni che richiedono più di un round",
+          "name": "Mostra Azioni Lente"
+        },
+        "showUnchargedItems": {
+          "hint": "Mostra gli oggetti senza cariche rimanenti",
+          "name": "Mostra Oggetti Senza Cariche"
+        },
+        "showUnequippedItems": {
+          "hint": "Mostra gli oggetti non equipaggiati",
+          "name": "Mostra Oggetti Non Equipaggiati"
+        },
+        "showUnequippedItemsNpcs": {
+          "hint": "Mostra gli oggetti non equipaggiati per PNG",
+          "name": "Mostra Oggetti Non Equipaggiati per PNG"
+        },
+        "showUnpreparedSpells": {
+          "hint": "Mostra gli incantesimi non preparati",
+          "name": "Mostra Incantesimi Non Preparati"
+        }
+      }
+    }
+  }
+}
