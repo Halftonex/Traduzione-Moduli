@@ -4,10 +4,11 @@ Modulo per Foundry VTT che aggiunge la traduzione in italiano ad una serie di mo
 Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modules-language-pack), in quanto l'autore sembra inattivo.
 
 ##
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FHalftonex%2Fitalian-modules-translation%2Freleases%2Flatest%2Fdownload%2Fmodule.json&query=compatibility.verified&label=Foundry%20Version&color=orange)
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/Halftonex/italian-modules-translation?label=Release&color=teal)
 ![GitHub all releases](https://img.shields.io/github/downloads/Halftonex/italian-modules-translation/total?label=Downloads&color=yellow)
 
-## Download
+## Installazione
 1. All'interno di Foundry, selezionare la scheda Moduli Aggiuntivi.
 1. Clicca su Installa modulo e incolla il seguente indirizzo: https://github.com/Halftonex/italian-modules-translation/releases/latest/download/module.json
 1. Clicca su Installa e attendi il completamento.
