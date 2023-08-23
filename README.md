@@ -1,4 +1,5 @@
 # Italian Modules Translation
+Modulo per Foundry VTT che aggiunge la traduzione in italiano ad una serie di moduli che ne sono sprovvisti.
 
 Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modules-language-pack), in quanto l'autore sembra inattivo.
 
