@@ -1,7 +1,7 @@
 {
   "id": "italian-modules-translation",
   "title": "Italian Modules Translation",
-  "description": "Modulo per Foundry VTT che aggiunge la traduzione in italiano ad una serie di moduli che ne sono sprovvisti",
+  "description": "Modulo che aggiunge la traduzione in italiano ad una serie di moduli che ne sono sprovvisti",
   "version": "1.0.0",
   "compatibility": {
     "minimum": "10",
