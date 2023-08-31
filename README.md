@@ -7,6 +7,8 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FHalftonex%2Fitalian-modules-translation%2Freleases%2Flatest%2Fdownload%2Fmodule.json&query=compatibility.verified&label=Foundry%20Version&color=orange)
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/Halftonex/italian-modules-translation?label=Release&color=teal)
 ![GitHub all releases](https://img.shields.io/github/downloads/Halftonex/italian-modules-translation/total?label=Downloads&color=yellow)
+![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/Halftonex/italian-modules-translation/latest/total?label=Downloads%20Latest&color=green)
+
 
 ## Installazione
 1. All'interno di Foundry, selezionare la scheda Moduli Aggiuntivi.
