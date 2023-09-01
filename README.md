@@ -8,6 +8,7 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/Halftonex/italian-modules-translation?label=Release&color=teal)
 ![GitHub all releases](https://img.shields.io/github/downloads/Halftonex/italian-modules-translation/total?label=Downloads&color=yellow)
 ![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/Halftonex/italian-modules-translation/latest/total?label=Downloads%20Latest&color=green)
+![GitHub](https://img.shields.io/github/license/Halftonex/italian-modules-translation?logo=creativecommons&logoColor=blue&label=License&color=blue)
 
 
 ## Installazione
