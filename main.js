@@ -39,7 +39,7 @@ class ItalianTranslations {
         if (game.system.id === 'dnd5e' && game.modules.get("torch")) {
             game.settings.register(this.moduleId, this.torchAddLights, {
                 name: "Torch - D&D5e Fonti di Luce Addizionali",
-                hint: "Aggiunge un file per le fonti di luce addizionali di D&D5e in italiano alle impostazioni di Torch.",
+                hint: "Aggiunge un file per le fonti di luce addizionali di D&D5e in italiano alle impostazioni di Torch. Utile se si ha il compendio Oggetti (SRD) tradotto in italiano.",
                 default: false,
                 type: Boolean,
                 scope: "world",
