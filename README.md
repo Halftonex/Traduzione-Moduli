@@ -16,6 +16,10 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 1. Clicca su Installa modulo e incolla il seguente indirizzo: https://github.com/Halftonex/italian-modules-translation/releases/latest/download/module.json
 1. Clicca su Installa e attendi il completamento.
 
+## Impostazioni
+* Impostazione per tralasciare i moduli la dove sia già presente una traduzione italiana
+* Impostazione, qualora ci si trovi su sistema D&D5e e ci sia il modulo Torch installato e attivo, che aggiunge un file per le fonti di luce addizionali in italiano alle impostazioni di Torch. Utile se si ha il compendio Oggetti (SRD) tradotto in italiano.
+
 ## Moduli supportati
 * [About Face](https://github.com/mclemente/about-face)
 * [About Time](https://gitlab.com/tposney/about-time)
