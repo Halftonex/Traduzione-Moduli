@@ -30,11 +30,12 @@ class ItalianTranslations {
         });
         game.settings.register(this.moduleId, this.overrideLang, {
             name: "Sovrascrivere Italiano Predefinito",
-            hint: "Sovrascrive le traduzioni in italiano già presenti nei moduli con quelle fornite da questo modulo. (Richiede ricarica del mondo)",
+            hint: "Sovrascrive le traduzioni in italiano già presenti nei moduli con quelle fornite da questo modulo.",
             default: false,
             type: Boolean,
             scope: "world",
-            config: true
+            config: true,
+            onChange: value => { SettingsConfig.reloadConfirm({ world: true }); }
         });
         if (game.system.id === 'dnd5e' && game.modules.get("torch")) {
             game.settings.register(this.moduleId, this.torchAddLights, {
@@ -43,7 +44,8 @@ class ItalianTranslations {
                 default: false,
                 type: Boolean,
                 scope: "world",
-                config: true
+                config: true,
+                onChange: value => { SettingsConfig.reloadConfirm({ world: true }); }
             });
         }
     }
