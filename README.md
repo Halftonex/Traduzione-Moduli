@@ -17,7 +17,7 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 1. Clicca su Installa e attendi il completamento.
 
 ## Impostazioni
-<img src="images/settings.png">
+<img src="images/settings.webp">
 
 ## Moduli supportati
 * [About Face](https://github.com/mclemente/about-face)
