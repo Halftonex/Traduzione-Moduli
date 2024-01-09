@@ -1,7 +1,7 @@
 # Italian Modules Translation Changelog
 
 ## v1.2.0
-* Aggiunta la traduzione per il sistema D&D5e (Compatibile con [DnD5e Italian Translation](https://gitlab.com/riccisi/foundryvtt-dnd5e-lang-it-it))
+* Aggiunta la traduzione per il sistema D&D5e (Compatibile con [DnD5e Italian Translation](https://gitlab.com/riccisi/foundryvtt-dnd5e-lang-it-it); i valori di quest'ultimo avranno la precedenza)
 
 ## v1.1.1
 * Aggiunta l'impostazione per tralasciare i moduli la dove sia già presente una traduzione italiana
