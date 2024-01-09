@@ -76,9 +76,9 @@ class ItalianTranslations {
         const ovrLanguages = [];
 
         for (const lang of languages) {
-            const module = game.modules.get(lang.module);
+            const module = (lang.system && lang.system == game.system.id) ? game.system : game.modules.get(lang.module);
 
-            if (!module?.active) continue;
+            if (!lang.system && !module?.active) continue;
 
             if (game.settings.get(this.moduleId, this.overrideLang) || !this._hasItalian(module.languages)) {
                 ovrLanguages.push(lang);
@@ -95,7 +95,7 @@ class ItalianTranslations {
         const { languages = [] } = imt;
 
         const modules = languages
-            .map(lang => game.modules.get(lang.module)?.title)
+            .map(lang => lang.system ? game.system.title : game.modules.get(lang.module)?.title)
             .sort();
 
         if (modules.length === 0) return;

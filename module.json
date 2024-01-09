@@ -23,6 +23,11 @@
   "languages": [{
     "lang": "it",
     "name": "Italian",
+    "path": "./lang/dnd5e_it.json",
+    "system": "dnd5e"
+  }, {
+    "lang": "it",
+    "name": "Italian",
     "path": "./lang/about-face_it.json",
     "module": "about-face"
   }, {
