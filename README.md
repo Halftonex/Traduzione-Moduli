@@ -16,6 +16,9 @@ Fork di [italian-modules-language-pack](https://gitlab.com/riccisi/italian-modul
 ## Impostazioni
 <img src="images/settings.webp">
 
+## Sistemi supportati
+* [D&D5e](https://github.com/foundryvtt/dnd5e)
+
 ## Moduli supportati
 * [About Face](https://github.com/mclemente/about-face)
 * [About Time](https://gitlab.com/tposney/about-time)
