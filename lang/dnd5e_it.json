@@ -144,7 +144,7 @@
     "DND5E.ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
     "DND5E.Add": "Add",
     "DND5E.AddEmbeddedItemPromptHint": "Do you want to add these items to your character sheet?",
-    "DND5E.AdvancementAbilityScoreImprovementTitle": "Ability Score Improvement",
+    "DND5E.AdvancementAbilityScoreImprovementTitle": "Incremento dei Punteggi di Caratteristica",
     "DND5E.AdvancementAbilityScoreImprovementHint": "Allow the player to increase one or more ability scores or take an optional feat.",
     "DND5E.AdvancementAbilityScoreImprovementCap": "Point Cap",
     "DND5E.AdvancementAbilityScoreImprovementCapHint": "Maximum number of points a player can assign to a single score.",
